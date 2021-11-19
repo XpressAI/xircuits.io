@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Spark Cyclone',
-  tagline: 'The performance will blow you away',
-  url: 'http://sparkcyclone.io',
+  title: 'Xpipes',
+  tagline: 'Xpress your Workflows',
+  url: 'http://xpipes.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/cyclone-logo.png',
   organizationName: 'XpressAI', // Usually your GitHub org/user name.
-  projectName: 'sparkcyclone', // Usually your repo name.
+  projectName: 'Xpipes', // Usually your repo name.
 
   presets: [
     [
@@ -24,13 +24,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/XpressAI/sparkcyclone.io/edit/main/',
+          editUrl: 'https://github.com/XpressAI/xpipes.io/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/XpressAI/sparkcyclone.io/edit/main/blog/',
+            'https://github.com/XpressAI/xpipes.io/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -43,7 +43,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Spark Cyclone',
+        title: 'Xpipes',
         logo: {
           alt: 'Spark Cyclone Logo',
           src: 'img/cyclone-logo.png',
@@ -57,7 +57,7 @@ const config = {
           },
           {to: 'https://blog.xpress.ai', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/XpressAI/SparkCyclone',
+            href: 'https://github.com/XpressAI/xai-jupyterlab',
             label: 'GitHub',
             position: 'right',
           },

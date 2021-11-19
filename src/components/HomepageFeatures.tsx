@@ -16,35 +16,34 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Configure',
+    title: 'Xpress Integration',
     image: '/img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Spark Cyclone is designed as a standard plug-in for Apache Spark.
-          Simply adding a couple of lines to your spark-submit command is
-          all you need to accelerate your jobs between 2x and 10x.
+          Xpipes supports various famous ML and DL frameworks
+          including Keras Tensorflow and Spark. All you need to do is 
+          drag a line, and they're connected.
       </>
     ),
   },
   {
-    title: 'Compatible',
+    title: 'Xpress Training',
     image: '/img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        The SX-Aurora TSUBASA Vector Engine is natively 64-bit, so you
-          don&apos;t have to change your longs to ints, or doubles to
-          float to take advantage of the extra performance.
+        Xpipes in Konsole allows you access to industry level DL training hardware,
+        such as the Aurora Vector Engine.  
       </>
     ),
   },
   {
-    title: 'Powered by Frovedis',
+    title: 'Xpress Workflow',
     image: '/img/undraw_docusaurus_react.svg',
     description: (
       <>
-        <a href='http://github.com/frovedis/frovedis'>Frovedis</a> provides the foundation
-        for Spark Cyclone giving us algorithms that are highly optimized for not only
-        the SX-Aurora TSUBASA Vector Engine but also X86_64 CPUs.
+        Convey your  workflow to colleagues and superiors alike
+        with Xpipes Components. Visual and low-code, focus on expressing
+        your ideas.
       </>
     ),
   },

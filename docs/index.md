@@ -4,8 +4,19 @@ sidebar_position: 0
 
 # Overview
 
-The Spark Cyclone plugin showcases the performance of the SX-Aurora Vector Engine (VE) for Big Data Analytics use cases. The plugin we have created enables developers to accelerate Spark jobs with VE hardware. We believe that the architecture of the VE makes it better suited for these Big Data workloads as it has high-performance support for the typical data types used in Spark jobs and has much larger memory capacity and higher memory bandwidth than all but the recently released A100 GPU.
+Xpipes is a Jupyterlab-based extension that enables visual, low-code, training workflows. It is created by data scientists for data scientists. 
 
-This documentation outlines the design of a Spark plugin to enable the acceleration of Spark SQL and show benchmark results of the Spark Cyclone system. Several of our optimized functions showcases promising results for the VE. 
 
-We provide a quick guide on how to start using Spark on the VE and sample commands, as well as how to install Spark Cyclone plugin from scratch. We also introduce the concepts related to the implementation of Spark and Kubernetes, instructions to install and finalizes with the benchmark results of the VE compared to CPU-only Spark and GPU-accelerated execution with the Nvidia Rapids4Spark plugin.
+## Key Features
+
+- Visual Low Code Workflow
+- Code Generation (CodeGen)
+- Customizable Components
+- Debugger
+
+# Workflow
+1. Create a new Xpipes from the Jupyterlab launcher or open an existing .xpipes file.
+2. Drag components from the Xpipes Component Tray to form your training workflow and link all triangles.
+3. Press Compile button! The Xpipes will compile the components into a working python code.
+4. Run the compiled python code using your own terminal or use our Output Viewer. 
+5. Unexpected output? Would like to have more in-depth insights of the data between components? Mark the components you'd like to observe and try out our debugger.

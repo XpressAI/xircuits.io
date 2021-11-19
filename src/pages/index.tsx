@@ -30,7 +30,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Accelerating Spark with the SX-Aurora TSUBASA Vector Engine">
+      description="Xpress Your Workflows">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
