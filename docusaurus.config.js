@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/cyclone-logo.png',
+  favicon: 'img/xpipes-logo.png',
   organizationName: 'XpressAI', // Usually your GitHub org/user name.
   projectName: 'Xpipes', // Usually your repo name.
 
@@ -43,10 +43,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Xpipes',
+        title: 'Home',
         logo: {
-          alt: 'Spark Cyclone Logo',
-          src: 'img/cyclone-logo.png',
+          alt: 'Xpipes Logo',
+          src: 'img/xpipes-logo.png',
         },
         items: [
           {
