@@ -15,7 +15,7 @@ It is created by data scientists for data scientists.
 - **Customizable Components**: Xpipe components are very extendable and customizable. Create your own Xpipes component library and share it to the world!
 
 ## Workflow
-1. Create a new Xpipes from the Jupyterlab launcher or open an existing .xpipe files.
+1. Create a new Xpipes from the Jupyterlab launcher or open an existing .xpipe file.
 
 ![xpipe](01-open-xpipe.gif)
 

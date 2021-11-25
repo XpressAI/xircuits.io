@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/xpipes-logo.png',
+  favicon: 'img/xpress-logo.svg',
   organizationName: 'XpressAI', // Usually your GitHub org/user name.
   projectName: 'Xpipes', // Usually your repo name.
 
@@ -71,15 +71,15 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/docs/getting-started/vector-engine-setup',
+                to: '/docs/index',
               },
               {
-                 label: 'Configuration',
-                 to: '/docs/configuration/spark-cyclone-configuration',
+                 label: 'Components',
+                 to: '/docs/xpipes-components/getting-started-with-xpipes-components',
               },
               {
-                 label: 'Examples',
-                 to: '/docs/examples/running-tpch-benchmarks',
+                 label: 'Tutorials',
+                 to: '/docs/tutorials/tutorials',
               },
             ],
           },
