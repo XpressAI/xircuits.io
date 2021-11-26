@@ -88,11 +88,11 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/spark-cyclone',
+                href: 'https://stackoverflow.com/questions/tagged/xpipes',
               },
               {
                 label: 'Discord',
-                href: 'https://discord.gg/J5ERetfR',
+                href: 'https://discord.gg/C4DaD3MrAH',
               },
               {
                 label: 'Twitter',
