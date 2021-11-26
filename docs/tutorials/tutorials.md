@@ -13,4 +13,7 @@ Learn how to make a Xpipe workflow to load prebuilt Keras models, perform infere
 
 ## Spark
 
-Learn how to pipeline fundamental Spark operations on Xpipe, perform data visualization, or perform machine learning operations such as regression using Spark MLlib.
+Learn how to pipeline fundamental Spark operations on Xpipe, perform data visualization, or make SparkSQL queries on your dataframe.
+
+1. [Creating a Basic Spark Application - Loading Data and Visualization](spark#basic-spark-application)
+2. [Performing Spark SQL Queries](spark#performing-spark-sql-queries)

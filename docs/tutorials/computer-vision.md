@@ -8,6 +8,8 @@ sidebar_position: 2
 
 ![xpipe-runner](..\04-xpipes-runner.gif)
 
+##### Example: KerasModelPredict.xpipe 
+
 Keras has provided a handful of prebuilt famous models such as the resnet50 and VGG16 and in their API. In Xpipes, you have two ways of loading these models.
 
 - You can use the general `LoadKerasModel` component, all you need to do is supply it a literal string parameter and it will load the config for you. There are also additional parameters that you can supply, but if you would like to have more model specific options, you can choose the 2nd option.
@@ -16,14 +18,12 @@ Keras has provided a handful of prebuilt famous models such as the resnet50 and 
 
 Both `LoadKerasModel` and custom Keras model components can be linked to `KerasPredict`. You can test this out by linking the model ports between them and supplying an image path to the image you would like to perform inference on.
 
-##### You may try it out KerasModelPredict.xpipe 
-
 
 ## Training an Image Classifier Image from Scratch
 
 ![SampleTraining](..\xpipes-components\general-components\SampleTraining.png)
 
-KerasTrainImageClassifier.xpipe 
+##### Example: KerasTrainImageClassifier.xpipe 
 
 
 To train an image classifier, you would need a few components. 
@@ -35,5 +35,3 @@ To train an image classifier, you would need a few components.
 5. `EvaluateAccuracy`: Finally, to evaluate your model you can test it out with the test split earlier.
 
 Alternatively, you may also want to perform image augmentation such as `FlattenImageData`. You can place this component between `ReadDataSet` and `TrainTestSplit`. As the input this time is a 1D tensor, use `Create1DInputModel` instead of the Create2DInputModel.
-
-Related File: KerasTrainImageClassifier.xpipe 
