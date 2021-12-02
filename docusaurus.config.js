@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/xpress-logo.svg',
+  favicon: 'img/xpress-logo.ico',
   organizationName: 'XpressAI', // Usually your GitHub org/user name.
   projectName: 'Xpipes', // Usually your repo name.
 
