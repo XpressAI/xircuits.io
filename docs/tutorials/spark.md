@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Spark
 
-Before starting any of these examples, please ensure that your Spark configuration is ready. You may refer to the [Spark setup guide](..\xpipes-components\advanced-components\Spark.md). 
+Before starting any of these examples, please ensure that your Spark configuration is ready. You may refer to the [Spark setup guide](../xpipes-components/advanced-components/Spark.md). 
 ## Basic Spark Application
 
 ![Basic-Xpipe](spark-line-plot-xpipe.png)

@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Loading a Keras Model and Performing Inference
 
-![xpipe-runner](..\04-xpipes-runner.gif)
+![xpipe-runner](../04-xpipes-runner.gif)
 
 ##### Example: KerasModelPredict.xpipe 
 
@@ -21,7 +21,7 @@ Both `LoadKerasModel` and custom Keras model components can be linked to `KerasP
 
 ## Training an Image Classifier Image from Scratch
 
-![SampleTraining](..\xpipes-components\general-components\SampleTraining.png)
+![SampleTraining](../xpipes-components/general-components/SampleTraining.png)
 
 ##### Example: KerasTrainImageClassifier.xpipe 
 
