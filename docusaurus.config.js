@@ -57,7 +57,7 @@ const config = {
           },
           {to: 'https://blog.xpress.ai', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/XpressAI/xai-jupyterlab',
+            href: 'https://github.com/XpressAI/xpipes',
             label: 'GitHub',
             position: 'right',
           },
