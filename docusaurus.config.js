@@ -109,7 +109,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/XpressAI/SparkCyclone',
+                href: 'https://github.com/XpressAI/xpipes',
               },
             ],
           },
