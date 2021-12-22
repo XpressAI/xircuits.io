@@ -65,5 +65,5 @@ To perform a binary unet model inference in PyTorchUnetInferenceSample.xpipes, y
 
 ##### Example: ConvertToOnnxSample.xpipes
 To convert a torch model into an onnx model, you would need a few components:
-1. `UnetModel`: Create the unet model, but you also specify the gpu (default is 0 (cpu).
+1. `UnetModel`: Create the unet model, but you also specify the gpu (default is 0 (cpu)).
 2. `ConvertTorchModelToOnnx`: In order to run the complete conversion pipeline, you need to specify the input model path (pth format) and output model path (onnx format).
