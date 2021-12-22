@@ -1,14 +1,14 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Computer Vision
+# Keras
 
 ## Loading a Keras Model and Performing Inference
 
-![xpipe-runner](../04-xpipes-runner.gif)
+![xpipe-runner](../../04-xpipes-runner.gif)
 
-##### Example: KerasModelPredict.xpipe 
+##### Example: KerasModelPredict.xpipes
 
 Keras has provided a handful of prebuilt famous models such as the resnet50 and VGG16 and in their API. In Xpipes, you have two ways of loading these models.
 
@@ -21,12 +21,12 @@ Both `LoadKerasModel` and custom Keras model components can be linked to `KerasP
 
 ## Training an Image Classifier Image from Scratch
 
-![SampleTraining](../xpipes-components/general-components/SampleTraining.png)
+![SampleTraining](../../xpipes-components/general-components/SampleTraining.png)
 
-##### Example: KerasTrainImageClassifier.xpipe 
+##### Example: KerasTrainImageClassifier.xpipes
 
 
-To train an image classifier, you would need a few components. 
+To train an image classifier, you would need a few components.
 
 1. `ReadDataSet`: Keras provides several [prebuilt small datasets](https://keras.io/api/datasets/). Provide the component a literal string and it will download it if you don't haven't downloaded it before.
 2. `TrainTestSplit`: The only needed parameter here is the dataset input, however you may want to adjust the default parameters.
@@ -35,3 +35,4 @@ To train an image classifier, you would need a few components.
 5. `EvaluateAccuracy`: Finally, to evaluate your model you can test it out with the test split earlier.
 
 Alternatively, you may also want to perform image augmentation such as `FlattenImageData`. You can place this component between `ReadDataSet` and `TrainTestSplit`. As the input this time is a 1D tensor, use `Create1DInputModel` instead of the Create2DInputModel.
+
