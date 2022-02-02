@@ -9,6 +9,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          known_hosts: 'placeholder'
+
+      - name: Adding Known Hosts
+        run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
       - name: Setup Build Env
         run: |
           curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | sh
@@ -23,4 +32,4 @@ jobs:
         run: npm run-script build
 
       - name: Copying to xircuits.io
-        run: rsync -r -v build/* egonzalez@xpressai.jp:/var/www/xircuits.io/
+        run: rsync -r -v build/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/xircuits.io/
