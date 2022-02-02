@@ -1,0 +1,26 @@
+name: Publish Site
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup Build Env
+        run: |
+          curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | sh
+          . ~/.nvm/nvm.sh
+          nvm install 14.15.3
+          nvm use 14.15.3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build site
+        run: npm run-script build
+
+      - name: Copying to xircuits.io
+        run: rsync -r -v build/* egonzalez@xpressai.jp:/var/www/xircuits.io/
