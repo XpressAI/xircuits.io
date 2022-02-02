@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
     image: '/img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-          Xpipes supports various famous ML and DL frameworks
+          Xircuits supports various famous ML and DL frameworks
           including Keras Tensorflow and Spark. All you need to do is 
           drag a line, and they're connected.
       </>
@@ -31,7 +31,7 @@ const FeatureList: FeatureItem[] = [
     image: '/img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Xpipes in Konsole allows you access to industry level DL training hardware,
+        Xircuits in Konsole allows you access to industry level DL training hardware,
         such as the Aurora Vector Engine.  
       </>
     ),
@@ -42,7 +42,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Convey your  workflow to colleagues and superiors alike
-        with Xpipes Components. Visual and low-code, focus on expressing
+        with Xircuits Components. Visual and low-code, focus on expressing
         your ideas.
       </>
     ),

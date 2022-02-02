@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Xpipes',
+  title: 'Xircuits',
   tagline: 'Xpress your Workflows',
-  url: 'http://xpipes.io',
+  url: 'http://xircuits.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/xpress-logo.ico',
   organizationName: 'XpressAI', // Usually your GitHub org/user name.
-  projectName: 'Xpipes', // Usually your repo name.
+  projectName: 'Xircuits', // Usually your repo name.
 
   presets: [
     [
@@ -24,13 +24,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/XpressAI/xpipes.io/edit/main/',
+          editUrl: 'https://github.com/XpressAI/xircuits.io/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/XpressAI/xpipes.io/edit/main/blog/',
+            'https://github.com/XpressAI/xircuits.io/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -45,8 +45,8 @@ const config = {
       navbar: {
         title: 'Home',
         logo: {
-          alt: 'Xpipes Logo',
-          src: 'img/xpipes-logo.png',
+          alt: 'Xircuits Logo',
+          src: 'img/xircuits-logo.png',
         },
         items: [
           {
@@ -57,7 +57,7 @@ const config = {
           },
           {to: 'https://blog.xpress.ai', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/XpressAI/xpipes',
+            href: 'https://github.com/XpressAI/xircuits',
             label: 'GitHub',
             position: 'right',
           },
@@ -75,7 +75,7 @@ const config = {
               },
               {
                  label: 'Components',
-                 to: '/docs/xpipes-components/getting-started-with-xpipes-components',
+                 to: '/docs/xircuits-components/getting-started-with-xircuits-components',
               },
               {
                  label: 'Tutorials',
@@ -88,7 +88,7 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/xpipes',
+                href: 'https://stackoverflow.com/questions/tagged/xircuits',
               },
               {
                 label: 'Discord',
@@ -109,7 +109,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/XpressAI/xpipes',
+                href: 'https://github.com/XpressAI/xircuits',
               },
             ],
           },

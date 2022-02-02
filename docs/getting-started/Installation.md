@@ -6,7 +6,7 @@ sidebar_position: 1
 
 The current iteration of the juypterlab engine are made of seperate extensions of Jupyterlab 3.1.10. The following steps is if you're developing on a Windows or Ubuntu 20.04. 
 ```
-git clone https://github.com/XpressAI/xpipes
+git clone https://github.com/XpressAI/xircuits
 ```
 Make and activate python env. The tested python versions are 3.9.6
 
@@ -15,16 +15,16 @@ python -m venv venv
 venv/Scripts/activate
 ```
 
-Download python packages. Currently it's located at /xpipe/
+Download python packages. Currently it's located at /xircuit/
 
 ```
-cd xpipe
+cd xircuit
 pip install -r requirements.txt
 # For Linux
 # pip install -r requirements_linux.txt
 ```
 
-The main body of the app is the xpipe. It also have a server extension. Ensure you are in the /xpipe/ folder and run
+The main body of the app is the xircuit. It also have a server extension. Ensure you are in the /xircuit/ folder and run
 
 ```
 # Install package in development mode
@@ -32,7 +32,7 @@ pip install -e .
 # Link your development version of the extension with JupyterLab
 jupyter labextension develop . --overwrite
 # Enable the server extension
-jupyter server extension enable xpipe
+jupyter server extension enable xircuit
 
 # Rebuild Typescript source after making changes
 jlpm build
@@ -49,11 +49,11 @@ jlpm watch
 jupyter lab --watch
 ```
 
-By running jupyter lab, you should be able to load the Xpipe Panel by selecting a .xpipe file in the file browser or launch the xpipe from Launcher > Xpipe File
+By running jupyter lab, you should be able to load the Xircuit Panel by selecting a .xircuit file in the file browser or launch the xircuit from Launcher > Xircuit File
 
 ![image](https://user-images.githubusercontent.com/23378929/133190662-61e71e75-88a4-4fca-8b9c-c1f7ed1fac55.png)
 
 
 The current extension looks like this.
-![Xpipe v0 3 4](https://user-images.githubusercontent.com/68586800/134819194-c7f932e2-beb5-4e35-ba53-3a3bf24dccdc.png)
+![Xircuit v0 3 4](https://user-images.githubusercontent.com/68586800/134819194-c7f932e2-beb5-4e35-ba53-3a3bf24dccdc.png)
 

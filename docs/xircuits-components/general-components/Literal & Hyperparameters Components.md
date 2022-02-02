@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Literal & Hyperparameters Components
 
-To supply your Xpipes components with customizable parameters, we provide literal and hyperparameter components.The main difference between them can be observed in the generated code. Consider the training_epoch parameter in the TrainImageClassifier component below. 
+To supply your Xircuits components with customizable parameters, we provide literal and hyperparameter components.The main difference between them can be observed in the generated code. Consider the training_epoch parameter in the TrainImageClassifier component below. 
 
 ![SampleTraining](SampleTraining.png)
 
@@ -45,7 +45,7 @@ As you can see, the value is passed in as a literal integer to the TrainImageCla
 
 ## Hyperparameter Component
 
-The following example shows if the hyperparameter component is used. Xpipes will prompt you to supply the parameter through our hyperparameter window prompt.
+The following example shows if the hyperparameter component is used. Xircuits will prompt you to supply the parameter through our hyperparameter window prompt.
 
 ![HyperparameterComponent](HyperparameterComponent.gif)
 
@@ -79,9 +79,9 @@ if __name__ == '__main__':
 
 And then executed by running `SampleTraining.py --epoch 3`
 
-From a higher level perspective, both components are perfectly executable in Xpipes. 
+From a higher level perspective, both components are perfectly executable in Xircuits. 
 
-The one supplied with hyperparameters are more flexible if executed outside the Xpipes. For example, consider the situation that you would like to automate your training workflow that displays the accuracy of your model for each training dataset. If you would use Hyperparameter components, you could simply run
+The one supplied with hyperparameters are more flexible if executed outside the Xircuits. For example, consider the situation that you would like to automate your training workflow that displays the accuracy of your model for each training dataset. If you would use Hyperparameter components, you could simply run
 
 ```
 python TrainingScript.py --dataset mnist

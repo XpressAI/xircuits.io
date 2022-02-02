@@ -7,8 +7,8 @@ sidebar_position: 2
 ## Training a Custom Binary Unet Model
 ![image](https://user-images.githubusercontent.com/23378929/146719809-45b48f38-ebf9-4a21-b36b-4c7ab6f89afd.png)
 
-##### Example: PyTorchUnetTrainSample.xpipes
-To train a binary unet model in PyTorchUnetTrainSample.xpipes, you would need a few components:
+##### Example: PyTorchUnetTrainSample.xircuits
+To train a binary unet model in PyTorchUnetTrainSample.xircuits, you would need a few components:
 1. `ReadMaskDataset`: In order to run this component, please download any segmentation dataset that contains the images and segmentation images and ensure the image name in image folder is same in the segmentation folder. Any preprocessing can also be done in this component before passing to the next component.
 ```
 class ReadMaskDataSet(Component):
@@ -56,14 +56,14 @@ Besides, custom dataset should follow in this tree format.
 ## Loading Unet model and Perform Inference
 ![inference-unet](https://user-images.githubusercontent.com/23378929/146729793-e37d73cd-1691-4540-89da-b11e6139614e.gif)
 
-##### Example: PyTorchUnetInferenceSample.xpipes
-To perform a binary unet model inference in PyTorchUnetInferenceSample.xpipes, you would need to first load the Unet model and perform the preprocessing step before loading the testing image. But in this case, we would have all the needed functions inside one single component (i.e. UnetPredict).
+##### Example: PyTorchUnetInferenceSample.xircuits
+To perform a binary unet model inference in PyTorchUnetInferenceSample.xircuits, you would need to first load the Unet model and perform the preprocessing step before loading the testing image. But in this case, we would have all the needed functions inside one single component (i.e. UnetPredict).
 1. `UnetPredict`: To do the unet inference, please load the model whether in torch format or onnx format and an image path in the config.
 
 ## Converting Torch model to Onnx model
 ![image](https://user-images.githubusercontent.com/23378929/146732392-6f6828f8-b12d-4293-ad3a-af016aabf307.png)
 
-##### Example: ConvertToOnnxSample.xpipes
+##### Example: ConvertToOnnxSample.xircuits
 To convert a torch model into an onnx model, you would need a few components:
 1. `UnetModel`: Create the unet model, but you also specify the gpu (default is 0 (cpu)).
 2. `ConvertTorchModelToOnnx`: In order to run the complete conversion pipeline, you need to specify the input model path (pth format) and output model path (onnx format).

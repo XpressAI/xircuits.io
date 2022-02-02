@@ -4,12 +4,12 @@ sidebar_position: 3
 
 # Spark
 
-Before starting any of these examples, please ensure that your Spark configuration is ready. You may refer to the [Spark setup guide](../xpipes-components/advanced-components/Spark.md). 
+Before starting any of these examples, please ensure that your Spark configuration is ready. You may refer to the [Spark setup guide](../xircuits-components/advanced-components/Spark.md). 
 ## Basic Spark Application
 
-![Basic-Xpipe](spark-line-plot-xpipe.png)
+![Basic-Xircuit](spark-line-plot-xircuit.png)
 
-##### Example: SparkLinePlot.xpipe
+##### Example: SparkLinePlot.xircuit
 
 In this example, you will learn how to start a basic spark application that reads a time series dataset and plots the data.
 
@@ -20,7 +20,7 @@ Note that you may need to upload the file to the HDFS if you're running Spark in
 
 3. `SparkReadFile` will output a Spark dataframe which can be then passed to the `SparkVisualize` component. `SparkVisualize` utilizes matplotlib library to plot. You also would need to specify which of the data column to be the X and Y axis.
 
-4. Run using the Xpipes Runner or through your local terminal! It will generate the following output.
+4. Run using the Xircuits Runner or through your local terminal! It will generate the following output.
 
 ```
 Executing: xSparkSession
@@ -57,15 +57,15 @@ Executing: SparkVisualize
 
 ## Performing Spark SQL Queries
 
-![SparkSQLXpipe](spark-sql-xpipe.png)
+![SparkSQLXircuit](spark-sql-xircuit.png)
 
-##### Example: SparkSQLPlotBar.xpipe 
+##### Example: SparkSQLPlotBar.xircuit 
 
-The next example show how can you perform sparkSQL queries in Xpipes. 
+The next example show how can you perform sparkSQL queries in Xircuits. 
 
 1. As with the previous example, you would start with a `xSparkSession`.
 
-2. To perform sparkSQL queries, you would require a dataset. In this example, we load the penguin dataset using `SparkReadCSV`. Although not utilized in this .xpipe, `SparkReadCSV` is the more specialized version of `SparkReadData` and allows other csv loading options, such as whether your csv has a header or specifying the data separator.
+2. To perform sparkSQL queries, you would require a dataset. In this example, we load the penguin dataset using `SparkReadCSV`. Although not utilized in this .xircuit, `SparkReadCSV` is the more specialized version of `SparkReadData` and allows other csv loading options, such as whether your csv has a header or specifying the data separator.
 
 3. Next is the `SparkSQL` component! The component is smart enough to infer simple SQL queries such as `SELECT species`, however if you would like to use more complex queries, please specify the SQL table name. For example, if you would to run `FROM PenguinTable SELECT species WHERE body_mass_g > 3000`, please supply a `PenguinTable` string to the `table_name` InPort.
 

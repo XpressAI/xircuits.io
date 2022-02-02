@@ -6,11 +6,11 @@ sidebar_position: 1
 
 ## Loading a Keras Model and Performing Inference
 
-![xpipe-runner](../../04-xpipes-runner.gif)
+![xircuit-runner](../../04-xircuits-runner.gif)
 
-##### Example: KerasModelPredict.xpipes
+##### Example: KerasModelPredict.xircuits
 
-Keras has provided a handful of prebuilt famous models such as the resnet50 and VGG16 and in their API. In Xpipes, you have two ways of loading these models.
+Keras has provided a handful of prebuilt famous models such as the resnet50 and VGG16 and in their API. In Xircuits, you have two ways of loading these models.
 
 - You can use the general `LoadKerasModel` component, all you need to do is supply it a literal string parameter and it will load the config for you. There are also additional parameters that you can supply, but if you would like to have more model specific options, you can choose the 2nd option.
 
@@ -21,9 +21,9 @@ Both `LoadKerasModel` and custom Keras model components can be linked to `KerasP
 
 ## Training an Image Classifier Image from Scratch
 
-![SampleTraining](../../xpipes-components/general-components/SampleTraining.png)
+![SampleTraining](../../xircuits-components/general-components/SampleTraining.png)
 
-##### Example: KerasTrainImageClassifier.xpipes
+##### Example: KerasTrainImageClassifier.xircuits
 
 
 To train an image classifier, you would need a few components.
