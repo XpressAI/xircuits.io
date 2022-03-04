@@ -14,7 +14,7 @@ To train a binary unet model in PyTorchUnetTrainSample.xircuits, you would need 
 class ReadMaskDataSet(Component):
     ...
 
-    def execute(self) -> None:
+    def execute(self, ctx) -> None:
 
         if self.dataset_name.value and self.mask_dataset_name.value:
 
