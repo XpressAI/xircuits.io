@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Literal & Hyperparameters Components
 
-To supply your Xircuits components with customizable parameters, we provide literal and hyperparameter components.The main difference between them can be observed in the generated code. Consider the training_epoch parameter in the TrainImageClassifier component below. 
+To supply your Xircuits components with customizable parameters, we provide literal and hyperparameter components. The main difference between them can be observed in the generated code. Consider the training_epoch parameter in the TrainImageClassifier component below. 
 
 ![SampleTraining](SampleTraining.png)
 
