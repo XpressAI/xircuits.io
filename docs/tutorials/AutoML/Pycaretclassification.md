@@ -1,0 +1,95 @@
+---
+sidebar_position: 3
+---
+
+# Pycaret AutoML (Classification)
+
+Before starting any of these examples, please ensure that you installed <code>Pycaret=>2.2</code> in your working environment. You can use <code>pip install pycaret==2.3.8</code> to install it too.    
+## Basic Pycaret AutoML Binary classification
+
+![Basic-Example](example1.gif)
+
+##### Example: AutoMLBasicBinaryClassification.xircuit
+
+In this example, you will learn how to build a basic Pycaret application that reads a tabular dataset,setup environment, compare training on multiple ML models, fine-tune models, plot results and save the trained model.
+
+1. To start the workflow,first you will need to get a dataset with  `GetData`. Here we chose the *credit* dataset. additionally, `SampleTestData` could be used to set-aside a testing dataset. 
+   
+2. To setup the Pycaret AutoML environment you will need the `SetupEnviromment`, This component initializes the training environment and creates the transformation pipeline. `SetupEnviromment` component must be present before executing any other component. It takes two mandatory parameters:in_dataset and target(label column). All the other parameters are optional.   
+   
+3. `CompareModels` This component trains and evaluates performance of all estimators available in the model library using cross validation.The output of this component is a score grid with average cross validated scores. additionally, it output a list of the top performing models, number of top model returned can be controlled by the *num_top* input. 
+   
+### Compare Model Output
+![Binary_compare_models](pycaret_class_images\Binary_compare_models.png)
+
+4. `CreateModel` This component trains and evaluates the performance of a **given model** using cross validation.The output of this component is a score grid with CV scores by fold and the created model. 
+
+5. `TuneModel` This component tunes the hyperparameter of a given model, in this case the output model from `CreateModel`. The output of this component is a score grid with CV scores by fold of the best selected model based on optimize parameter and the tuned model. 
+   
+6. `PlotModel` This component analyzes the performance of a trained model on holdout set. the type of the plot wanted could be set in *plot_type*
+
+### Plot Feature Graph
+![Binary_feature](pycaret_class_images\Binary_feature.png)
+
+
+7. `PredictModel` This component predicts Label and Score (probability of predicted class) using a trained model. When the *predict_dataset* input is None, it predicts label and score on the holdout(validation) set.
+   
+8. `FinalizeModel` This component trains a given estimator on the entire dataset including the holdout set.
+   
+8.  `AutoML` This component returns the best model out of all trained models in current session based on the input *optimize* parameter(default optimize is Accuracy). 
+    
+10.  `SaveModel` This component saves the transformation pipeline and trained model object into the current working directory as a pickle file for later use.
+
+
+
+## Pycaret AutoML Model Operation 
+
+
+##### Example: AutoMLClassificationBlendModels.xircuit 
+
+In this example, you will learn how to build to apply transformation on the dataset, Blend the top performing model into one model and calibrate the model.
+
+1. As with the previous example, you would start with a `GetData` and `SampleTestData`.
+
+2. To perform transformation on the dataset you would require to pass parameters to the transformation inputs in `SetupEnviromment`. available dataset transform operation:
+   1. *normalize* : when set to True, it transforms the numeric features by scaling them to a given range. 
+   2. *transformation* : when set to True, it applies the power transform to make data more Gaussian-like.   
+   3. *ignore_low_variance* : When set to True, all categorical features with insignificant variances are removed from the data.
+   4. *remove_multicollinearity* : When set to True, features with the inter-correlations higher than the defined threshold are removed.
+   5. *multicollinearity_threshold* :Threshold for correlated features. Ignored when remove_multicollinearity is not True.
+   6. *bin_numeric_features* : To convert numeric features into categorical,It takes a list of strings with column names that are related.
+   7. *group_features* : When the dataset contains features with related characteristics, group_features parameter can be used for feature extraction. It takes a list of strings with column names that are related.
+
+    More data transformation techniques from Pycaret could be added to the `SetupEnviromment` component simply by adding new inputs to the component script. 
+
+3. `BlendModels` This component trains a Soft Voting / Majority Rule classifier for select models passed in the top_model list. Here, you could pass a list of top models from the `CompareModels` component or create multiple models and link them to the *model_1,model_2,model_3* inputs. 
+    
+4. `CalibrateModel` This component calibrates the probability of a given estimator using isotonic or logistic regression. The output of this function is a score grid with CV scores by fold and calibrated model. 
+5. `logging` this component save all the trained models logs to MLflow dashboard can access at localhost:5000, to activate logging you will need to set *log_experiment* in `SetupEnviromment` component to True.  
+
+
+
+## Basic Pycaret AutoML Multiclass classification
+
+##### AutoMLBasicMulticlassClassification.xircuit 
+
+In this example, you will realize that we used the same components to build a basic Pycaret Multiclass classification that reads a tabular dataset,setup environment, compare training on multiple ML models, fine-tune models,Pick and save the best performance trained model.
+
+1. For this example we get a dataset with  `GetData` too. but we chose the *iris* dataset instead.
+   
+2. in the `SetupEnviromment` when need to ensure the *target* input is supplied with the dataset label column name(species).
+   
+3. `PlotModel` could give us some insight on the model performance here some plot examples:
+   
+
+### Plot Boundary Graph 
+
+![multiclass_boundary](pycaret_class_images\multiclass_boundary.png)
+
+### Plot Confusion Matrix Graph
+
+![multiclass_confusion_matrix](pycaret_class_images\multiclass_confusion_matrix.png)
+
+### Plot Class Report Graph
+
+![multiclass_class_report](pycaret_class_images\multiclass_class_report.png)
