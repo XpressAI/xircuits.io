@@ -7,8 +7,6 @@ sidebar_position: 3
 Before starting any of these examples, please ensure that you installed <code>Pycaret=>2.2</code> in your working environment. You can use <code>pip install pycaret==2.3.8</code> to install it too.    
 ## Basic Pycaret AutoML Binary classification
 
-![Basic-Example](example1.gif)
-
 ##### Example: AutoMLBasicBinaryClassification.xircuit
 
 In this example, you will learn how to build a basic Pycaret application that reads a tabular dataset,setup environment, compare training on multiple ML models, fine-tune models, plot results and save the trained model.
