@@ -18,7 +18,7 @@ In this example, you will learn how to build a basic Pycaret application that re
 3. `CompareModelsClassification`: This component trains and evaluates performance of all estimators available in the model library using cross validation.The output of this component is a score grid with average cross validated scores. Additionally, it output a list of the top performing models, number of top model returned can be controlled by the *num_top* input. 
    
 ### Compare Model Output
-![Binary_compare_models](pycaret_class_images\Binary_compare_models.png)
+![Binary_compare_models](pycaret_class_images/Binary_compare_models.png)
 
 4. `CreateModelClassification`: This component trains and evaluates the performance of a **given model** using cross validation.The output of this component is a score grid with CV scores by fold and the created model. 
 
@@ -27,7 +27,7 @@ In this example, you will learn how to build a basic Pycaret application that re
 6. `PlotModelClassification`: This component analyzes the performance of a trained model on holdout set. the type of the plot wanted could be set in *plot_type*.
 
 ### Plot Feature Graph
-![Binary_feature](pycaret_class_images\Binary_feature.png)
+![Binary_feature](pycaret_class_images/Binary_feature.png)
 
 
 7. `PredictModelClassification`: This component predicts Label and Score (probability of predicted class) using a trained model. When the *predict_dataset* input is None, it predicts label and score on the holdout(validation) set.
@@ -79,12 +79,12 @@ In this example, we have used the same components to build a basic Pycaret Multi
 
 ### Plot Boundary Graph 
 
-![multiclass_boundary](pycaret_class_images\multiclass_boundary.png)
+![multiclass_boundary](pycaret_class_images/multiclass_boundary.png)
 
 ### Plot Confusion Matrix Graph
 
-![multiclass_confusion_matrix](pycaret_class_images\multiclass_confusion_matrix.png)
+![multiclass_confusion_matrix](pycaret_class_images/multiclass_confusion_matrix.png)
 
 ### Plot Class Report Graph
 
-![multiclass_class_report](pycaret_class_images\multiclass_class_report.png)
+![multiclass_class_report](pycaret_class_images/multiclass_class_report.png)
