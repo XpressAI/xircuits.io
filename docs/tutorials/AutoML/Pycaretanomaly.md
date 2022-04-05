@@ -25,7 +25,7 @@ In this example, you will learn how to build a basic anomaly detection Pycaret a
 5. `PlotModelAnomaly` This component analyzes the performance of a trained model on the dataset. the type of the plot wanted could be set in *plot_type*
 
 
-### Plot Feature Graph
+### Plot TSNE Graph
 ![TSNE_anomaly](pycaret_images/TSNE_anomaly.png)
 
 

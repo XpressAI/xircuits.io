@@ -28,7 +28,7 @@ In this example, you will learn how to build a basic Pycaret application that re
    
 6. `PlotModelRegression` This component analyzes the performance of a trained model on holdout set. the type of the plot wanted could be set in *plot_type*
 
-### Plot Feature Graph
+### Plot Residuals Graph
 ![residuals_plot_regression](pycaret_images/residuals_plot_regression.png)
 
 
