@@ -39,6 +39,6 @@ In this example, you will learn how to build a basic clustering Pycaret applicat
 ![Cluster_CaNA](pycaret_images/Cluster_CaNA.png)
 
 
-6. Lastly, `SaveModelAnomaly` This component saves the transformation pipeline and trained model object into the current working directory as a pickle file for later use.
+6. Lastly, `SaveModelClustering` This component saves the transformation pipeline and trained model object into the current working directory as a pickle file for later use.
 
 
