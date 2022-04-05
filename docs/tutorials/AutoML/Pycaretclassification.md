@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Pycaret AutoML (Classification)
+# Classification
 
 Before starting any of these examples, please ensure that you installed <code>Pycaret=>2.2</code> in your working environment. You can use <code>pip install pycaret==2.3.8</code> to install it too.    
 ## Basic Pycaret AutoML Binary classification
