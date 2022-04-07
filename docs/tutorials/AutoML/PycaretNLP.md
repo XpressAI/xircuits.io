@@ -6,7 +6,7 @@ sidebar_position: 3
 
 Before starting any of these examples, please ensure that you installed <code>Pycaret=>2.2</code> in your working environment. You can use <code>pip install pycaret==2.3.8</code> to install it too. 
 
-**Note :** Some functionalities in AutoML NLP requires english language model. The language model is not downloaded automatically when you install pycaret. To download the model, please type the following in your command line:
+**Note :** Some functionalities in AutoML NLP requires an English language model. The language model is not downloaded automatically when you install Pycaret. To download the model, please type the following in your command line:
 
 ```
 python -m spacy download en_core_web_sm
@@ -19,18 +19,17 @@ python -m textblob.download_corpora
 
 ##### Example: AutoMLBasicNLP.xircuit
 
-In this example, you will learn how to build a basic NLP Pycaret application that reads a tabular dataset, setup environment, Create and assign clustering ML models, plot results and save the trained model.
+In this example, you will learn how to build a basic NLP Pycaret application that reads a tabular dataset, setup environment, create and assign clustering ML models, plot results and save the trained model.
 
-1. To start the workflow,first you will need to get a dataset with  `GetData`. Here we chose the *kiva* dataset. additionally, `SampleData` could be used to randomly sample certain number of row from the dataset. 
-   
-2. To setup the Pycaret AutoML environment you will need the `SetupNLP`, This component initializes the training environment and creates the transformation pipeline. `SetupNLP` component must be present before executing any other component. It takes one mandatory parameter **in_dataset**. All the other parameters are optional.   
-   
+1. To start the workflow,first you will need to get a dataset with `GetData`. Here we chose the *kiva* dataset. Additionally, `SampleData` could be used to randomly sample certain number of row from the dataset.
 
-3. `CreateModelNLP` This component trains and evaluates the performance of a **selected model**. You specify the number of topics to group the words. The output of this component is a trained clustering model. 
+2. To setup the Pycaret AutoML environment you will need the `SetupNLP`, This component initializes the training environment and creates the transformation pipeline. `SetupNLP` component must be present before executing any other component. It takes one mandatory parameter **in_dataset**. All the other parameters are optional.
 
-4. `AssignModelNLP` This function assigns topic group labels to the dataset for a given model, in this case we used the trained model from `CreateModelNLP` this adds *Dominant_Topic* and *Perc_Dominant_Topic* columns to the dataset. *Dominant_Topic* in this example is the topic number with highest proportion and *Perc_Dominant_Topic* is the percentage of dominant topic over 1 
-   
-5. `PlotModelNLP` This component analyzes the performance of a trained model on the dataset. the type of the plot wanted could be set in *plot_type*
+3. `CreateModelNLP`: This component trains and evaluates the performance of a **selected model**. You specify the number of topics to group the words. The output of this component is a trained clustering model.
+
+4. `AssignModelNLP`: This function assigns topic group labels to the dataset for a given model, in this case we used the trained model from `CreateModelNLP` which adds *Dominant_Topic* and *Perc_Dominant_Topic* columns to the dataset. *Dominant_Topic* in this example is the topic number with highest proportion and *Perc_Dominant_Topic* is the percentage of dominant topic over 1.
+
+5. `PlotModelNLP`: This component analyzes the performance of a trained model on the dataset. The type of the plot desired can be set in *plot_type*.
 
 
 ### Plot Graphs
@@ -44,7 +43,7 @@ In this example, you will learn how to build a basic NLP Pycaret application tha
 ![TSNE_NLP](pycaret_images/TSNE_NLP.png)
 
 
-6. Lastly, `SaveModelNLP` This component saves the transformation pipeline and trained model object into the current working directory as a pickle file for later use.
+6. Lastly, `SaveModelNLP`: This component saves the transformation pipeline and trained model object into the current working directory as a pickle file for later use.
 
 
 ##  Pycaret AutoML Model Tuning
@@ -53,13 +52,13 @@ In this example, you will learn how to build a basic NLP Pycaret application tha
 
 ##### Example: AutoMLTuningNLP.xircuit
 
-In this example, you will learn how to tune the *num_topics* parameter in NLP model
+In this example, you will learn how to tune the *num_topics* parameter in NLP model.
 
 1.  As with the previous example, you would start with a `GetData` and `SampleData`.
    
 2. In this example we excluded some common words from the model, this done by passing a list of the excluded words to the *custom_stopwords* in the `SetupNLP` component.
    
-3. Next, we created a basic *Latent Dirichlet Allocation* model with 4 topics using the `CreateModelNLP` component and plot the *Word Distribution Plot* using the `PlotModelNLP`  
+3. Next, we created a basic *Latent Dirichlet Allocation* model with 4 topics using the `CreateModelNLP` component and plot the *Word Distribution Plot* using the `PlotModelNLP`.
 
 ### Plot Graphs
 #### Word Distribution Plot
@@ -69,8 +68,8 @@ In this example, you will learn how to tune the *num_topics* parameter in NLP mo
 ```
 Best Model: Latent Dirichlet Allocation | # Topics: 400 | Coherence: 0.4573
 ```   
-5. the other method to tune NLP model is by using a classifier or regressor model. in this example, The dataset we are using is labelled using `status` column. in this case we can use the `TuneModelNLP()` component to determine the best number of topics, since this is a classification problem we used a supervised machine learning approach with *Accuracy* as measure of interest to get the *Accuracy* and *num_topics*.
+5. The other method to tune NLP model is by using a classifier or regressor model. In this example, The dataset we are using is labelled using `status` column. In this case we can use the `TuneModelNLP()` component to determine the best number of topics, since this is a classification problem we used a supervised machine learning approach with *Accuracy* as measure of interest to get the *Accuracy* and *num_topics*.
 ```
 Best Model: Latent Dirichlet Allocation | # Topics: 8 | Accuracy : 0.869
 ```  
-6. Lastly, `SaveModelNLP` This component saves the transformation pipeline and trained model object into the current working directory as a pickle file for later use.
+6. Lastly, `SaveModelNLP`: This component saves the transformation pipeline and trained model object into the current working directory as a pickle file for later use.
