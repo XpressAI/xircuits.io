@@ -7,7 +7,7 @@ sidebar_position: 3
 Before starting any of these examples, please ensure that you installed <code>Pycaret=>2.2</code> in your working environment. You can use <code>pip install pycaret==2.3.8</code> to install it too.
 ## Basic Pycaret AutoML Clustering
 
-![Basic-clustering-example](pycaret_images/clustering_example.gif)
+![Basic-clustering-example](pycaret_images/Clustering_example.gif)
 
 ##### Example: AutoMLBasicClustering.xircuit
 
