@@ -9,7 +9,7 @@ Before starting any of these examples, please ensure that you installed <code>Py
 ![basic_class_example](pycaret_images/basic_class_example.gif)
 ##### Example: AutoMLBasicBinaryClassification.xircuits
 
-In this example, you will learn how to build a basic Pycaret application that reads a tabular dataset,setup environment, compare training on multiple ML models, fine-tune models, plot results and save the trained model.
+In this example, you will learn how to build a basic Pycaret classification application that reads a tabular dataset,setup environment, compare training on multiple ML models, fine-tune models, plot results and save the trained model.
 
 1. To start the workflow,first you will need to get a dataset with  `GetData`. Here we chose the *credit* dataset. Additionally, `SampleTestData` could be used to set-aside a testing dataset. 
    
