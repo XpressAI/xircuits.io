@@ -21,7 +21,7 @@ Both `LoadKerasModel` and custom Keras model components can be linked to `KerasP
 
 ## Training an Image Classifier Image from Scratch
 
-![SampleTraining](../../xircuits-components/general-components/SampleTraining.png)
+![SampleTraining](images/SampleTraining.png)
 
 ##### Example: KerasTrainImageClassifier.xircuits
 
