@@ -26,5 +26,5 @@ Learn how to make a Xircuits workflow to train a custom unet model in Pytorch, p
 
 Learn how to pipeline fundamental Spark operations on Xircuits, perform data visualization, or make SparkSQL queries on your dataframe.
 
-1. [Creating a Basic Spark Application - Loading Data and Visualization](spark#basic-spark-application)
-2. [Performing Spark SQL Queries](spark#performing-spark-sql-queries)
+1. [Creating a Basic Spark Application - Loading Data and Visualization](spark/spark#basic-spark-application)
+2. [Performing Spark SQL Queries](spark/spark#performing-spark-sql-queries)
