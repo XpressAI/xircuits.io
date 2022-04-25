@@ -4,12 +4,12 @@ sidebar_position: 3
 
 # Spark
 
-Before starting any of these examples, please ensure that your Spark configuration is ready. You may refer to the [Spark setup guide](../xircuits-components/advanced-components/Spark.md). 
+Before starting any of these examples, please ensure that your Spark configuration is ready. You may refer to the [Spark setup guide](spark-installation.md). 
 ## Basic Spark Application
 
 ![Basic-Xircuit](spark-line-plot-xircuit.png)
 
-##### Example: SparkLinePlot.xircuit
+##### Example: SparkLinePlot.xircuits
 
 In this example, you will learn how to start a basic spark application that reads a time series dataset and plots the data.
 
@@ -59,7 +59,7 @@ Executing: SparkVisualize
 
 ![SparkSQLXircuit](spark-sql-xircuit.png)
 
-##### Example: SparkSQLPlotBar.xircuit 
+##### Example: SparkSQLPlotBar.xircuits 
 
 The next example show how can you perform sparkSQL queries in Xircuits. 
 

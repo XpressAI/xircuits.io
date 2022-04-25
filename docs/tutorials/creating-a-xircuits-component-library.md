@@ -1,15 +1,15 @@
 ---
 sidebar_position: 2
-id: how-to-create-a-xircuits-component-library
-title: How to Create a Xircuits Component Library
+id: creating-a-xircuits-component-library
+title: Creating a Xircuits Component Library
 tags:
   - component-library dev
-  - how-tos
+  - tutorials
 ---
 
 # How to Create a Xircuits Component Library
 
-In the previous guide, you have learned how to create a component. In this guide, you will learn how to create a component library. 
+In the previous tutorial, you have learned how to create a component. In this tutorial, you will learn how to create a component library. 
 
 1. Create a directory in xai_components called `xai_newLibrary`.
 2. Inside that directory, indicate that your component library is a python module by creating `__init__.py`. Leave it blank.

@@ -1,10 +1,10 @@
 ---
 sidebar_position: 1
-id: how-to-create-a-xircuits-component
-title: How to Create a Xircuits Component
+id: creating-a-xircuits-component
+title: Creating a Xircuits Component
 tags:
   - component-library dev
-  - how-tos
+  - tutorials
 ---
 
 # How to Create a Xircuits Component
