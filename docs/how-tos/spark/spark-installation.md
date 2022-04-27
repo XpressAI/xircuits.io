@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Spark
+# Spark Installation
 
 Ensure that you have Apache Spark installed to use the Spark components. Once complete, simply pip install the required python libraries.
 
