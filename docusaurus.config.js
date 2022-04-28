@@ -75,11 +75,11 @@ const config = {
               },
               {
                  label: 'Components',
-                 to: '/docs/xircuits-components/getting-started-with-xircuits-components',
+                 to: '/docs/technical-concepts/xircuits-components/getting-started-with-xircuits-components',
               },
               {
                  label: 'Tutorials',
-                 to: '/docs/tutorials/tutorials',
+                 to: '/docs/tutorials/index',
               },
             ],
           },

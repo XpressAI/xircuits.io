@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-## Installation
+# Installation
 We recommend installing xircuits in a virtual environment. 
 ```
 $ pip install xircuits
