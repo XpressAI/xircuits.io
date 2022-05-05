@@ -4,8 +4,9 @@ sidebar_position: 0
 
 # Tutorials Overview
 
-1. How to run a Xircuits file
-2. How to create your own Xircuits component
-3. How to create a Xircuits component library
-4. How to create and use a component submodule library
-5. How to collaborate with your colleagues
+##w For Python Developers
+
+1. [Creating a Xircuits Component](creating-a-xircuits-component.md)
+2. [Creating a Xircuits Component Library](creating-a-xircuits-component-library.md)
+3. [Passing Data between Components](passing-data-between-components.md)
+
