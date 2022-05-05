@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Loading a Keras Model and Performing Inference
 
-![xircuit-runner](../../04-xircuits-runner.gif)
+![xircuit-runner](./images/xircuits-runner.gif)
 
 ##### Example: KerasModelPredict.xircuits
 

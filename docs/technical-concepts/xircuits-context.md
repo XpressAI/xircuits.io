@@ -1,12 +1,11 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 id: xircuits-context
 title: Xircuits Context
 tags:
   - glossary
 ---
 
-## Xircuits Context
 Aside from passing data between components by connecting the outPort to inPort, data can be passed between components via Context (ctx). This is useful for variables that are constantly used in most if not all components (such as SparkSession in Spark xircuits), so you don't have to link it multiple times.
 
 * The `ctx` is added to the base component `execute()` method. 

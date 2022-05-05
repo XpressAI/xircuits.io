@@ -1,12 +1,11 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 id: xircuits-component-library
 title: Xircuits Component Library
 tags:
   - glossary
 ---
 
-### Component Library:
 * A Xircuits component library is a repository or directory that contains xircuits component codes render and run in a Xircuits canvas.
 * A component library should be framework focused (tensorflow, pyspark, pycaret, etc).
 * A component library repository should focus on one framework at a time and keep other library / frameworks imports to a minimum.

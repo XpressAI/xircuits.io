@@ -3,7 +3,7 @@ sidebar_position: 2
 id: creating-a-xircuits-component-library
 title: Creating a Xircuits Component Library
 tags:
-  - component-library dev
+  - component dev
   - tutorials
 ---
 

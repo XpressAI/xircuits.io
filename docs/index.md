@@ -17,18 +17,18 @@ It is created by data scientists for data scientists.
 ## Workflow
 1. Create a new Xircuits from the Jupyterlab launcher or open an existing .xircuit file.
 
-![xircuit](01-open-xircuit.gif)
+![xircuit](./images/open-xircuit.gif)
 
 2. Drag components from the Xircuits Component Tray to form your training workflow. Share data among your components using the in and out ports.
 
-![xircuit-components](02-components.gif)
+![xircuit-components](./images/components.gif)
 
 3. Press Compile button! The Xircuits will compile the components into a working python code.
 
-![xircuit-parser](03-python-parser.gif)
+![xircuit-parser](./images/python-parser.gif)
 
 4. Run the compiled python code using your own terminal or use our Output Viewer. 
 
-![xircuit-runner](04-xircuits-runner.gif)
+![xircuit-runner](./images/xircuits-runner.gif)
 
 5. Unexpected output? Would like to have more in-depth insights of the data between components? Mark the components you'd like to observe and try out our debugger.

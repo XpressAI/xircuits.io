@@ -1,13 +1,11 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 id: xircuits-template
 title: Xircuits Template
 tags:
   - glossary
 ---
 
-
-### Xircuits Template
 * A Xircuits template is a project repository that utilizes Xircuits as its engine.
 * A single project should have only one Xircuits template at a time.
 * A template should be application focused (object detection, BERT training, etc).

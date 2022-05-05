@@ -3,7 +3,7 @@ sidebar_position: 1
 id: creating-a-xircuits-component
 title: Creating a Xircuits Component
 tags:
-  - component-library dev
+  - component dev
   - tutorials
 ---
 
@@ -47,4 +47,4 @@ And you're done! The component should be correctly rendered and automatically us
 
 - Xircuits performs type checking when linking parameters. In this example, if the user attempts to link a parameter that is not a string to the input_str port, it will throw a tooltip error.
 - We encourage users to have library imports inside execute() instead of at the header for one-time use cases to avoid cluttering your namespace. 
-- `ctx` is a dictionary that is available to all components to access. If you would like to include information globally, simply add that information in the dict via `ctx.update()`.
+- `ctx` is a dictionary that is available to all components to access. If you would like to include information globally, simply add that information in the dict via `ctx.update()`. Read more at [Xircuits Context(ctx)](../technical-concepts/xircuits-context.md).
