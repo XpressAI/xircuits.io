@@ -3,9 +3,17 @@ sidebar_position: 1
 ---
 
 # Installation
-We recommend installing xircuits in a virtual environment. 
+You will need python 3.9+ to install xircuits. We recommend installing in a virtual environment.
+```
+$ pip install xircuits[full]
+```
+If you would like to install just the core functions, use:
 ```
 $ pip install xircuits
+```
+### Download Examples
+```
+$ xircuits-examples
 ```
 ### Launch
 ```
@@ -13,10 +21,10 @@ $ xircuits
 ```
 ## Development
 
-
+For most use cases installing via `pip install xircuits` should be enough. If you would like to modify some of the Xircuits core functions (such as node and port logic) you may follow the following steps.
 ### Prerequisites
 
-Xircuits requires nodejs and yarn to build. The test nvm version is 14.15.3. 
+Building Xircuits requires nodejs and yarn. The test nvm version is 14.15.3. 
 You may also want to set yarn globally accessible by:
 
 ```
@@ -49,29 +57,27 @@ pip install -e .
 jupyter labextension develop . --overwrite
 # Enable the server extension
 jupyter server extension enable xircuits
+```
+### Running
+Start up xircuits using:
+```
+xircuits
+```
+Xircuits will open automatically in the browser.
 
+### Rebuild
+Rebuild Xircuits after making changes.
+```
 # Rebuild Typescript source after making changes
 jlpm build
-# Rebuild JupyterLab after making any changes
+# Rebuild Xircuits after making any changes
 jupyter lab build
-
 ```
-
-You can watch the source directory and run JupyterLab in watch mode to watch for changes in the extension's source and automatically rebuild the extension and application.
+### Rebuild (Automatically)
+You can watch the source directory and run Xircuits in watch mode to watch for changes in the extension's source and automatically rebuild the extension and application.
 ```
 # Watch the source directory in another terminal tab
 jlpm run watch
-# Run jupyterlab in watch mode in one terminal tab
+# Run Xircuits in watch mode in one terminal tab
 jupyter lab --watch
 ```
-
-
-## Preview
-
-### Normal Workflow
-![HelloXircuits](https://user-images.githubusercontent.com/68586800/151285391-1d4f477c-4f82-44c8-8d4f-729e52f32c3e.gif)
-
-### Machine Learning
-![XircuitKeras](https://user-images.githubusercontent.com/68586800/151285439-28a1ad93-4585-4fdb-8d73-41b5b7ba2044.gif)
-
-

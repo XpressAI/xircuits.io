@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# How-to Guide Overview
+# Examples Overview
 
 ## Computer Vision
 
@@ -22,6 +22,15 @@ Learn how to make a Xircuits workflow to train a custom unet model in Pytorch, p
 3. [Converting Torch model to Onnx model​](computer-vision/pytorch#converting-torch-model-to-onnx-model)
 
 
+## Pycaret AutoML
+
+Examples using our [Pycaret component library](https://github.com/XpressAI/xai-pycaret) built on top of [Pycaret](https://github.com/pycaret/pycaret).
+
+1. [Anomaly Detection](./AutoML/Pycaretanomaly.md)
+2. [Classification](./AutoML/Pycaretclassification.md)
+3. [Clustering](./AutoML/Pycaretclustering.md)
+4. [NLP](./AutoML/PycaretNLP.md)
+5. [Regression](./AutoML/Pycaretregression.md)
 ## Spark
 
 Learn how to pipeline fundamental Spark operations on Xircuits, perform data visualization, or make SparkSQL queries on your dataframe.
