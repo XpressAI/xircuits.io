@@ -26,7 +26,19 @@ If you have done it correctly, you should end up with a directory tree similar t
 #         +-- requirements.txt
 ```
 
+<details>
+  <summary>Video</summary>
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/68586800/166898970-ccef17fb-b9f1-497e-b48e-8d9dd45bb163.gif"></img></p>
+</details><br></br>
+
 You can now check whether Xircuits have registered your component library. In the Component Tray, click the refresh icon. `newLibrary` should appear, and inside it your component ready to use.
 Congratulations, you have successfully created your own Xircuits component library!
 
-Xircuits component libraries, as with xircuits are very sharable. All you need to do for your colleagues to use it is by dropping your component library folder in their xai_components folder, and your components should show up in theirs.
+Xircuits component libraries, as with xircuits files are very sharable. All you need to do for your colleagues to use it is by dropping your component library folder in their xai_components folder, and your components should show up in theirs.
+
+<details>
+  <summary>Video</summary>
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/68586800/165814749-bd782c59-f4d1-4452-a668-48543006d69e.gif"></img></p>
+</details><br></br>
