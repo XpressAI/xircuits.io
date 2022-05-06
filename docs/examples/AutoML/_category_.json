@@ -1,0 +1,8 @@
+{
+  "label": "Pycaret AutoML",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Examples using our Pycaret component library built on top of Pycaret."
+  }
+}

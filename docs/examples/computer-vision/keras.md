@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: "Learn how to make a Xircuits workflow to load prebuilt Keras models, perform inference, or train a Keras image recognition model from scratch"
 ---
 
 # Keras

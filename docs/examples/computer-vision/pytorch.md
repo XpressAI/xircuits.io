@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: Learn how to make a Xircuits workflow to train a custom unet model in Pytorch, perform inference, or converting a torch model into an onnx model.
 ---
 
 # Pytorch
