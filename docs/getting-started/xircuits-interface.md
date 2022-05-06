@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Xircuits Interface
+# The Xircuits Interface
 
 Xircuits is built on Jupyterlab, you will see a lot of familiar data scientist related tools. The following section introduces you to the Xircuits related interfaces. For the full Jupyterlab interface exploration, you may refer to the [Jupyterlab documentation](https://jupyterlab.readthedocs.io/en/stable/user/interface.html).
 
@@ -73,7 +73,7 @@ There are a few special interfaces for components. They are located at top right
 
 ![xircuits-context-menu](images/xircuits-tooltip.png)
 
-1. Information Tooltip [ `⋮` ] : Displays the component information tooltip, if any. In the python component code, the comment is enclosed in the triple ''' ''' braces. 
+1. Information Tooltip [ `⋮` ] : Displays the component information tooltip, if any. In the python component code, the comment is enclosed in the triple ''' ''' quotation marks. 
 2. Lock Component [ `🔒` ] : Locks selected component. Locked components cannot be moved, linked-to nor deleted.
 
 In addition, for `Literal Components` you are able to modify the values by double clicking the component.
@@ -97,6 +97,6 @@ You can access the component library tray by selecting the block icon.
     - [General Components](../technical-concepts/xircuits-components/getting-started-with-xircuits-components.md#general-components) - general purpose components.
     - [Component Libraries](../technical-concepts/xircuits-components/getting-started-with-xircuits-components.md#xircuits-library-components) - Component libraries and components from the various component libraries.
 
-Read More:
+## Read More:
 - [The Jupyterlab Interface](https://jupyterlab.readthedocs.io/en/stable/user/interface.html)
 - [Xircuits Components](../technical-concepts/xircuits-components/getting-started-with-xircuits-components.md)
