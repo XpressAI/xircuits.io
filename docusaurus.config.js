@@ -71,16 +71,16 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/docs/index',
-              },
-              {
-                 label: 'Components',
-                 to: '/docs/technical-concepts/xircuits-components/getting-started-with-xircuits-components',
+                to: '/docs/category/getting-started',
               },
               {
                  label: 'Tutorials',
-                 to: '/docs/tutorials/index',
+                 to: '/docs/category/tutorials',
               },
+              {
+                label: 'Examples',
+                to: '/docs/category/examples',
+             },
             ],
           },
           {
