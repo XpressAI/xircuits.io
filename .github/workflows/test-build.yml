@@ -1,0 +1,26 @@
+name: Test Build
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: "*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Build Env
+        run: |
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+          . ~/.nvm/nvm.sh
+          nvm install 14.17.0
+          nvm use 14.17.0
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build site
+        run: npm run-script build
