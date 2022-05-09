@@ -7,7 +7,7 @@ sidebar_position: 3
 Before starting any of these examples, please ensure that you installed <code>Pycaret=>2.2</code> in your working environment. You can use <code>pip install pycaret==2.3.8</code> to install it too.
 ## Basic Pycaret AutoML Clustering
 
-![Basic-clustering-example](pycaret_images/Clustering_example.gif)
+![Basic-clustering-example](images/Clustering_example.gif)
 
 ##### Example: AutoMLBasicClustering.xircuit
 
@@ -27,16 +27,16 @@ In this example, you will learn how to build a basic clustering Pycaret applicat
 
 ### Plot Graphs
 #### Cluster PCA Plot (2d)
-![Cluster_PCA](pycaret_images/Cluster_PCA.png)
+![Cluster_PCA](images/Cluster_PCA.png)
 
 #### Elbow Plot
-![clustering_elbow](pycaret_images/clustering_elbow.png)
+![clustering_elbow](images/clustering_elbow.png)
 
 #### Silhouette Plot
-![clustering_kmean](pycaret_images/clustering_kmean.png)
+![clustering_kmean](images/clustering_kmean.png)
 
 #### Distribution Plot
-![Cluster_CaNA](pycaret_images/Cluster_CaNA.png)
+![Cluster_CaNA](images/Cluster_CaNA.png)
 
 
 6. Lastly, `SaveModelClustering`: This component saves the transformation pipeline and trained model object into the current working directory as a pickle file for later use.
