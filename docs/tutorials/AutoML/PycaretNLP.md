@@ -19,7 +19,7 @@ python -m textblob.download_corpora
 
 ##### Example: AutoMLBasicNLP.xircuit
 
-In this example, you will learn how to build a basic NLP Pycaret application that reads a tabular dataset, setup environment, create and assign clustering ML models, plot results and save the trained model.
+In this example, you will learn how to build a basic NLP Pycaret application that reads a tabular dataset, setup environment, create and assign NLP ML models, plot results and save the trained model.
 
 1. To start the workflow,first you will need to get a dataset with `GetData`. Here we chose the *kiva* dataset. Additionally, `SampleData` could be used to randomly sample certain number of row from the dataset.
 
