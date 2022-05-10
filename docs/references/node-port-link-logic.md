@@ -10,7 +10,7 @@ To ensure a robust codegen compilation, we have set several rules and logics for
 - A node is a [xircuits component](../technical-concepts/xircuits-components/getting-started-with-xircuits-components.md).
 - Each canvas will have a `Start` and `Finish` node, which cannot be deleted.
 - Nodes can be locked. Nodes that are locked cannot be moved nor deleted.
-- All component library nodes must be linked to compile and execute a canvas. 
+- All component library nodes must be linked to compile and execute a workflow. 
 
 ## Port Logic
 - Each node will have ▶ Ports and optionally parameter ports.
@@ -26,7 +26,7 @@ To ensure a robust codegen compilation, we have set several rules and logics for
 
 ### Compulsory Ports
 - `Compulsory inPorts` are rendered `inCompArg` indicated with the `*` symbol. 
-- A parameter must be supplied to compile and run the canvas.
+- A parameter must be supplied to compile and run the workflow.
 
 ### Port Type Checking
 

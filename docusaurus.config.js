@@ -74,9 +74,13 @@ const config = {
                 to: '/docs/category/getting-started',
               },
               {
-                 label: 'Tutorials',
-                 to: '/docs/category/tutorials',
+                 label: 'User Guide',
+                 to: '/docs/category/user-guide',
               },
+              {
+                label: 'Developer Guide',
+                to: '/docs/category/developer-guide',
+             },
               {
                 label: 'Examples',
                 to: '/docs/category/examples',

@@ -33,7 +33,7 @@ It is created by data scientists for data scientists.
 <details>
   <summary><b>Code Generation</b></summary>
 
-  Xircuits generates executable python scripts from the canvas. As they're very customizable, you can perform DevOps automation like actions. Consider this Xircuits template which trains an mnist classifier.
+  Xircuits generates executable python scripts from the workflow. As they're very customizable, you can perform DevOps automation like actions. Consider this Xircuits template which trains an mnist classifier.
   
   ![hyperpara-codegen](https://user-images.githubusercontent.com/68586800/165815661-2b6e17e8-ed1d-4950-97b1-658d2bd14410.gif)
 
