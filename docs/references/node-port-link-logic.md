@@ -53,7 +53,7 @@ To ensure a robust codegen compilation, we have set several rules and logics for
 
 ## Link Logic
 - A link is created when you select and drag from a port.
-- Linking an `outPort` to an `inPort` will indicate [data passing between components](../tutorials/passing-data-between-components.md).
+- Linking an `outPort` to an `inPort` will indicate [data passing between components](../developer-guide/passing-data-between-components.md).
 - If a link is not dropped on a port, it will prompt the component tray interface. Selecting one of the components will automatically link the ▶ ports.
     <details>
     <summary>Video</summary>

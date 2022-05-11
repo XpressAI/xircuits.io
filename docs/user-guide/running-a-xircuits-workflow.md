@@ -2,16 +2,16 @@
 sidebar_position: 2
 ---
 
-# Your First Xircuits Run
+# Your First Xircuits Workflow
 
 The following tutorial will walk you through a basic Xircuits run. You will open an existing xircuits workflow that trains a model, learn how to modify the parameters for your use case, and then run it.
 
 ## Prerequisites
 1. For this tutorial, please ensure that you already have the `xai_learning` related libraries installed. You can do this by `pip install xircuits[full]` or by `pip install -r xai_components/xai_learning/requirements.txt`.
-2. Ensure that you have the `example` folder in your working directory. After xircuits is pip installed, you can download it by running the `xircuits-examples` command.
+2. Ensure that you have the `examples` folder in your working directory. After xircuits is pip installed, you can download it by running the `xircuits-examples` command.
 
 ## Opening an existing Xircuits File
-Xircuits users will mostly use premade xircuits templates created by developers. Their task would be to simply change the parameters to suit their use case. In Xircuits, we have created a handful of templates for you to try in the example directory. 
+Xircuits users will mostly use premade xircuits workflow templates created by developers. Their task would be to simply change the parameters to suit their use case. In Xircuits, we have created a handful of templates for you to try in the examples directory. 
 
 **For this tutorial, open `KerasTrainImageClassifier.xircuits` in the example directory.**
 
@@ -19,7 +19,7 @@ Xircuits users will mostly use premade xircuits templates created by developers.
 
 Once the Xircuits canvas is open, you will see the [Xircuits Interface](xircuits-interface.md). 
 
-A Xircuits workflow starts from the `Start` node to the `Finish` node. The flow sequence is indicated by the flowing blue links connecting the ▶ ports. The rest of the ports are data ports where data is passed from one component to another.
+A Xircuits workflow starts from the `Start` node to the `Finish` node. The flow sequence is indicated by the flowing blue links connecting the ▶ ports. A component node may also have data ports, which indicates how a component can receive data and parameters to configure their behavior, as well as pass data to the next nodes.
 
 If you are unsure what a component does, you can click on the component information tooltip to display component information. For python savvy users, you may open the component code via context menu (`right-click` > `Open Script`).
 
