@@ -61,7 +61,7 @@ export default function SupportedFramework(): JSX.Element {
     <section>
         <br></br>
         <h1>Supported Frameworks</h1>
-      <FrameworkDisplay />
+        <FrameworkDisplay />
     </section>
   );
 }

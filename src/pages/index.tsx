@@ -9,6 +9,7 @@ import HomepageHeader from '../components/HomepageHeader';
 import HomepageFeatures from '../components/HomepageFeatures';
 import SupportedFrameworks from '../components/SupportedFrameworks';
 import XircuitsforUsers from '../components/XircuitsforUsers';
+import XircuitsforDevelopers from '../components/XircuitsforDevelopers';
 
 
 
@@ -21,6 +22,7 @@ export default function Home(): JSX.Element {
       <HomepageHeader />
       <main>
         <XircuitsforUsers /><hr />
+        <XircuitsforDevelopers /><hr />
         <SupportedFrameworks />
       </main>
     </Layout>

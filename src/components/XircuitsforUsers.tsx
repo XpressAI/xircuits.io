@@ -16,7 +16,7 @@ function XircuitsforUsers() {
           <ul>
               <li><strong>Create workflows</strong> from prebuilt components</li>
               <li><strong>Easily modify</strong> templates from our <strong>growing repository</strong> for your personal use case</li>
-              <li>Sharing your work is as <strong>easy</strong> as drag and drop</li>
+              <li>Our <strong>component tooltips </strong>will always be there to help you.</li>
           </ul>
           <p>From image classification to anomaly detection, perform complex workflows at a click of a button!</p>
 
@@ -31,7 +31,7 @@ function XircuitsforUsers() {
         </div>
 
         <div className={clsx('col col--5 col--offset-1')}>
-          <img src="/img/website/anomaly-detection.gif"></img>
+          <img src="/img/website/preview-machine-learning.gif"></img>
         </div>
     </div>
     );
