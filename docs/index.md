@@ -68,16 +68,16 @@ And many more.
 ## Workflow
 1. Create a new Xircuits from the Jupyterlab launcher or open an existing .xircuits file.
 
-![xircuit](./images/open-xircuit.gif)
+![xircuit](/img/docs/open-xircuit.gif)
 
 2. Drag components from the Xircuits Component Tray to form your training workflow. Share data among your components using the in and out ports.
 
-![xircuit-components](./images/components.gif)
+![xircuit-components](/img/docs/components.gif)
 
 3. Press Compile button! The Xircuits will compile the components into a working python code.
 
-![xircuit-parser](./images/python-parser.gif)
+![xircuit-parser](/img/docs/python-parser.gif)
 
 4. Run the compiled python code using your own terminal or use our Output Viewer. 
 
-![xircuit-runner](./images/xircuits-runner.gif)
+![xircuit-runner](/img/docs/xircuits-runner.gif)

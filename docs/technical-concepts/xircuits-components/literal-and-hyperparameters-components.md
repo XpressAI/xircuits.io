@@ -6,7 +6,7 @@ sidebar_position: 3
 
 To supply your Xircuits library components with customizable parameters, we provide literal and hyperparameter components as general components. The main difference between them can be observed in the generated code. Consider the training_epoch parameter in the TrainImageClassifier component below. 
 
-![SampleTraining](SampleTraining.png)
+![SampleTraining](/img/docs/examples/computer-vision/SampleTraining.png)
 
 You will need to supply an integer to specify how many epochs to run the training. 
 
