@@ -6,7 +6,9 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 
 import HomepageHeader from '../components/HomepageHeader';
+import UserSection from '../components/UserSection';
 import HomepageFeatures from '../components/HomepageFeatures';
+import SupportedFrameworks from '../components/SupportedFrameworks';
 
 
 
@@ -19,6 +21,7 @@ export default function Home(): JSX.Element {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <SupportedFrameworks />
       </main>
     </Layout>
   );

@@ -7,14 +7,16 @@ import styles from './HomepageHeader.module.css';
 function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
     return (
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <header className={(styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <img src="/img/xircuits-logo.png"></img>
+          <img src="/img/docs/xircuits-frontpage.gif"></img>
+
+          <p className="hero__subtitle">A simple visual programming environment for Jupyterlab.</p>
           <div className={styles.buttons}>
             <Link
               className="button button--secondary button--lg"
-              to="/docs/index">
+              to="/docs/">
               Get Started
             </Link>
           </div>

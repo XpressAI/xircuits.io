@@ -1,0 +1,14 @@
+.features {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.featureImg {
+  height: 200px;
+}
+
+h1 {
+  /* Center horizontally*/
+  text-align: center;
+}
