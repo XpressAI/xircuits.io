@@ -34,7 +34,7 @@ const FrameworkList: FrameworkItem[] = [
 
 function Framework({title, image}: FrameworkItem) {
   return (
-    <div className={clsx('col col--3')}>
+    <div className={clsx('col')}>
       <div className="text--center">
         <img className={styles.featureImg} alt={title} src={image} />
       </div>
@@ -59,7 +59,7 @@ function FrameworkDisplay(): JSX.Element {
 export default function SupportedFramework(): JSX.Element {
   return (
     <section>
-        <br></br><br></br>
+        <br></br>
         <h1>Supported Frameworks</h1>
       <FrameworkDisplay />
     </section>

@@ -6,9 +6,9 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 
 import HomepageHeader from '../components/HomepageHeader';
-import UserSection from '../components/UserSection';
 import HomepageFeatures from '../components/HomepageFeatures';
 import SupportedFrameworks from '../components/SupportedFrameworks';
+import XircuitsforUsers from '../components/XircuitsforUsers';
 
 
 
@@ -20,7 +20,7 @@ export default function Home(): JSX.Element {
       description="Xpress Your Workflows">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <XircuitsforUsers /><hr />
         <SupportedFrameworks />
       </main>
     </Layout>
