@@ -29,7 +29,7 @@ Both `LoadKerasModel` and custom Keras model components can be linked to `KerasP
 
 To train an image classifier, you would need a few components.
 
-1. `ReadDataSet`: Keras provides several [prebuilt small datasets](https://keras.io/api/datasets/). Provide the component a literal string and it will download it if you don't haven't downloaded it before.
+1. `ReadDataSet`: Keras provides several [prebuilt small datasets](https://keras.io/api/datasets/). Provide the component a literal string and it will download it if you haven't downloaded it before.
 2. `TrainTestSplit`: The only needed parameter here is the dataset input, however you may want to adjust the default parameters.
 3. `Create2DInputModel`: This component will auto adjust according to the input shape from the dataset.
 4. `TrainImageClassifier`:This component takes in a model and a dataset split, and trains according to the number of epoch you supply.
