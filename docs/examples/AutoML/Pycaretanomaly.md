@@ -7,7 +7,7 @@ sidebar_position: 3
 Before starting any of these examples, please ensure that you installed <code>Pycaret=>2.2</code> in your working environment. You can use <code>pip install pycaret==2.3.8</code> to install it too.
 ## Basic Pycaret AutoML Anomaly Detection
 
-![Basic-Anomaly_Detection-example](images/Anomaly_Detection_example.gif)
+![Basic-Anomaly_Detection-example](/img/docs/examples/AutoML/Anomaly_Detection_example.gif)
 
 ##### Example: AutoMLBasicAnomalyDetection.xircuit
 
@@ -26,7 +26,7 @@ In this example, you will learn how to build a basic anomaly detection Pycaret a
 
 
 ### Plot TSNE Graph
-![TSNE_anomaly](images/TSNE_anomaly.png)
+![TSNE_anomaly](/img/docs/examples/AutoML/TSNE_anomaly.png)
 
 
 6. Lastly, `SaveModelAnomaly`: This component saves the transformation pipeline and trained model object into the current working directory as a pickle file for later use.

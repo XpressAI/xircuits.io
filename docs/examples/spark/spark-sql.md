@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Spark SQL Queries
 
-![SparkSQLXircuit](spark-sql-xircuit.png)
+![SparkSQLXircuit](/img/docs/examples/spark/spark-sql-xircuit.png)
 
 ##### Example: SparkSQLPlotBar.xircuits 
 
@@ -82,4 +82,4 @@ only showing top 20 rows
 Executing: SparkVisualize
 
 ```
-![spark-sql-plot](sparksql-bar-plot.png)
+![spark-sql-plot](/img/docs/examples/spark/sparksql-bar-plot.png)
