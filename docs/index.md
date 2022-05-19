@@ -5,7 +5,7 @@ sidebar_position: 0
 # Overview
 
 
-![frontpage](https://user-images.githubusercontent.com/68586800/160965807-ba0fb65d-3912-4155-96fd-010ae082830b.gif)
+![frontpage](/img/docs/xircuits-frontpage.gif)
 
 Xircuits is a Jupyterlab-based extension that enables visual, low-code, training workflows. It allows anyone to easily create executable python code in seconds.
 
@@ -17,17 +17,16 @@ It is created by data scientists for data scientists.
   <summary><b>Rich Xircuits Canvas Interface</b></summary>
   <br></br>
   <p align="center">Unreal Engine-like Chain Component Interface<br></br>
-  <img src="https://user-images.githubusercontent.com/68586800/165813394-3d81e135-1c40-42c6-b480-7cba48114c1c.gif
-" width="600"></img></p>
+  <img src="/img/docs/interface-chain.gif" width="600"></img></p>
 
   <p align="center">Custom Nodes and Ports<br></br>
-  <img src="https://user-images.githubusercontent.com/84708008/161918620-34e20908-f32d-406b-8e47-104e91249472.gif" width="600"></img></p>
+  <img src="/img/docs/interface-custom-ports.gif" width="600"></img></p>
   
   <p align="center">Smart Link and Type Check Logic<br></br>
-  <img src="https://user-images.githubusercontent.com/84708008/165257379-77776d0e-8b20-4ef9-820b-40b9e80697e4.gif" width="600"></img></p>
+  <img src="/img/docs/interface-smart-link.gif" width="600"></img></p>
   
   <p align="center">Component Tooltips<br></br>
-  <img src="https://user-images.githubusercontent.com/84708008/163518580-186d4298-3344-4280-a87a-67be90eec13f.gif" width="600"></img></p>
+  <img src="/img/docs/interface-tooltips.gif" width="600"></img></p>
 </details>
 
 <details>
@@ -35,7 +34,7 @@ It is created by data scientists for data scientists.
 
   Xircuits generates executable python scripts from the canvas. As they're very customizable, you can perform DevOps automation like actions. Consider this Xircuits template which trains an mnist classifier.
   
-  ![hyperpara-codegen](https://user-images.githubusercontent.com/68586800/165815661-2b6e17e8-ed1d-4950-97b1-658d2bd14410.gif)
+  ![codegen-hyperparameter](/img/docs/codegen-hyperparameter.gif)
 
   You can run the code generated python script in Xircuits, but you can also take the same script to train 3 types of models in one go using bash script:
 
@@ -57,7 +56,7 @@ Didn't find what you're looking for? Creating Xircuits components is very easy! 
 <summary><b>Effortless Collaboration</b></summary>
 Created a cool Xircuits workflow? Just pass the .xircuits file to your fellow data scientist, they will be able to load your Xircuits canvas instantly.
 
-![collab](https://user-images.githubusercontent.com/68586800/165814749-bd782c59-f4d1-4452-a668-48543006d69e.gif)
+![collab](/img/docs/collab.gif)
 
 Created a cool component library? All your colleagues need to do is to drop your component library folder in theirs and they can immediately use your components.
 
@@ -68,7 +67,7 @@ And many more.
 ## Workflow
 1. Create a new Xircuits from the Jupyterlab launcher or open an existing .xircuits file.
 
-![xircuit](/img/docs/open-xircuit.gif)
+![xircuit](/img/docs/open-xircuits.gif)
 
 2. Drag components from the Xircuits Component Tray to form your training workflow. Share data among your components using the in and out ports.
 

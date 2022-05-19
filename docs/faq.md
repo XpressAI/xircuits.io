@@ -9,7 +9,7 @@ Nope, the easiest way to install it is by `pip install xircuits`. If you'd like 
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="https://user-images.githubusercontent.com/68586800/167117502-9cf41857-0956-415d-a1c5-a1a8bff239d9.gif"></img></p>
+  <img src="/img/docs/download-wheel.gif"></img></p>
 </details>
 
 **Q: What's the difference between installing and building Xircuits?**

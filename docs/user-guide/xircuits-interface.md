@@ -16,7 +16,7 @@ You can open the Xircuits canvas in two ways:
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="https://user-images.githubusercontent.com/68586800/167055354-f6871f8e-c813-402e-bfc0-914e78770040.gif"></img></p>
+  <img src="/img/docs/open-xircuits.gif"></img></p>
 </details><br></br>
 
 Select the Xircuits tray widget on the left toolbar, you should then see the following screen.
@@ -81,7 +81,7 @@ In addition, for `Literal Components` you are able to modify the values by doubl
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="https://user-images.githubusercontent.com/68586800/167083764-d1e4b22e-ab81-47cb-833d-b65f99ddb6bb.gif"></img></p>
+  <img src="/img/docs/getting-started/edit-literal.gif"></img></p>
 </details><br></br>
 
 

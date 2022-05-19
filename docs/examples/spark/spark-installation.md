@@ -45,7 +45,7 @@ scala>
 
 You can also see the Spark web UI by accessing http://localhost:4040/
 
-![image](https://user-images.githubusercontent.com/68586800/139038251-cbfd452f-0eab-41bc-9e09-50bfd3a6cf33.png)
+![spark-shell-ui](/img/docs/examples/spark/spark-shell-ui.png)
 
 
 ## Errors:

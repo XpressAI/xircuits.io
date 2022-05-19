@@ -48,7 +48,7 @@ To ensure a robust codegen compilation, we have set several rules and logics for
     <details>
     <summary>Video</summary>
     <p align="center">
-    <img src="https://user-images.githubusercontent.com/84708008/161918620-34e20908-f32d-406b-8e47-104e91249472.gif"></img></p>
+    <img src="/img/docs/interface-custom-ports.gif"></img></p>
     </details>
 
 ## Link Logic
@@ -58,8 +58,7 @@ To ensure a robust codegen compilation, we have set several rules and logics for
     <details>
     <summary>Video</summary>
     <p align="center">
-    <img src="https://user-images.githubusercontent.com/68586800/165813394-3d81e135-1c40-42c6-b480-7cba48114c1c.gif
-    "></img></p>
+    <img src="/img/docs/interface-chain.gif"></img></p>
     </details>
 
 ### Smart Link
@@ -68,7 +67,7 @@ To ensure a robust codegen compilation, we have set several rules and logics for
     <details>
     <summary>Video</summary>
     <p align="center">
-    <img src="https://user-images.githubusercontent.com/84708008/165257379-77776d0e-8b20-4ef9-820b-40b9e80697e4.gif"></img></p>
+    <img src="/img/docs/interface-smart-link.gif"></img></p>
     </details>
 
 
