@@ -28,7 +28,7 @@ const FrameworkList: FrameworkItem[] = [
   },
   {
     title: 'Pycaret',
-    image: '/img/website/frameworks/pycaret2.png',
+    image: '/img/website/frameworks/pycaret.png',
   },
 ];
 
