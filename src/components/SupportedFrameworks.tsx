@@ -35,8 +35,8 @@ const FrameworkList: FrameworkItem[] = [
 function Framework({title, image}: FrameworkItem) {
   return (
     <div className={clsx('col')}>
-      <div className="container">
-          <img className={styles.featureImg} alt={title} src={image} />
+      <div className="text--center">
+        <img className={styles.featureImg} alt={title} src={image} />
       </div>
     </div>
   );
@@ -61,7 +61,7 @@ export default function SupportedFramework(): JSX.Element {
     <section>
         <br></br>
         <h1>Supported Frameworks</h1>
-        <FrameworkDisplay /><br></br>
+        <FrameworkDisplay />
     </section>
   );
 }
