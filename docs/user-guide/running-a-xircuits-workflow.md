@@ -32,7 +32,7 @@ As previously mentioned, a Xircuits User will usually work on a premade workflow
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="https://user-images.githubusercontent.com/68586800/167083764-d1e4b22e-ab81-47cb-833d-b65f99ddb6bb.gif"></img></p>
+  <img src="/img/docs/getting-started/edit-literal.gif"></img></p>
 </details>
 
 For more advanced users, you may add more component nodes from the Xircuits component tray, or by dropping a link from a port.

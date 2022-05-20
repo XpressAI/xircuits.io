@@ -48,7 +48,7 @@ class HelloNewLibrary(Component):
 <details>
 <summary>Video</summary>
   <p align="center">
-  <img src="https://user-images.githubusercontent.com/68586800/166897511-a064eb5a-6112-4e9b-8f66-b5d09fe23f41.gif"></img></p>
+  <img src="/img/docs/developer-guide/create-new-component.gif"></img></p>
 </details><br></br>
 
 And you're done! Press refresh on the component tray and the component should be correctly rendered, automatically usable in the Xircuits canvas.

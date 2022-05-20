@@ -7,7 +7,7 @@ sidebar_position: 2
 
 Before starting any of these examples, please ensure that your Spark configuration is ready. You may refer to the [Spark setup guide](spark-installation.md). 
 
-![Basic-Xircuit](spark-line-plot-xircuit.png)
+![Basic-Xircuit](/img/docs/examples/spark/spark-line-plot-xircuit.png)
 
 ##### Example: SparkLinePlot.xircuits
 
@@ -52,5 +52,5 @@ Executing: SparkReadFile
 
 Executing: SparkVisualize
 ```
-![spark-line-plot](spark-line-plot.png)
+![spark-line-plot](/img/docs/examples/spark/spark-line-plot.png)
 

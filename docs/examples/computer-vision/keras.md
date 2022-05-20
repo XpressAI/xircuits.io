@@ -7,7 +7,7 @@ description: "Learn how to make a Xircuits workflow to load prebuilt Keras model
 
 ## Loading a Keras Model and Performing Inference
 
-![xircuit-runner](./images/xircuits-runner.gif)
+![xircuit-runner](/img/docs/xircuits-runner.gif)
 
 ##### Example: KerasModelPredict.xircuits
 
@@ -22,7 +22,7 @@ Both `LoadKerasModel` and custom Keras model components can be linked to `KerasP
 
 ## Training an Image Classifier Image from Scratch
 
-![SampleTraining](images/SampleTraining.png)
+![SampleTraining](/img/docs/examples/computer-vision/SampleTraining.png)
 
 ##### Example: KerasTrainImageClassifier.xircuits
 

@@ -44,7 +44,7 @@ Passing data via ports is as simple as declaring the port variable as `InArg` or
     <details>
     <summary>Video</summary>
       <p align="center">
-      <img src="https://user-images.githubusercontent.com/68586800/166882553-90fb766a-9c44-4795-a2ea-80474c7e7b85.gif"></img></p>
+      <img src="/img/docs/developer-guide/create-simple-component.gif"></img></p>
     </details><br></br>
 
 2. Declare an `outPort` with type `OutArg` that passes a string. Is it also a good practice to specify it as empty when you initialize in `__init__(self)`. Finally to pass the data to the next components, explicitly set the port value in the `execute()` method, shown in `#(3)`.
@@ -78,7 +78,7 @@ Passing data via ports is as simple as declaring the port variable as `InArg` or
     <details>
     <summary>Video</summary>
       <p align="center">
-      <img src="https://user-images.githubusercontent.com/68586800/166882575-c87353a7-e260-416a-9aee-bba0ff2b55aa.gif"></img></p>
+      <img src="/img/docs/developer-guide/add-outport.gif"></img></p>
     </details><br></br>
 
 3. Create another xircuits component has an `InPort`. As with the previous component, declare the type as `InArg` which takes in a `str` type. To access the data passed from the port, you can simply call it via `self.port_name.value` as shown in `#(4)`.
@@ -111,7 +111,7 @@ Passing data via ports is as simple as declaring the port variable as `InArg` or
     <details>
     <summary>Video</summary>
       <p align="center">
-      <img src="https://user-images.githubusercontent.com/68586800/166882582-0f82a9ca-72c0-469d-a3b5-465942842173.gif"></img></p>
+      <img src="/img/docs/developer-guide/add-inport.gif"></img></p>
     </details>
 
 

@@ -16,12 +16,12 @@ You can open the Xircuits canvas in two ways:
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="https://user-images.githubusercontent.com/68586800/167055354-f6871f8e-c813-402e-bfc0-914e78770040.gif"></img></p>
+  <img src="/img/docs/open-xircuits.gif"></img></p>
 </details><br></br>
 
 Select the Xircuits tray widget on the left toolbar, you should then see the following screen.
 
-![xircuits-interface](images/xircuits-interface.png)
+![xircuits-interface](/img/docs/user-guide/xircuits-interface.png)
 
 ## The Xircuits Canvas Interface
 Once you open a .xircuits file or create a new one, you will see the Xircuits canvas.
@@ -30,7 +30,7 @@ Once you open a .xircuits file or create a new one, you will see the Xircuits ca
 
 The Xircuits toolbar is displayed on top of every Xircuits canvas. From left to right:
 
-![xircuits-toolbar](images/xircuits-toolbar.png)
+![xircuits-toolbar](/img/docs/user-guide/xircuits-toolbar.png)
 
 1. **Save**: Save current xircuits canvas.
 2. **Undo**: Goes back one step.
@@ -53,7 +53,7 @@ The Xircuits toolbar is displayed on top of every Xircuits canvas. From left to 
 
 You can open the context menu via right click.
 
-![xircuits-context-menu](images/xircuits-context-menu.png)
+![xircuits-context-menu](/img/docs/user-guide/xircuits-context-menu.png)
 
 1. **Cut**: Cuts selected component(s) to clipboard.
 2. **Copy**: Copies selected component(s) to clipboard.
@@ -71,7 +71,7 @@ You can open the context menu via right click.
 
 There are a few special interfaces for components. They are located at top right corner of components. 
 
-![xircuits-context-menu](images/xircuits-tooltip.png)
+![xircuits-context-menu](/img/docs/user-guide/xircuits-tooltip.png)
 
 1. Information Tooltip [ `⋮` ] : Displays the component information tooltip, if any. In the python component code, the comment is enclosed in the triple ''' ''' quotation marks. 
 2. Lock Component [ `🔒` ] : Locks selected component. Locked components cannot be moved, linked-to nor deleted.
@@ -81,7 +81,7 @@ In addition, for `Literal Components` you are able to modify the values by doubl
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="https://user-images.githubusercontent.com/68586800/167083764-d1e4b22e-ab81-47cb-833d-b65f99ddb6bb.gif"></img></p>
+  <img src="/img/docs/getting-started/edit-literal.gif"></img></p>
 </details><br></br>
 
 
@@ -89,7 +89,7 @@ In addition, for `Literal Components` you are able to modify the values by doubl
 
 You can access the component library tray by selecting the block icon. 
 
-![xircuits-component-tray](images/xircuits-component-tray.png)
+![xircuits-component-tray](/img/docs/user-guide/xircuits-component-tray.png)
 
 1. **Search Bar**: Search your component.
 2. **Refresh**: Refresh component list. Useful when adding new components and/or modifying existing ones.
