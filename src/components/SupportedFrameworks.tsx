@@ -28,15 +28,15 @@ const FrameworkList: FrameworkItem[] = [
   },
   {
     title: 'Pycaret',
-    image: '/img/website/frameworks/pycaret.png',
+    image: '/img/website/frameworks/pycaret2.png',
   },
 ];
 
 function Framework({title, image}: FrameworkItem) {
   return (
     <div className={clsx('col')}>
-      <div className="text--center">
-        <img className={styles.featureImg} alt={title} src={image} />
+      <div className="container">
+          <img className={styles.featureImg} alt={title} src={image} />
       </div>
     </div>
   );
@@ -61,7 +61,7 @@ export default function SupportedFramework(): JSX.Element {
     <section>
         <br></br>
         <h1>Supported Frameworks</h1>
-        <FrameworkDisplay />
+        <FrameworkDisplay /><br></br>
     </section>
   );
 }

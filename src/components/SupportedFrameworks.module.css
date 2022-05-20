@@ -5,7 +5,12 @@
 }
 
 .featureImg {
-  height: 200px;
+  width: 200px;
+}
+
+img {
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -16,4 +21,19 @@ h1 {
 h2 {
   /* Center horizontally*/
   text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.center {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #dbe4ed; /* Border color is optional */  
 }
