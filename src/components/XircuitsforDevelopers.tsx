@@ -10,11 +10,11 @@ function XircuitsforDevelopers() {
       <div className={clsx('row')}>
 
         <div className={clsx('col col--5 col--offset-1')}>
-          <div className={styles.contentPad}>
+          <div className={styles.gifPad}>
             <img src="/img/website/preview-anomaly-detection.gif"></img>
           </div>
         </div>
-        <div className={clsx('col col--3 col--offset-1')}>
+        <div className={clsx('col col--4 col--offset-1')}>
           <div className={styles.contentPad}>
 
             <br></br>

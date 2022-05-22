@@ -9,7 +9,7 @@ function XircuitsforUsers() {
     return (
       <div className={clsx('row')}>
 
-        <div className={clsx('col col--3 col--offset-2')}>
+        <div className={clsx('col col--4 col--offset-1')}>
           <br></br>
           <div className={styles.contentPad}>
             <h1>Xircuits for Users</h1>
@@ -32,8 +32,8 @@ function XircuitsforUsers() {
         </div>
 
         <div className={clsx('col col--5 col--offset-1')}>
-          <div className={styles.contentPad}>
-            <img src="/img/website/preview-machine-learning.gif"></img>
+          <div className={styles.gifPad}>
+            <img src="/img/website/preview-xircuits-user.gif"></img>
           </div>
         </div>
     </div>
