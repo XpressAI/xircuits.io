@@ -1,0 +1,41 @@
+.features {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.featureImg {
+  width: 200px;
+}
+
+img {
+  text-align: center;
+
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  /* Center horizontally*/
+  text-align: center;
+}
+
+h2 {
+  /* Center horizontally*/
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.center {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #dbe4ed; /* Border color is optional */  
+}
