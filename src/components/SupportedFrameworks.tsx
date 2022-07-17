@@ -60,7 +60,10 @@ export default function SupportedFramework(): JSX.Element {
   return (
     <section>
         <br></br>
-        <h1>Supported Frameworks</h1>
+        <section className={styles.homepageHeader}>
+          <h1>Supported Frameworks</h1>
+        </section>
+
         <FrameworkDisplay />
     </section>
   );

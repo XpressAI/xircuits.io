@@ -18,7 +18,10 @@ function XircuitsforDevelopers() {
           <div className={styles.contentPad}>
 
             <br></br>
-            <h1>Xircuits for Developers</h1>
+            <div className={styles.homepageHeader}>
+              <h1>Xircuits for Developers</h1>
+            </div>
+            
             <p>If you're a python developer, you'll be greeted with familiar Jupyterlab tools.</p>
             <ul>
                 <li>Create templates supported by our <strong>rich canvas interface</strong>.</li>

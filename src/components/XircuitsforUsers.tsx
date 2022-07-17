@@ -12,7 +12,10 @@ function XircuitsforUsers() {
         <div className={clsx('col col--4 col--offset-1')}>
           <br></br>
           <div className={styles.contentPad}>
-            <h1>Xircuits for Users</h1>
+            <div className={styles.homepageHeader}>
+              <h1>Xircuits for Users</h1>
+            </div>
+
             <p>You don't have to know how to code to use Xircuits!</p>
             <ul>
                 <li><strong>Create workflows</strong> from prebuilt components</li>

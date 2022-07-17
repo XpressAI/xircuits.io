@@ -6,23 +6,9 @@
 
 .featureImg {
   width: 200px;
-}
-
-img {
   text-align: center;
-
   align-items: center;
   justify-content: center;
-}
-
-h1 {
-  /* Center horizontally*/
-  text-align: center;
-}
-
-h2 {
-  /* Center horizontally*/
-  text-align: center;
 }
 
 .container {
@@ -38,4 +24,9 @@ h2 {
   align-items: center;
   justify-content: center;
   border: 3px solid #dbe4ed; /* Border color is optional */  
+}
+
+.homepageHeader {
+  /* Center horizontally*/
+  text-align: center;
 }
