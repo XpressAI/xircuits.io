@@ -27,7 +27,7 @@ function XircuitsforUsers() {
             <div className={styles.buttons}>
               <Link
                 className="button button--outline button--primary button--lg"
-                to="/docs/category/user-guide">
+                to="/docs/category/tutorials">
                 Go to User Guide
               </Link>
             </div>
