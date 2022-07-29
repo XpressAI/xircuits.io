@@ -64,7 +64,7 @@ Created a cool component library? All your colleagues need to do is to drop your
 </details>
 
 And many more.
-## Workflow
+## How it Works
 1. Create a new Xircuits from the Jupyterlab launcher or open an existing .xircuits file.
 
 ![xircuit](/img/docs/open-xircuits.gif)
@@ -77,6 +77,14 @@ And many more.
 
 ![xircuit-parser](/img/docs/python-parser.gif)
 
-4. Run the compiled python code using your own terminal or use our Output Viewer. 
+4. Run it!
 
 ![xircuit-runner](/img/docs/xircuits-runner.gif)
+
+Xircuits will execute the compiled python code on the Output Viewer.  
+## Great, how do I start?
+### Xircuits New Users
+If you're someone who've just started and would like to try out Xircuits, we recommend checking out the first `tutorials`! Learn how to run and modify existing workflows for your use case. You can then learn to create workflows from prebuilt components. You don't have to know how to code to use Xircuits. 
+
+### Component Library Developers
+You've gotten the charge of Xircuits, and now you're looking to create components and workflows for Xircuits users. You'll be looking for the `python-dev` tag. We have documented how to create components and component libraries.
