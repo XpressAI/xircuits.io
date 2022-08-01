@@ -46,13 +46,6 @@ export function SearchBox({ translations = {}, ...props }: SearchBoxProps) {
   // });
   const MAX_QUERY_SIZE = 64;
   const [searchQuery, setSearchQuery] = React.useState("")
-  const onSubmit = (e) => {
-    if (e.key === 'Enter') {
-      console.log(searchQuery);
-      // postSearchQueryToSearchPages(searchQuery)
-      // window.open("http://localhost:3000/vecto_search/", "_self");
-    }
-  }
   React.useEffect(() => {
     if (props.autoFocus && props.inputRef.current) {
       props.inputRef.current.focus();
@@ -68,12 +61,9 @@ export function SearchBox({ translations = {}, ...props }: SearchBoxProps) {
     <>
       <form
         className="DocSearch-Form"
-        onSubmit={(event) => {
-          event.preventDefault();
-        }}
-        // method="post"
-        // action="http://localhost:3000/vecto-search/"
-        // target="_self"
+        method="get"
+        id="VectoSearchBox"
+        action="http://localhost:3000/vecto_search"
       //   onReset={onReset}
       >
         <label className="DocSearch-MagnifierLabel">
@@ -92,15 +82,8 @@ export function SearchBox({ translations = {}, ...props }: SearchBoxProps) {
           //   autoFocus: props.autoFocus,
           //   maxLength: MAX_QUERY_SIZE,
           // })}
+          name='q'
           onChange={(e) => setSearchQuery(e.target.value)}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter') {
-              console.log(searchQuery);
-              // postSearchQueryToSearchPages(searchQuery)
-              window.open("http://localhost:3000/vecto_search/","_self");
-            }
-          }
-          }
         />
 
         <button

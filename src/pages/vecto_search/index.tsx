@@ -67,9 +67,16 @@ import { ThemeConfig } from '@docusaurus/preset-classic';
     
 // }
 
-
-
-
+function getQueryString() {
+    var GET = {};
+    var queryString = window.location.search.replace(/^\?/, '');
+    queryString.split(/\&/).forEach(function (keyValuePair) {
+        var paramName = keyValuePair.replace(/=.*$/, ""); // some decoding is probably necessary
+        var paramValue = keyValuePair.replace(/^[^=]*\=/, ""); // some decoding is probably necessary
+        GET[paramName] = paramValue;
+    });
+    return GET;
+}
 
 function useDocumentsFoundPlural() {
     const { selectMessage } = usePluralForm();
@@ -173,6 +180,16 @@ function SearchVersionSelectList({
     );
 }
 
+export type VectoSearchConfig = {
+    default_token: string,
+    default_vecto_base_url: string,
+    default_vector_space_id: number,
+    default_modality: string,
+    default_top_k: number,
+    default_allowBlogSearch: boolean,
+    default_allowDocSearch: boolean
+}
+
 type ResultDispatcherState = {
     items: {
         title: string;
@@ -228,6 +245,14 @@ export default function vectoSearchPage() {
         hasMore: null,
         loading: null,
     };
+    const {
+        default_token = '',
+        default_vecto_base_url = 'http://localhost:8080/api/v0',
+        default_vector_space_id = 3,
+        default_modality = 'TEXT',
+        default_top_k = 10,
+        default_allowDocSearch = true,
+        default_allowBlogSearch = true } = themeConfig as VectoSearchConfig;
 
     const [searchResultVecto, setSearchResultVectoDispatcher] = useState<any>([{}]);
     const notInitialRender = useRef(false);
@@ -273,11 +298,11 @@ export default function vectoSearchPage() {
 
 
     function postSearchQuery(searchStr) {
-        let TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1cG4iOiJiYXJfdG9rZW4iLCJpc3MiOiJodHRwczovL3ZlY3RvLmFpIiwiZ3JvdXBzIjpbInVzZXIiXSwiZXhwIjoxNjYxNTY2NDQ1LCJhdWQiOlsiMyJdLCJpYXQiOjE2NTg5NzQ0NDUsImp0aSI6ImQ5YWIzMmM4LWI4ZjgtNGI1Ni04YzA0LTUwZWVkNThiMzljMSJ9.SXTnRdLD65_5PcMIY_TZ3F4AwdaXwZOV4uz6qnVQerVrLZifKM3awoVDgq9Y_ES0PXQQJrRleqUpk9W0tpKlI_FU-M9_BPwOa2bJmN5rAB68OBk4BtOHDn3Lhv5l4Z_ef04CxLfk3Q2OuXE0ELyrmdKA6VQw66h5S3whFitQc1i_t0m6WQE63H2ZAG4kRk2WWUIG3VHBd2m2kihc_5UBNzYwqrz8l-1j7BEUbkz3dz242Zhhf8YL3881YsMlI-f0lKM93PJkyH-1EZfnx7okE2wnfKnu1BNYU5llNN2-2T8RH_xj3lr1SC-NryqumTV7G6-ZwhnSFfUjvWYX1G-YBQ";
-        let vecto_base_url = "http://localhost:8080/api/v0";
-        let vector_space_id = 3;
-        let modality = 'TEXT';
-        let top_k = 10;
+        let TOKEN = vecto.token ?? default_token;
+        let vecto_base_url = vecto.vecto_base_url ?? default_vecto_base_url;
+        let vector_space_id = vecto.vector_space_id ?? default_vector_space_id;
+        let modality = vecto.modality ?? default_modality;
+        let top_k = vecto.top_k ?? default_top_k;
         let data = new FormData();
         // @ts-ignore
         data.append('vector_space_id', vector_space_id)
@@ -287,7 +312,7 @@ export default function vectoSearchPage() {
         data.append('query', new File([new Blob([searchStr])], "hi"))
         // data.append('ids', 0)
         
-        fetch("http://localhost:8080/api/v0/lookup", {
+        fetch(vecto_base_url, {
             method: 'POST',
             body : data,
             headers: {
@@ -351,7 +376,11 @@ export default function vectoSearchPage() {
                 description: 'The search page title for empty query',
             });
 
-    // useEffect(() => {
+    useEffect(() => {
+        let queryStr: any = getQueryString();
+        postSearchQuery(queryStr.q)
+    }, []);
+            // useEffect(() => {
     //     // if (notInitialRender.current) {
 	// 	    postSearchQuery("")
     //     // } else {
