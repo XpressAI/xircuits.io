@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/xpress-logo.ico',
   organizationName: 'XpressAI', // Usually your GitHub org/user name.
   projectName: 'Xircuits', // Usually your repo name.
-
+  plugins: ['./src/remark'],
   presets: [
     [
       '@docusaurus/preset-classic',
