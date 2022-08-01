@@ -181,13 +181,12 @@ function SearchVersionSelectList({
 }
 
 export type VectoSearchConfig = {
-    default_token: string,
-    default_vecto_base_url: string,
-    default_vector_space_id: number,
-    default_modality: string,
-    default_top_k: number,
-    default_allowBlogSearch: boolean,
-    default_allowDocSearch: boolean
+    token: string,
+    vecto_base_url: string,
+    vector_space_id: number,
+    top_k: number,
+    allowBlogSearch: boolean,
+    allowDocSearch: boolean
 }
 
 type ResultDispatcherState = {
@@ -245,14 +244,13 @@ export default function vectoSearchPage() {
         hasMore: null,
         loading: null,
     };
-    const {
-        default_token = '',
-        default_vecto_base_url = 'http://localhost:8080/api/v0',
-        default_vector_space_id = 3,
-        default_modality = 'TEXT',
-        default_top_k = 10,
-        default_allowDocSearch = true,
-        default_allowBlogSearch = true } = themeConfig as VectoSearchConfig;
+    const defaultVectoConfig: VectoSearchConfig = {
+        token : '',
+        vecto_base_url : 'http://localhost:8080/api/v0',
+        vector_space_id : 3,
+        top_k : 10,
+        allowDocSearch : true,
+        allowBlogSearch : true }
 
     const [searchResultVecto, setSearchResultVectoDispatcher] = useState<any>([{}]);
     const notInitialRender = useRef(false);
@@ -298,11 +296,11 @@ export default function vectoSearchPage() {
 
 
     function postSearchQuery(searchStr) {
-        let TOKEN = vecto.token ?? default_token;
-        let vecto_base_url = vecto.vecto_base_url ?? default_vecto_base_url;
-        let vector_space_id = vecto.vector_space_id ?? default_vector_space_id;
-        let modality = vecto.modality ?? default_modality;
-        let top_k = vecto.top_k ?? default_top_k;
+        let TOKEN = vecto.token ?? defaultVectoConfig.token;
+        let vecto_base_url = vecto.vecto_base_url ?? defaultVectoConfig.vecto_base_url;
+        let vector_space_id = vecto.vector_space_id ?? defaultVectoConfig.vector_space_id;
+        let modality = 'TEXT';
+        let top_k = vecto.top_k ?? defaultVectoConfig.top_k;
         let data = new FormData();
         // @ts-ignore
         data.append('vector_space_id', vector_space_id)
