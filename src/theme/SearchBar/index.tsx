@@ -274,6 +274,7 @@ function DocSearch() {
        {isOpen &&
         createPortal(
           <DocSearchModal 
+            onClose={onClose}
           />,
           document.body
         )}

@@ -29,13 +29,13 @@ import { useTrapFocus } from './useTrapFocus';
 // }> &
 //   ScreenStateTranslations;
 
-// export type DocSearchModalProps = DocSearchProps & {
-//   initialScrollY: number;
-//   onClose?: () => void;
-//   translations?: ModalTranslations;
-// };
+export type DocSearchModalProps = {
+  // initialScrollY: number;
+  onClose?: () => void;
+  // translations?: ModalTranslations;
+};
 
-export function DocSearchModal() {
+export function DocSearchModal(props: DocSearchModalProps) {
 //   const {
 //     footer: footerTranslations,
 //     searchBox: searchBoxTranslations,
@@ -373,7 +373,7 @@ export function DocSearchModal() {
       tabIndex={0}
       onMouseDown={(event) => {
         if (event.target === event.currentTarget) {
-        //   onClose();
+          props.onClose();
         }
       }}
     >
