@@ -184,9 +184,7 @@ export type VectoSearchConfig = {
     token: string,
     vecto_base_url: string,
     vector_space_id: number,
-    top_k: number,
-    allowBlogSearch: boolean,
-    allowDocSearch: boolean
+    top_k: number
 }
 
 type ResultDispatcherState = {
@@ -248,9 +246,7 @@ export default function vectoSearchPage() {
         token : '',
         vecto_base_url : 'http://localhost:8080/api/v0',
         vector_space_id : 3,
-        top_k : 10,
-        allowDocSearch : true,
-        allowBlogSearch : true }
+        top_k : 10, }
 
     const [searchResultVecto, setSearchResultVectoDispatcher] = useState<any>([{}]);
     const notInitialRender = useRef(false);
