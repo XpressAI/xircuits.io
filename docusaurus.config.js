@@ -42,6 +42,18 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      vecto: {
+        // INSERT_VECTOR_SPACE_TOKEN_HERE.
+        token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1cG4iOiJiYXJfdG9rZW4iLCJpc3MiOiJodHRwczovL3ZlY3RvLmFpIiwiZ3JvdXBzIjpbInVzZXIiXSwiZXhwIjoxNjYxNTY2NDQ1LCJhdWQiOlsiMyJdLCJpYXQiOjE2NTg5NzQ0NDUsImp0aSI6ImQ5YWIzMmM4LWI4ZjgtNGI1Ni04YzA0LTUwZWVkNThiMzljMSJ9.SXTnRdLD65_5PcMIY_TZ3F4AwdaXwZOV4uz6qnVQerVrLZifKM3awoVDgq9Y_ES0PXQQJrRleqUpk9W0tpKlI_FU-M9_BPwOa2bJmN5rAB68OBk4BtOHDn3Lhv5l4Z_ef04CxLfk3Q2OuXE0ELyrmdKA6VQw66h5S3whFitQc1i_t0m6WQE63H2ZAG4kRk2WWUIG3VHBd2m2kihc_5UBNzYwqrz8l-1j7BEUbkz3dz242Zhhf8YL3881YsMlI-f0lKM93PJkyH-1EZfnx7okE2wnfKnu1BNYU5llNN2-2T8RH_xj3lr1SC-NryqumTV7G6-ZwhnSFfUjvWYX1G-YBQ', 
+
+        vecto_base_url: 'vecto_base_url',
+
+        vector_space_id: 3, // INSERT_VECTOR_SPACE_ID,
+
+        allowBlogSearch: true,
+
+        allowDocSearch: true
+      },
       navbar: {
         title: 'Home',
         logo: {
