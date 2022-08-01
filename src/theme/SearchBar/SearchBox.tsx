@@ -41,11 +41,11 @@ export function SearchBox({ translations = {}, ...props }: SearchBoxProps) {
     cancelButtonText = 'Cancel',
     cancelButtonAriaLabel = 'Cancel',
   } = translations;
-  // const { onReset } = props.getFormProps({
-  //   inputElement: props.inputRef.current,
-  // });
+  const [searchQuery, setSearchQuery] = React.useState("");
+  const onReset = () => {
+    setSearchQuery("");
+  }
   const MAX_QUERY_SIZE = 64;
-  const [searchQuery, setSearchQuery] = React.useState("")
   React.useEffect(() => {
     if (props.autoFocus && props.inputRef.current) {
       props.inputRef.current.focus();
@@ -64,7 +64,7 @@ export function SearchBox({ translations = {}, ...props }: SearchBoxProps) {
         method="get"
         id="VectoSearchBox"
         action="http://localhost:3000/vecto_search"
-      //   onReset={onReset}
+        onReset={onReset}
       >
         <label className="DocSearch-MagnifierLabel">
           <SearchIcon />
@@ -91,7 +91,7 @@ export function SearchBox({ translations = {}, ...props }: SearchBoxProps) {
           title={resetButtonTitle}
           className="DocSearch-Reset"
           aria-label={resetButtonAriaLabel}
-        // hidden={searchQuery == ""}
+          hidden={searchQuery.length == 0}
         >
           <ResetIcon />
         </button>
