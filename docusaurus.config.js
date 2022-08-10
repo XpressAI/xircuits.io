@@ -55,7 +55,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: 'https://blog.xpress.ai', label: 'Blog', position: 'left'},
+          {to: 'https://www.xpress.ai/blog/', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/XpressAI/xircuits',
             label: 'GitHub',
@@ -109,7 +109,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                href: 'https://blog.xpress.ai',
+                href: 'https://www.xpress.ai/blog/',
               },
               {
                 label: 'GitHub',
