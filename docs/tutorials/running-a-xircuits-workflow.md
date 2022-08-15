@@ -7,7 +7,7 @@ sidebar_position: 2
 The following tutorial will walk you through a basic Xircuits run. You will open an existing xircuits workflow that trains a model, learn how to modify the parameters for your use case, and then run it.
 
 ## Prerequisites
-1. For this tutorial, please ensure that you already have the `xai_learning` related libraries installed. You can do this by `pip install xircuits[full]` or by `pip install -r xai_components/xai_learning/requirements.txt`.
+1. For this tutorial, please ensure that you already have the `xai_learning` related libraries installed. You can do this by `pip install xircuits[learning]` or by `pip install -r xai_components/xai_learning/requirements.txt`.
 2. Ensure that you have the `examples` folder in your working directory. After xircuits is pip installed, you can download it by running the `xircuits-examples` command.
 
 ## Opening an existing Xircuits File
