@@ -7,9 +7,17 @@ sidebar_position: 1
 Xircuits is built on Jupyterlab, you will see a lot of familiar data scientist related tools. The following section introduces you to the Xircuits related interfaces. For the full Jupyterlab interface exploration, you may refer to the [Jupyterlab documentation](https://jupyterlab.readthedocs.io/en/stable/user/interface.html).
 
 
-## Starting Xircuits
+## Launching Xircuits
 
-You can open the Xircuits workflow canvas in two ways:
+You can launch Xircuits by running:
+
+```
+$ xircuits
+```
+
+## Starting a Xircuits Canvas
+
+You can start the Xircuits workflow canvas in two ways:
 1. Opening an existing .xircuits file.
 2. Creating a new Xircuits canvas via launcher.
 
@@ -45,9 +53,9 @@ The Xircuits toolbar is displayed on top of every Xircuits canvas. From left to 
 11. **Compile**: Codegens a python script based on current canvas. 
 12. **Save and Run**: Executes the generated python script on the Python kernel based on Run Options.
 13. **Xircuits Run Options**
-    - **Run**: Saves, compiles, and executes Xircuits canvas.
+    - **Local Run**: Saves, compiles, and executes Xircuits canvas locally.
     - **Run w/o Compile**: Saves current canvas but does not compile the python script. Executes python script with the same filename as the .xircuits file.
-    - **Spark Submit**: Saves, compiles, then performs a cmd-based Spark Submit. For more information, read Spark Submit.
+    - **Remote Run**: Saves, compiles, then performs a cmd-based remote run. Used often for Spark Submit. For more information, read [Remote Run](../references/remote-run.md).
     
 ### Right Click Context Menu
 
@@ -64,7 +72,7 @@ You can open the context menu via right click.
 7. **Delete**: Deletes component(s).
 8. **Undo**: Goes back one step.
 9. **Redo**: Goes forward one step.
-10. **Add Comment**: Inserts a `Comment Component`.
+10. **Add Comment**: Inserts a [`Comment Component`](../references/special-components.md#comment-component).
 
 
 ### Component Related Interface
@@ -96,7 +104,3 @@ You can access the component library tray by selecting the block icon.
 3. **Xircuits Component List**
     - [General Components](../technical-concepts/xircuits-components/getting-started-with-xircuits-components.md#general-components) - general purpose components.
     - [Component Libraries](../technical-concepts/xircuits-components/getting-started-with-xircuits-components.md#xircuits-library-components) - Component libraries and components from the various component libraries.
-
-## Read More:
-- [The Jupyterlab Interface](https://jupyterlab.readthedocs.io/en/stable/user/interface.html)
-- [Xircuits Components](../technical-concepts/xircuits-components/getting-started-with-xircuits-components.md)
