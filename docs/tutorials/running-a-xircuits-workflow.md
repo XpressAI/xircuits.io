@@ -11,13 +11,13 @@ The following tutorial will walk you through a basic Xircuits run. You will open
 2. Ensure that you have the `examples` folder in your working directory. After xircuits is pip installed, you can download it by running the `xircuits-examples` command.
 
 ## Opening an existing Xircuits File
-Xircuits users will mostly use premade xircuits workflow templates created by developers. Their task would be to simply change the parameters to suit their use case. In Xircuits, we have created a handful of templates for you to try in the examples directory. 
+New Xircuits users are recommended to start with premade xircuits workflow templates created by developers. The task would be to change the parameters for their use case. In Xircuits, we have created a handful of templates for you to try in the examples directory. 
 
 **For this tutorial, open `KerasTrainImageClassifier.xircuits` in the example directory.**
 
 ## Viewing and Interpreting the Xircuits Canvas
 
-Once the Xircuits canvas is open, you will see the [Xircuits Interface](xircuits-interface.md). 
+Once the Xircuits canvas is open, you will see the [Xircuits Interface](../getting-started/xircuits-interface.md). 
 
 A Xircuits workflow starts from the `Start` node to the `Finish` node. The flow sequence is indicated by the flowing blue links connecting the ▶ ports. A component node may also have data ports, which indicates how a component can receive data and parameters to configure their behavior, as well as pass data to the next nodes.
 
