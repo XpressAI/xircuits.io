@@ -6,44 +6,46 @@ sidebar_position: 1
 
 The following is a list of Xircuits related commands that you can use on the command line interface (CLI).
 
-## Starting Xircuits
+### Start Xircuits
 
 ```
-xircuits
+$ xircuits
 ```
-Launches Jupyterlab. Will create `.xircuits` config file at current directory as well as offer to download the `xai_components` from the main branch.
+- Launches Jupyterlab. Will create `.xircuits` config file at current directory as well as offer to download the `xai_components` from the main branch.
 
 ```
-xircuits --branch branchName
+$ xircuits --branch branchName
 ```
-Alternatively downloads `xai_components` from a specific branch.
+- Downloads `xai_components` from a specific branch.
 
-## Downloading Xircuits Examples + Datasets
-
-```
-xircuits-examples
-```
-Downloads the `examples` and `datasets` directories from the main branch.
+### Download Xircuits Examples + Datasets
 
 ```
-xircuits-examples --branch branchName
+$ xircuits-examples
 ```
-Downloads the `examples` and `datasets` directories from a specific branch.
-
-
-## Downloading Xircuits Components
+- Downloads the `examples` and `datasets` directories from the main branch.
 
 ```
-xircuits-components
+$ xircuits-examples --branch branchName
 ```
-Downloads the `xai_components` directory from the main branch.
+- Downloads the `examples` and `datasets` directories from a specific branch.
+
+
+### Download Xircuits Components
 
 ```
-xircuits-components --branch branchName
+$ xircuits-components
 ```
-Downloads the `xai_components` directory from a specified branch.
+- Downloads the `xai_components` directory from the main branch.
 
 ```
-xircuits-components --sublib componentLibraryName
+$ xircuits-components --branch branchName
 ```
-Downloads a single submodule component library.
+- Downloads the `xai_components` directory from a specified branch.
+
+### Download Additional Xircuits Components
+
+```
+$ xircuits-components --sublib componentLibraryName
+```
+- Downloads a submodule component library, for example the [Xircuits Pycaret](https://github.com/XpressAI/xai-pycaret) library. For the full list of additional libraries, refer to the [component library list](https://github.com/XpressAI/xircuits/tree/master/xai_components).
