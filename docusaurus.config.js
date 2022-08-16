@@ -55,13 +55,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {
-            type: 'doc',
-            docId: 'references/cli-commands',
-            position: 'left',
-            label: 'CLI',
-          },
-          {to: 'https://www.xpress.ai/blog', label: 'Blog', position: 'left'},
+          {to: 'https://blog.xpress.ai', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/XpressAI/xircuits',
             label: 'GitHub',
@@ -115,7 +109,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                href: 'https://www.xpress.ai/blog',
+                href: 'https://blog.xpress.ai',
               },
               {
                 label: 'GitHub',
