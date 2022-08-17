@@ -5,6 +5,11 @@ description: "Learn how to make a Xircuits workflow to load prebuilt Keras model
 
 # Keras
 
+Before running this example, ensure that you have already installed the keras related packages. You can do this by:
+
+```
+$ pip install xircuits[learning]
+```
 ## Loading a Keras Model and Performing Inference
 
 ![xircuit-runner](/img/docs/xircuits-runner.gif)
