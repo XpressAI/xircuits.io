@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 
@@ -16,7 +16,10 @@ In this example, you will learn how to start a basic spark application that read
 1. To start a Spark workflow, you will need to start with a `xSparkSession`. All components that require a session can be connected to the session parameter port. 
 
 2. To read a file, the xSparkSession is connected to `SparkReadFile`. In this example, the `LiteralString` path to the time series data, `wind.csv`. is supplied to the file_input InPort. `SparkReadFile` supports csv, parquet, orc, and json data files. 
-Note that you may need to upload the file to the HDFS if you're running Spark in a cluster.
+
+:::note
+You may need to upload the file to the HDFS if you're running Spark in a cluster.
+:::
 
 3. `SparkReadFile` will output a Spark dataframe which can be then passed to the `SparkVisualize` component. `SparkVisualize` utilizes matplotlib library to plot. You also would need to specify which of the data column to be the X and Y axis.
 

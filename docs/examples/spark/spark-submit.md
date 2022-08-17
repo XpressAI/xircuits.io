@@ -47,9 +47,12 @@ xircuits --ContentsManager.allow_hidden=True
 
 4. Under `[CLUSTER]`, you may add / modify the submit parameters as desired.
 
-*Note:* For multiple lines, you will need to add a forward slash (\). You also should not append the python script to the spark submit parameters as it is automatically added by Xircuits.
+:::tip
 
-**Note:** You will need to first select the normal `Run` before the `Spark Submit` for the changes reflected in the Spark Submit dialog. 
+ For multiple lines, you will need to add a forward slash (\). You also should not append the python script to the spark submit parameters as it is automatically added by Xircuits.
+
+:::
+
 
 By default, the following are the configs set:
 
@@ -81,3 +84,9 @@ command = $SPARK_HOME/bin/spark-submit \
 msg = Running Spark Submit using YARN cluster mode 
 url = http://localhost:8088/
 ```
+
+:::note
+
+You will need to first select the normal `Run` before the `Spark Submit` for the changes reflected in the Spark Submit dialog. 
+
+:::
