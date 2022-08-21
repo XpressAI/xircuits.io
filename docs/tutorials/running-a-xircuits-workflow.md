@@ -4,14 +4,14 @@ sidebar_position: 2
 
 # Your First Xircuits Workflow
 
-The following tutorial will walk you through a basic Xircuits run. You will open an existing xircuits workflow that trains a model, learn how to modify the parameters for your use case, and then run it.
+The following tutorial will walk you through a basic Xircuits run. You will open an existing Xircuits workflow that trains a model, learn how to modify the parameters for your use case, and then run it.
 
 ## Prerequisites
 1. For this tutorial, please ensure that you already have the `xai_learning` related libraries installed. You can do this by `pip install xircuits[learning]` or by `pip install -r xai_components/xai_learning/requirements.txt`.
-2. Ensure that you have the `examples` folder in your working directory. After xircuits is pip installed, you can download it by running the `xircuits-examples` command.
+2. Ensure that you have the `examples` folder in your working directory. After Xircuits is installed, you can download it by running `xircuits-examples` in the command line.
 
 ## Opening an existing Xircuits File
-New Xircuits users are recommended to start with premade xircuits workflow templates created by developers. The task would be to change the parameters for their use case. In Xircuits, we have created a handful of templates for you to try in the examples directory. 
+New Xircuits users are recommended to start with premade Xircuits workflow templates created by developers. The task would be to change the parameters for their use case. In Xircuits, we have created a handful of templates for you to try in the examples directory. 
 
 **For this tutorial, open `KerasTrainImageClassifier.xircuits` in the example directory.**
 
@@ -21,7 +21,7 @@ Once the Xircuits canvas is open, you will see the [Xircuits Interface](../getti
 
 A Xircuits workflow starts from the `Start` node to the `Finish` node. The flow sequence is indicated by the flowing blue links connecting the ▶ ports. A component node may also have data ports, which indicates how a component can receive data and parameters to configure their behavior, as well as pass data to the next nodes.
 
-If you are unsure what a component does, you can click on the component information tooltip to display component information. For python savvy users, you may open the component code via context menu (`right-click` > `Open Script`).
+If you are unsure what a component does, you can click on the component information tooltip to display component information. For Python savvy users, you may open the component code via context menu (`right-click` > `Open Script`).
 
 **Explore the KerasTrainImageClassifier workflow. Note the component sequence.**
 
@@ -41,13 +41,13 @@ For more advanced users, you may add more component nodes from the Xircuits comp
 
 ## Saving and Compiling a Xircuits Canvas Workflow
 
-Once you are satisfied with your workflow, you can save and compile the Xircuits workflow. A python script with the same filename as the .xircuits canvas will be generated.
+Once you are satisfied with your workflow, you can save and compile the Xircuits workflow. A Python script with the same filename as the .xircuits canvas will be generated.
 
-**Press Save then Compile, then verify that the python script has been generated.**
+**Press Save then Compile, then verify that the Python script has been generated.**
 
 ## Running the Workflow
 
-To run the workflow, press the `Save & Compile` button. It will prompt you to save the workflow if you haven't. Select the python kernel to run it. 
+To run the workflow, press the `Save & Compile` button. It will prompt you to save the workflow if you haven't. Select the Python kernel to run it. 
 
 **Press Save then Compile button. You should get the following output:**
 

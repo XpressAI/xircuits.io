@@ -22,7 +22,7 @@ The remote run configurations can be viewed at `.xircuits/config.ini`. You will 
 ### How it Works
 Under the hood, the execute configuration is performed using using the [subprocess](https://docs.python.org/3/library/subprocess.html) module. A new process is spawned when Remote Run is selected and executed.
 
-The `command` in `CONFIGURATION` will be appended to the compiled python Xircuits file, such that what will be executed is
+The `command` in `CONFIGURATION` will be appended to the compiled Python Xircuits file, such that what will be executed is
 
 $ `command` `CompiledScript.py`
 

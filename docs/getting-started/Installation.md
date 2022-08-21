@@ -3,12 +3,31 @@ sidebar_position: 1
 ---
 
 # Installation
-You will need python 3.8+ to install Xircuits. We recommend installing in a virtual environment.
+You will need Python 3.8+ to install Xircuits. 
+:::tip
+
+We recommend installing in a virtual environment such as Python [venv](https://docs.python.org/3/library/venv.html). 
+
+```
+$ python -m venv venv
+$ source venv/Scripts/activate
+```
+
+:::
+
+To install Xircuits run:
+
 ```
 $ pip install xircuits
 ```
 
-Xircuits has many component libraries. To use them, simply install via `pip install xircuits[packageName]`.
+
+
+
+
+## Installing Xircuits Component Libraries
+
+Xircuits has various [component libraries](https://github.com/XpressAI/xircuits/blob/master/xai_components/readme.md). To use them, install them via `pip install xircuits[packageName]`.
 
 For example, to be able to use the pytorch components, run:
 ```
@@ -35,4 +54,4 @@ Finally to launch it, run:
 ```
 $ xircuits
 ```
-You will be prompted to load the xai_components in the current path. 
+You will be prompted to load the xai_components in the current path. We recommend doing so to be able to edit them.

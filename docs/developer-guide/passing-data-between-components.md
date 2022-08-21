@@ -9,7 +9,7 @@ tags:
 
 # Passing Data between Components
 
-There are two ways of passing data between components: through ports and by utilizing the xircuits context (ctx). The tutorial below will walk you through a simple example using ports. 
+There are two ways of passing data between components: through ports and by utilizing the Xircuits context (ctx). The tutorial below will walk you through a simple example using ports. 
 
 
 ## Passing Data via Ports
@@ -81,7 +81,7 @@ Passing data via ports is as simple as declaring the port variable as `InArg` or
       <img src="/img/docs/developer-guide/add-outport.gif"></img></p>
     </details><br></br>
 
-3. Create another xircuits component has an `InPort`. As with the previous component, declare the type as `InArg` which takes in a `str` type. To access the data passed from the port, you can simply call it via `self.port_name.value` as shown in `#(4)`.
+3. Create another Xircuits component has an `InPort`. As with the previous component, declare the type as `InArg` which takes in a `str` type. To access the data passed from the port, you can simply call it via `self.port_name.value` as shown in `#(4)`.
 
     <details>
       <summary>Code Snippet</summary>
@@ -116,7 +116,7 @@ Passing data via ports is as simple as declaring the port variable as `InArg` or
 
 
 ## Notes:
-- An inPort can also be linked to a literal or a hyperparameter component given the correct data type.
+- An inPort can also be linked to a `Literal` or a `Hyperparameter` component given the correct data type.
 - Declaring the port type as `any` will bypass the port type check.
 
 

@@ -12,4 +12,4 @@ These components are daily components such as String and Ints that you'll use in
 
 ### Xircuits Library Components
 
-These components rendered from python components located at the `xai_component` directory. These components such as Keras and Spark have specific usages which users can pip install their packages separately through `requirements.txt`.
+These components rendered from Python components located at the `xai_component` directory. These components such as Keras and Spark have specific usages which users can pip install their packages separately through `requirements.txt`.

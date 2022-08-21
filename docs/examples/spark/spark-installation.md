@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Spark Installation
 
-Ensure that you have Apache Spark installed to use the Spark components. Once complete, simply pip install the required python libraries.
+Ensure that you have Apache Spark installed to use the Spark components. Once complete, simply pip install the required Python libraries.
 
 Currently XAI Spark components are tested and working on 
 - Windows 10 Spark 3.1.2 and Hadoop 3.2

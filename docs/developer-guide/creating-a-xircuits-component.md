@@ -40,7 +40,7 @@ class HelloNewLibrary(Component):
 1. Create `SampleComponent.py` inside one of the `xai_components` directories, eg `xai_components/xai_template`. 
 2. Inside `SampleComponent.py`, add the essential imports: `import InArg, OutArg, Component, xai_component`.
 3. Create your component class which inherits Component, ie `class HelloXircuits(Component)`.
-4. To indicate that your python class is an Xircuits Component, you would need to add the `@xai_component()` decorator above it.
+4. To indicate that your Python class is an Xircuits Component, you would need to add the `@xai_component()` decorator above it.
 6. Your execute() call must pass `self` and context `ctx`.
 7. Xircuits enable variables to be passed by reference through the `InArg` and `OutArg`. Please initialize them in `__init__` and specify them as class properties.
 8. The `self.done` attribute is needed for the Xircuits debugger. It needs to be initialized in the `__init__` as well as at the end of the `execute()` segment.

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Literal & Hyperparameters Components
 
-To supply your Xircuits library components with customizable parameters, we provide literal and hyperparameter components as general components. The main difference between them can be observed in the generated code. Consider the training_epoch parameter in the TrainImageClassifier component below. 
+To supply your Xircuits library components with customizable parameters, we provide `Literal` and `Hyperparameter` components as general components. The main difference between them can be observed in the generated code. Consider the training_epoch parameter in the TrainImageClassifier component below. 
 
 ![SampleTraining](/img/docs/examples/computer-vision/SampleTraining.png)
 
@@ -41,7 +41,7 @@ if __name__ == '__main__':
     main(parser.parse_args())
 ```
 
-As you can see, the value is passed in as a literal integer to the TrainImageClassifier component. 
+As you can see, the value is passed in as a `Literal Integer` to the TrainImageClassifier component. 
 
 ## Hyperparameter Component
 

@@ -10,7 +10,7 @@ tags:
 * A single project should have only one Xircuits template at a time.
 * A template should be application focused (object detection, BERT training, etc).
 * A template repository can have as much component libraries as the application needs.
-* The template repository should be structured so that Xircuits can be launched directly. Hence it will need the `.xircuits` config directory, `xai_components` with the `base.py` and whatever component libraries needed, as well as the xircuits to run the application template, as shown below: 
+* The template repository should be structured so that Xircuits can be launched directly. Hence it will need the `.xircuits` config directory, `xai_components` with the `base.py` and whatever component libraries needed, as well as the Xircuits to run the application template, as shown below: 
 ```
 # working directory
 # |
@@ -29,4 +29,4 @@ tags:
 # +-- ApplicationTemplate.xircuits
 # +-- requirements.txt
 ```
-* The workflow of using a template would be to clone the template repository then installing requirements.txt with a specified xircuits version inside.
+* The workflow of using a template would be to clone the template repository then installing requirements.txt with a specified Xircuits version inside.
