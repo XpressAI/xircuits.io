@@ -87,4 +87,4 @@ Xircuits will execute the compiled Python code on the Output Viewer.
 If you're someone who've just started and would like to try out Xircuits, we recommend checking out the first `tutorials`! Learn how to run and modify existing workflows for your use case. You can then learn to create workflows from prebuilt components. You don't have to know how to code to use Xircuits. 
 
 ### Component Library Developers
-You've gotten the charge of Xircuits, and now you're looking to create components and workflows for Xircuits users. You'll be looking for the `Python-dev` tag. We have documented how to create components and component libraries.
+You've gotten the charge of Xircuits, and now you're looking to create components and workflows for Xircuits users. You'll be looking for the [Developer Guide](../docs/category/developer-guide) section. We have documented how to create components and component libraries.
