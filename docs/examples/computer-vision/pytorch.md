@@ -17,7 +17,7 @@ The following example showcases how to load a Torch dataset, specify a Torch mod
 ##### Example: TorchTrainModel.xircuits
 
 
-1. `LoadTorchVisionDataset`: Loads a [Torch Vision Dataset](https://pytorch.org/vision/stable/datasets.html). For this case, we're loading the [FASIONMNIST dataset](https://pytorch.org/vision/stable/generated/torchvision.datasets.FashionMNIST.html#torchvision.datasets.FashionMNIST).  
+1. `LoadTorchVisionDataset`: Loads a [Torch Vision Dataset](https://pytorch.org/vision/stable/datasets.html). For this case, we're loading the [FashionMNIST dataset](https://pytorch.org/vision/stable/generated/torchvision.datasets.FashionMNIST.html#torchvision.datasets.FashionMNIST).  
 2. `TorchDataLoader`: Creates an iterator for the dataset. The batch size can be adjusted depending on your device memory. By default the size is 64.
 3. `TorchModel`: A custom PyTorch neural network model that expects a 28*28 input. Internally it is defined as:
     ```
@@ -148,7 +148,7 @@ To perform inference, you will need the following components:
 1. `Image2TorchTensor`: converts an image loaded from provided path to a Torch tensor.
 2. `TorchModel`: creates a custom Torch model config. Ensure that you have used the same model config used in training.
 3. `LoadTorchModelState`: loads a Torch model state from a previously saved .pth. You will also need to provide the original Torch model class, in this case the previous `TorchModel`.
-4. `TorchModelPredictFromTensor`: loads performs a prediction given a Torch model configuration, tensor, and class list. For this example, we have trained using the fashionMNIST dataset, and therefore the classes are `"T-shirt/top", "Trouser", "Pullover", "Dress", "Coat", "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"`.
+4. `TorchModelPredictFromTensor`: loads performs a prediction given a Torch model configuration, tensor, and class list. For this example, we have trained using the FashionMNIST dataset, and therefore the classes are `"T-shirt/top", "Trouser", "Pullover", "Dress", "Coat", "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"`.
 
 
 <details>

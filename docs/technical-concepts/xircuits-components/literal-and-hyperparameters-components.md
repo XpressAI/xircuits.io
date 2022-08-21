@@ -79,7 +79,7 @@ if __name__ == '__main__':
 
 And then executed by running `SampleTraining.py --epoch 3`
 
-From a user perspective, both components are perfectly executable in Xircuits, however the one supplied with hyperparameters are more flexible if executed outside Xircuits. For example, consider the situation that you would like to automate your training workflow that displays the accuracy of your model for each training dataset. If you would use Hyperparameter components, you could simply run
+From a user perspective, both components are perfectly executable in Xircuits, however the one supplied with hyperparameters are more flexible if executed outside Xircuits. For example, consider the situation that you would like to automate your training workflow that displays the accuracy of your model for each training dataset. If you use Hyperparameter components, you could simply run:
 
 ```
 python TrainingScript.py --dataset mnist

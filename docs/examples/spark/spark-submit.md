@@ -49,7 +49,7 @@ xircuits --ContentsManager.allow_hidden=True
 
 :::tip
 
- For multiple lines, you will need to add a forward slash (\). You also should not append the python script to the spark submit parameters as it is automatically added by Xircuits.
+ For multiple lines, you will need to add a forward slash ( \\ ). You also should not append the python script to the spark submit parameters as it is automatically added by Xircuits.
 
 :::
 

@@ -40,5 +40,5 @@ To train an image classifier, you would need a few components.
 4. `TrainImageClassifier`:This component takes in a model and a dataset split, and trains according to the number of epoch you supply.
 5. `EvaluateAccuracy`: Finally, to evaluate your model you can test it out with the test split earlier.
 
-Alternatively, you may also want to perform image augmentation such as `FlattenImageData`. You can place this component between `ReadDataSet` and `TrainTestSplit`. As the input this time is a 1D tensor, use `Create1DInputModel` instead of the Create2DInputModel.
+Alternatively, you may also want to perform image augmentation such as `FlattenImageData`. You can place this component between `ReadDataSet` and `TrainTestSplit`. As the input this time is a 1D tensor, use `Create1DInputModel` instead of the `Create2DInputModel`.
 
