@@ -42,8 +42,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+          hideable: true,
+        }
+      },
       navbar: {
-        title: 'Home',
+        title: '',
         logo: {
           alt: 'Xircuits Logo',
           src: 'img/xircuits-logo.png',
@@ -54,6 +59,12 @@ const config = {
             docId: 'index',
             position: 'left',
             label: 'Docs',
+          },
+          {
+            type: 'doc',
+            docId: 'references/cli-commands',
+            position: 'left',
+            label: 'Commands',
           },
           {to: 'https://www.xpress.ai/blog/', label: 'Blog', position: 'left'},
           {
@@ -74,8 +85,8 @@ const config = {
                 to: '/docs/category/getting-started',
               },
               {
-                 label: 'User Guide',
-                 to: '/docs/category/user-guide',
+                 label: 'Tutorials',
+                 to: '/docs/category/tutorials',
               },
               {
                 label: 'Developer Guide',

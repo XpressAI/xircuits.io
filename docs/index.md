@@ -7,7 +7,7 @@ sidebar_position: 0
 
 ![frontpage](/img/docs/xircuits-frontpage.gif)
 
-Xircuits is a Jupyterlab-based extension that enables visual, low-code, training workflows. It allows anyone to easily create executable python code in seconds.
+Xircuits is a Jupyterlab-based extension that enables visual, low-code, training workflows. It allows anyone to easily create executable Python code in seconds.
 
 It is created by data scientists for data scientists. 
 
@@ -32,11 +32,11 @@ It is created by data scientists for data scientists.
 <details>
   <summary><b>Code Generation</b></summary>
 
-  Xircuits generates executable python scripts from the canvas. As they're very customizable, you can perform DevOps automation like actions. Consider this Xircuits template which trains an mnist classifier.
+  Xircuits generates executable Python scripts from the canvas. As they're very customizable, you can perform DevOps automation like actions. Consider this Xircuits template which trains an mnist classifier.
   
   ![codegen-hyperparameter](/img/docs/codegen-hyperparameter.gif)
 
-  You can run the code generated python script in Xircuits, but you can also take the same script to train 3 types of models in one go using bash script:
+  You can run the code generated Python script in Xircuits, but you can also take the same script to train 3 types of models in one go using bash script:
 
     TrainModel.py --epoch 5 --model "resnet50"
     TrainModel.py --epoch 5 --model "vgg16"
@@ -48,7 +48,7 @@ It is created by data scientists for data scientists.
 <summary><b>Famous Python Library Support</b></summary>
 Xircuits is built on top of the shoulders of giants. Perform ML and DL using Tensorflow or Pytorch, accelerate your big data processing via Spark, or perform autoML using Pycaret. We're constantly updating our Xircuits library, so stay tuned for more!
 
-Didn't find what you're looking for? Creating Xircuits components is very easy! If it's in python - it can be made into a component. Your creativity is the limit, create components that are easily extendable!
+Didn't find what you're looking for? Creating Xircuits components is very easy! If it's in Python - it can be made into a component. Your creativity is the limit, create components that are easily extendable!
 
 </details>
 
@@ -64,7 +64,7 @@ Created a cool component library? All your colleagues need to do is to drop your
 </details>
 
 And many more.
-## Workflow
+## How it Works
 1. Create a new Xircuits from the Jupyterlab launcher or open an existing .xircuits file.
 
 ![xircuit](/img/docs/open-xircuits.gif)
@@ -73,10 +73,18 @@ And many more.
 
 ![xircuit-components](/img/docs/components.gif)
 
-3. Press Compile button! The Xircuits will compile the components into a working python code.
+3. Press Compile button! The Xircuits will compile the components into a working Python code.
 
 ![xircuit-parser](/img/docs/python-parser.gif)
 
-4. Run the compiled python code using your own terminal or use our Output Viewer. 
+4. Run it!
 
 ![xircuit-runner](/img/docs/xircuits-runner.gif)
+
+Xircuits will execute the compiled Python code on the Output Viewer.  
+## Great, how do I start?
+### Xircuits New Users
+If you're someone who've just started and would like to try out Xircuits, we recommend checking out the first `tutorials`! Learn how to run and modify existing workflows for your use case. You can then learn to create workflows from prebuilt components. You don't have to know how to code to use Xircuits. 
+
+### Component Library Developers
+You've gotten the charge of Xircuits, and now you're looking to create components and workflows for Xircuits users. You'll be looking for the [Developer Guide](../docs/category/developer-guide) section. We have documented how to create components and component libraries.

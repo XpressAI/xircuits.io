@@ -7,7 +7,7 @@ To ensure a robust codegen compilation, we have set several rules and logics for
 
 ## Node Logic
 
-- A node is a [xircuits component](../technical-concepts/xircuits-components/getting-started-with-xircuits-components.md).
+- A node is a [Xircuits component](../technical-concepts/xircuits-components/getting-started-with-xircuits-components.md).
 - Each canvas will have a `Start` and `Finish` node, which cannot be deleted.
 - Nodes can be locked. Nodes that are locked cannot be moved nor deleted.
 - All component library nodes must be linked to compile and execute a workflow. 
