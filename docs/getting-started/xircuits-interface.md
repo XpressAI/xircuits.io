@@ -36,14 +36,6 @@ From top to bottom:
 
 ## The Workflow Canvas
 
-You will spend the majority of your time in the Xircuits workflow canvas. The following are the common interfaces that you will use:
-
-  1. Xircuits Toolbar
-  2. Component Interfaces
-  3. Link Interfaces
-  4. Context Menu Interface
-### Starting a Xircuits Canvas
-
 You can start the Xircuits workflow canvas in two ways:
 1. Opening an existing .xircuits file.
 2. Creating a new Xircuits canvas via launcher.
@@ -54,6 +46,12 @@ You can start the Xircuits workflow canvas in two ways:
   <img src="/img/docs/open-xircuits.gif"></img></p>
 </details>
 
+The following are the common canvas interfaces that you will use:
+
+  1. [Xircuits Toolbar](#the-xircuits-toolbar)
+  2. [Component Interfaces](#component-related-interfaces)
+  3. [Link Interfaces](#link-related-interfaces)
+  4. [Context Menu Interface](#right-click-context-menu)
 ### The Xircuits Toolbar
 
 The Xircuits toolbar is displayed on top of every Xircuits canvas. From left to right:
@@ -79,14 +77,14 @@ The Xircuits toolbar is displayed on top of every Xircuits canvas. From left to 
 
 ### Component Related Interfaces
 
-A Xircuit workflow will be populated with various library components, as one shown below.
+Components are the gears of a Xircuits workflow which performs specific actions in sequence. Here's an example:
 
 ![xircuits-component-example](/img/docs/getting-started/xircuits-component.png)
 
 Each Xircuits components will usually have the following attributes:
-1. **Component Name:** A unique name that identifies the component. 
-2. **Triangle [▶] Ports:** These ports indicate the sequence of the workflow. All ▶ ports must be connected from the `Start` Node to `Finish` Node.
-3. **Parameter Ports:** These ports modify the behavior of the library component. They can be linked by `Literal`, `Hyperparameter` components or by other library components. If the inPort has a `*` symbol, users **must** supply the port with a parameter.
+  1. **Component Name:** A unique name that identifies the component. 
+  2. **Triangle [▶] Ports:** These ports indicate the sequence of the workflow. All ▶ ports must be connected from the `Start` Node to `Finish` Node.
+  3. **Parameter Ports:** These ports modify the behavior of the library component. They can be linked by `Literal`, `Hyperparameter` components or by other library components. If the inPort has a `*` symbol, it is a `compulsory inPort`. Users *must* link the port with a parameter. 
 
 There are a few additional interfaces for library components. They are located at top right corner of components. 
 
