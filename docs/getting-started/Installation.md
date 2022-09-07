@@ -1,3 +1,7 @@
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ---
 sidebar_position: 1
 ---
@@ -6,12 +10,26 @@ sidebar_position: 1
 You will need Python 3.8+ to install Xircuits. 
 :::tip
 
-We recommend installing in a virtual environment such as Python [venv](https://docs.python.org/3/library/venv.html). 
+We recommend installing in a virtual environment such as Python [venv](https://docs.python.org/3/library/venv.html).
+<Tabs>
 
-```
+<TabItem value="win" label="Windows">
+
+```bash
 $ python -m venv venv
 $ source venv/Scripts/activate
 ```
+
+</TabItem>
+<TabItem value="MacOS / Linux" label="MacOS / Linux">
+
+```bash
+$ python -m venv venv
+$ source venv/bin/activate
+```
+
+</TabItem>
+</Tabs>
 
 :::
 
