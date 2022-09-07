@@ -1,10 +1,11 @@
+---
+sidebar_position: 1
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
----
-sidebar_position: 1
----
+
 
 # Installation
 You will need Python 3.8+ to install Xircuits. 
