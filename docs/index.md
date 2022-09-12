@@ -5,7 +5,7 @@ title: "Welcome To Xircuits!"
 ---
 # Xircuits Documentation
 
-Welcome to Xircuits! If you're looking to learn more about Xircuits we've got your back - we've provided extensive documentation to support you. 
+If you're looking to learn more about Xircuits, you're in the right place. We've provided extensive documentation to support you. 
 
 ## First Steps
 Are you new to Xircuits? Here's some quick links to start!

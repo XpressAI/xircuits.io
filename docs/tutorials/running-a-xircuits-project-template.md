@@ -27,9 +27,9 @@ You can view the available project repositories [here](https://github.com/Xpress
 
 When using a project template, you will primarily work with these files and directories:
 
-1. Readme - The starting point of every project. Typically contains information on how to setup the project, the Xircuits workflows, and often a description of the components inside.
-2. xircuits-workflows - this is where all the Xircuits workflows that can perform the project objective are kept.
-3. xai_components - this is where the Xircuits components used in the `xircuits-workflows` are defined.
+1. **Readme** - the starting point of every project. Typically contains information on how to setup the project, the Xircuits workflows, and often a description of the components inside.
+2. **xircuits-workflows** - this is where all the Xircuits workflows that can perform the project objective are kept.
+3. **xai_components** - this is where the Xircuits components used in the `xircuits-workflows` are defined.
 
 **Explore the Iris Classification project template.**
 
@@ -41,7 +41,7 @@ For each project template, the recommended way of setting up the project and ins
 bash setup.sh
 ```
 
-For simple project templates, it will usually just perform `pip install -r requirements.txt` that will install the python packages along with Xircuits. For more advanced projects, it may download datasets or create directories.
+For simple project templates, it will usually just perform `pip install -r requirements.txt` that will install the python packages along with Xircuits. For more advanced projects, it may download datasets, create directories and other commands.
 
 **Setup the Iris Classification project template by running `bash setup.sh`.**
 
@@ -52,20 +52,12 @@ Once you've setup the project, a Xircuits project template becomes a normal Xirc
 2. Navigate to `xircuits-workflows`.
 3. Run the Xircuits workflows. 
 
-**Press Save then Compile, then verify that the Python script has been generated.**
+**Run IrisClassification.xircuits. You should get the following output:**
 
+<details>
+  <summary>Video</summary>
+  <p align="center">
+  <img src="/img/docs/tutorials/iris_template.gif"></img></p>
+</details>
 
 Congratulations you have successfully ran your first Xircuits project template! From here, you should be able to run any project templates. Be sure to checkout the [Xircuits project template list](https://github.com/XpressAI/xircuits/project%20templates) if you want to see the various project template workflows made by our engineers and open source contributors.
-
-
-
-### Commonly Faced Errors:
-<details>
-  <b>ModuleNotFoundError</b>
-
-  You have not installed the needed libraries for that specific component library! For this tutorial, ensure that you have run the prerequisites.
-
-  <b>Please connect all the nodes before running.</b>
-
-  The Xircuits workflow is not complete! Please ensure the blue links from the `Start` node to the `Finish` node is completely connected.
-</details><br></br>
