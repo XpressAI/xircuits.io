@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 import Tabs from '@theme/Tabs';
@@ -46,9 +46,9 @@ $ pip install xircuits
 
 ## Installing Xircuits Component Libraries
 
-Xircuits has various [component libraries](https://github.com/XpressAI/xircuits/blob/master/xai_components/readme.md). To use them, install them via `pip install xircuits[packageName]`.
+Before being able to use a component library, you need to install them via `pip install xircuits[packageName]`.
 
-For example, to be able to use the pytorch components, run:
+For example, to be able to use the Pytorch components, run:
 ```
 $ pip install xircuits[pytorch]
 ```
@@ -58,7 +58,7 @@ Additionally you can also get all the component library packages via:
 ```
 $ pip install xircuits[full]
 ```
-We wouldn't recommended it though as it's very large!
+We wouldn't recommended it though as it's very large! For the full list of supported libraries, you can visit the [component libraries page](https://github.com/XpressAI/xircuits/blob/master/xai_components/readme.md).
 
 ## Download Examples
 
