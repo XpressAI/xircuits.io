@@ -22,7 +22,7 @@ Here's high-level overview of how the documentation is organized will help you k
 - [**Examples**](category/examples) guide you through the steps involved in possible Xircuits use-cases. They are more advanced than tutorials and assume some foundation knowledge of how that particular use-case works and instead focus on how it can be implemented in Xircuits.
 - [**Developer Guide**](category/developer-guide) are guides so that you can create components and workflows for Xircuits users.
 - [**Technical Concepts**](category/technical-concepts) discuss key topics and concepts at a fairly high level and provide useful background information and explanation.
-- [**References**](category/) while not very structured, it contains technical reference for APIs and other aspects of Xircuits’ machinery. 
+- [**References**](category/references) while not very structured, it contains technical reference for APIs and other aspects of Xircuits’ machinery. 
 
 ## Getting Help
 Having trouble? We’d like to help!
