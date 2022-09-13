@@ -18,7 +18,7 @@ Ensure that you already have a Xircuits working directory before proceeding.
 1. Create a directory in xai_components called `xai_newLibrary`.
 2. Inside that directory, indicate that your component library is a Python module by creating `__init__.py`. Leave it blank.
 3. Inside xai_newLibrary, create `component_code.py`. Inside `component_code.py`, import the needed base Xircuits modules: `from xai_components.base import InArg, OutArg, Component, xai_component`.
-6. Insert your component definition inside `component_code.py`. You can use the same component created in the previous guide, or create a new one.
+6. Insert your component definition inside `component_code.py`. You can use the same component created in the [previous guide](creating-a-xircuits-component.md), or create a new one.
 7. Finally, inside `xai_newLibrary`, create `requirements.txt`. Populate the txt file with the required packages to install your library, or leave it blank if it does not require any additional library.
 
 If you have done it correctly, you should end up with a directory tree similar to this:
