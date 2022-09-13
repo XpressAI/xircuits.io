@@ -18,7 +18,7 @@ Starting a Xircuits project template is simple. All you need is to clone an exis
 $ git clone project-url
 ```
 
-You can view the available project repositories [here](https://github.com/XpressAI/xircuits/project%20templates). 
+You can view the available project repositories [here](https://github.com/XpressAI/xircuits/tree/master/project-templates#list-of-open-source-project-templates). 
 
 **For this tutorial, clone `https://github.com/XpressAI/template-iris_classification`**
 
@@ -60,4 +60,4 @@ Once you've setup the project, a Xircuits project template becomes a normal Xirc
   <img src="/img/docs/tutorials/iris_template.gif"></img></p>
 </details>
 
-Congratulations you have successfully ran your first Xircuits project template! From here, you should be able to run any project templates. Be sure to checkout the [Xircuits project template list](https://github.com/XpressAI/xircuits/project%20templates) if you want to see the various project template workflows made by our engineers and open source contributors.
+Congratulations you have successfully ran your first Xircuits project template! From here, you should be able to run any project templates. Be sure to checkout the [Xircuits project template list](https://github.com/XpressAI/xircuits/tree/master/project-templates#list-of-open-source-project-templates) if you want to see the various project template workflows made by our engineers and open source contributors.

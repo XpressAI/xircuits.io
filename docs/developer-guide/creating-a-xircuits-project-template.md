@@ -44,4 +44,4 @@ $ git submodule update
 
 ## Submitting the Project Template to Xircuits
 
-If your project is something extendable and you'd like to share to the world, you are more welcome to submit it to our official [Xircuits Project Template list](https://github.com/XpressAI/xircuits/project-templates#readme).
+If your project is something extendable and you'd like to share to the world, you are more welcome to submit it to our official [Xircuits Project Template list](https://github.com/XpressAI/xircuits/tree/master/project-templates#list-of-open-source-project-templates).
