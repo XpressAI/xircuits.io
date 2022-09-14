@@ -17,12 +17,12 @@ To ensure a robust codegen compilation, we have set several rules and logics for
 - Parameter Ports are `inArg` and `outArg` rendered into `inPorts` and `outPorts` respectively.
 - You can only link from an `outPort` to an `inPort`.
 
-### Triangle [ `▶` ] Ports
+### Flow [ `▶` ] Ports
 
-- ▶ Ports indicates sequence of execution.
-- All ▶ ports must be linked from `Start` to `Finish`.
-- You cannot create a ▶ loop. 
-- You can only link ▶ ports to ▶ ports, and parameter to parameter ports.
+- Flow Ports indicates sequence of execution.
+- All flow ports must be linked from `Start` to `Finish`.
+- You cannot create a flow loop. 
+- You can only link flow ports to flow ports, and parameter to parameter ports.
 
 ### Compulsory Ports
 - `Compulsory inPorts` are rendered `inCompArg` indicated with the `*` symbol. 

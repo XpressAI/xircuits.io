@@ -1,15 +1,12 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 id: passing-data-between-components
 title: Passing Data between Components
-tags:
-  - component dev
-  - tutorials
 ---
 
 # Passing Data between Components
 
-There are two ways of passing data between components: through ports and by utilizing the Xircuits context (ctx). The tutorial below will walk you through a simple example using ports. 
+There are two ways of passing data between components: through ports and by utilizing the Xircuits context (ctx). The guide below will walk you through a simple example using ports. 
 
 
 ## Passing Data via Ports

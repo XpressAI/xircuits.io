@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Your First Xircuits Workflow
@@ -7,17 +7,19 @@ sidebar_position: 2
 The following tutorial will walk you through a basic Xircuits run. You will open an existing Xircuits workflow that trains a model, learn how to modify the parameters for your use case, and then run it.
 
 ## Prerequisites
-1. For this tutorial, please ensure that you already have the `xai_learning` related libraries installed. You can do this by `pip install xircuits[learning]` or by `pip install -r xai_components/xai_learning/requirements.txt`.
-2. Ensure that you have the `examples` folder in your working directory. After Xircuits is installed, you can download it by running `xircuits-examples` in the command line.
+For this tutorial, ensure that:
+1. You have a Python version that is compatible with Xircuits (Python 3.8+).
+2. You already have the `xai_learning` related libraries installed. You can do this by `pip install xircuits[learning]` or by `pip install -r xai_components/xai_learning/requirements.txt`.
+3. Ensure that you have the `examples` folder in your working directory. After Xircuits is installed, you can download it by running `xircuits-examples` in the command line.
 
 ## Opening an existing Xircuits File
-New Xircuits users are recommended to start with premade Xircuits workflow templates created by developers. The task would be to change the parameters for their use case. In Xircuits, we have created a handful of templates for you to try in the examples directory. 
+New Xircuits users are recommended to start with premade Xircuits workflows created by developers. The task would be to change the parameters for their use case. In Xircuits, we have created a handful of workflows for you to try in the `examples` directory. 
 
 **For this tutorial, open `KerasTrainImageClassifier.xircuits` in the example directory.**
 
 ## Viewing and Interpreting the Xircuits Canvas
 
-Once the Xircuits canvas is open, you will see the [Xircuits Interface](../getting-started/xircuits-interface.md). 
+Once the Xircuits canvas is open, you will see the [Xircuits Interface](../references/xircuits-interface.md). 
 
 A Xircuits workflow starts from the `Start` node to the `Finish` node. The flow sequence is indicated by the flowing blue links connecting the ▶ ports. A component node may also have data ports, which indicates how a component can receive data and parameters to configure their behavior, as well as pass data to the next nodes.
 
@@ -27,12 +29,12 @@ If you are unsure what a component does, you can click on the component informat
 
 ## Modifying the Xircuits Workflow
 
-As previously mentioned, a Xircuits User will usually work on a premade workflow template and adjust the parameter components for their use case. To modify `Literal Components` such as `Literal Int` or `Literal String`, simply double click on the component, and you will be prompted to change the value.
+As previously mentioned, a Xircuits User will usually work on a premade workflow and adjust the parameter components for their use case. To modify `Literal Components` such as `Literal Int` or `Literal String`, simply double click on the component, and you will be prompted to change the value.
 
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/getting-started/edit-literal.gif"></img></p>
+  <img src="/img/docs/references/edit-literal.gif"></img></p>
 </details>
 
 For more advanced users, you may add more component nodes from the Xircuits component tray, or by dropping a link from a port.
@@ -93,7 +95,7 @@ To run the workflow, press the `Save & Compile` button. It will prompt you to sa
 </details><br></br>
 
 
-Congratulations you have successfully ran your first Xircuits workflow! From here, you should be able to run any Xircuits template examples. Jump to the [Examples](../category/examples/) section if you want to see the various templates made by our engineers and open source contributors.
+Congratulations you have successfully ran your first Xircuits workflow! From here, you should be able to run any Xircuits workflow examples. Jump to the [Examples](../category/examples/) section if you want to see the various workflows made by our engineers and open source contributors.
 
 
 
