@@ -84,7 +84,7 @@ Components are the gears of a Xircuits workflow which performs specific actions 
 
 Each Xircuits components will usually have the following attributes:
   1. **Component Name:** A unique name that identifies the component. 
-  2. **Triangle [▶] Ports:** These ports indicate the sequence of the workflow. All ▶ ports must be connected from the `Start` Node to `Finish` Node.
+  2. **Flow [▶] Ports:** These ports indicate the sequence of the workflow. All flow ports must be connected from the `Start` Node to `Finish` Node.
   3. **Parameter Ports:** These ports modify the behavior of the library component. They can be linked by `Literal`, `Hyperparameter` components or by other library components. If the inPort has a `*` symbol, it is a `compulsory inPort`. Users *must* link the port with a parameter. 
 
 There are a few additional interfaces for library components. They are located at top right corner of components. 
