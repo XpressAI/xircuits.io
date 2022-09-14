@@ -2,6 +2,7 @@
   "label": "Technical Concepts",
   "position": 5,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Here are discussions on topics and concepts at a fairly high level and provide useful background information and explanation."
   }
 }
