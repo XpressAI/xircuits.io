@@ -67,4 +67,7 @@ We have provided a Xircuits library template repository [here](https://github.co
     
     Once complete, you should be able to render and use the components from the tray.
 
-Creating individual component library repositories is the recommended way if your project requires multiple libraries that are also used in other projects. You can also submit your own component library to our official [Xircuits Component Library list](https://github.com/XpressAI/xircuits/tree/master/xai_components#readme).
+Creating individual component library repositories is the recommended way if your project requires multiple libraries that are also used in other projects. 
+
+## Contributing your Own Component Library
+Our official [Xircuits Component Library list](https://github.com/XpressAI/xircuits/tree/master/xai_components#readme) is built from our devs and open-source contributors. If you would like your component library to be included in this list, we've made a [guide](../contributing/contributing-a-xircuits-component-library.md) for you.
