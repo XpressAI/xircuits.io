@@ -24,8 +24,8 @@ jobs:
         run: |
           curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
           . ~/.nvm/nvm.sh
-          nvm install 14.17.0
-          nvm use 14.17.0
+          nvm install 18.14.2
+          nvm use 18.14.2
 
       - name: Install dependencies
         run: npm install
