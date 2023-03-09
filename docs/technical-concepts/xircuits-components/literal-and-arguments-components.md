@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# Literal & Hyperparameters Components
+# Literal & Argument Components
 
-To supply your Xircuits library components with customizable parameters, we provide `Literal` and `Hyperparameter` components as general components. The main difference between them can be observed in the generated code. Consider the training_epoch parameter in the TrainImageClassifier component below. 
+To supply your Xircuits library components with customizable parameters, we provide `Literal` and `Argument` components as general components. The main difference between them can be observed in the generated code. Consider the training_epoch parameter in the TrainImageClassifier component below. 
 
 ![SampleTraining](/img/docs/examples/computer-vision/SampleTraining.png)
 
@@ -43,11 +43,11 @@ if __name__ == '__main__':
 
 As you can see, the value is passed in as a `Literal Integer` to the TrainImageClassifier component. 
 
-## Hyperparameter Component
+## Argument Component
 
-The following example shows if the hyperparameter component is used. Xircuits will prompt you to supply the parameter through our hyperparameter window prompt.
+The following example shows if the argument component is used. Xircuits will prompt you to supply the parameter through our argument window prompt.
 
-![HyperparameterComponent](HyperparameterComponent.gif)
+![ArgumentComponent](ArgumentComponent.gif)
 
 And it will be supplied as a argument in the generated code.
 
@@ -79,7 +79,7 @@ if __name__ == '__main__':
 
 And then executed by running `SampleTraining.py --epoch 3`
 
-From a user perspective, both components are perfectly executable in Xircuits, however the one supplied with hyperparameters are more flexible if executed outside Xircuits. For example, consider the situation that you would like to automate your training workflow that displays the accuracy of your model for each training dataset. If you use Hyperparameter components, you could simply run:
+From a user perspective, both components are perfectly executable in Xircuits, however the one supplied with arguments are more flexible if executed outside Xircuits. For example, consider the situation that you would like to automate your training workflow that displays the accuracy of your model for each training dataset. If you use Argument components, you could simply run:
 
 ```
 python TrainingScript.py --dataset mnist

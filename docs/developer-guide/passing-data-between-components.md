@@ -113,10 +113,10 @@ Passing data via ports is as simple as declaring the port variable as `InArg` or
 
 
 ## Notes:
-- An inPort can also be linked to a `Literal` or a `Hyperparameter` component given the correct data type.
+- An inPort can also be linked to a `Literal` or a `Argument` component given the correct data type.
 - Declaring the port type as `any` will bypass the port type check.
 
 
 Read More:
 - [Xircuits Context](../technical-concepts/xircuits-context.md)
-- [Literals and Hyperparameters](../technical-concepts/xircuits-components/literal-and-hyperparameters-components.md)
+- [Literals and Arguments](../technical-concepts/xircuits-components/literal-and-arguments-components.md)

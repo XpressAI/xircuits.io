@@ -30,7 +30,7 @@ From top to bottom:
 1. **Search Bar**: Searches your component.
 2. **Refresh**: Refreshes component list. Use when adding new components and/or modifying existing ones.
 3. **Xircuits Component List**: Components to be dragged into the Xircuits canvas. There are two main types of components.
-    - [General Components](../technical-concepts/xircuits-components/getting-started-with-xircuits-components.md#general-components) - General use components that supply *parameters* or *hyperparameters* to library components.
+    - [General Components](../technical-concepts/xircuits-components/getting-started-with-xircuits-components.md#general-components) - General use components that supply *parameters* or *arguments* to library components.
     - [Library Components](../technical-concepts/xircuits-components/getting-started-with-xircuits-components.md#xircuits-library-components) - Custom components that are created from various Python frameworks. 
 
     Read the [component documentation](../technical-concepts/xircuits-components/getting-started-with-xircuits-components.md) for a more in-depth explanation on components.
@@ -85,7 +85,7 @@ Components are the gears of a Xircuits workflow which performs specific actions 
 Each Xircuits components will usually have the following attributes:
   1. **Component Name:** A unique name that identifies the component. 
   2. **Flow [▶] Ports:** These ports indicate the sequence of the workflow. All flow ports must be connected from the `Start` Node to `Finish` Node.
-  3. **Parameter Ports:** These ports modify the behavior of the library component. They can be linked by `Literal`, `Hyperparameter` components or by other library components. If the inPort has a `*` symbol, it is a `compulsory inPort`. Users *must* link the port with a parameter. 
+  3. **Parameter Ports:** These ports modify the behavior of the library component. They can be linked by `Literal`, `Argument` components or by other library components. If the inPort has a `*` symbol, it is a `compulsory inPort`. Users *must* link the port with a parameter. 
 
 There are a few additional interfaces for library components. They are located at top right corner of components. 
 

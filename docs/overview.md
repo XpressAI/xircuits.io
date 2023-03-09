@@ -34,7 +34,7 @@ It is created by data scientists for data scientists.
 
   Xircuits generates executable Python scripts from the canvas. As they're very customizable, you can perform DevOps automation like actions. Consider this Xircuits workflow which trains an mnist classifier.
   
-  ![codegen-hyperparameter](/img/docs/codegen-hyperparameter.gif)
+  ![codegen-argument](/img/docs/codegen-argument.gif)
 
   You can run the code generated Python script in Xircuits, but you can also take the same script to train 3 types of models in one go using bash script:
 
