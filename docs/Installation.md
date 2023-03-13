@@ -40,8 +40,21 @@ To install Xircuits run:
 $ pip install xircuits
 ```
 
+## Canary Installation
 
+If you'd like the latest goodies (but might be unstable features) of Xircuits, you may grab the wheel from our Github Actions. Select the Python Package Builder run from a master branch, and download the wheel artifact.
 
+<details>
+  <summary>Video</summary>
+  <p align="center">
+  <img src="/img/docs/download-wheel.gif"></img></p>
+</details>
+
+After downloading the artifact, extract the wheel to your working directory then install it using 
+
+```
+$ pip install xircuits-version-py3.none-any.whl
+```
 
 
 ## Installing Xircuits Component Libraries
@@ -73,4 +86,4 @@ Finally to launch it, run:
 ```
 $ xircuits
 ```
-You will be prompted to load the xai_components in the current path. We recommend doing so to be able to edit them.
+You will be prompted to load the `xai_components` in the current path. We recommend doing so to be able to edit them.
