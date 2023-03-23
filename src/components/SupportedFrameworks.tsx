@@ -1,9 +1,3 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
 import React from 'react';
 import clsx from 'clsx';
 import styles from './SupportedFrameworks.module.css';
@@ -30,12 +24,24 @@ const FrameworkList: FrameworkItem[] = [
     title: 'Pycaret',
     image: '/img/website/frameworks/pycaret.png',
   },
+  {
+    title: 'Streamlit',
+    image: '/img/website/frameworks/streamlit.svg',
+  },
+  {
+    title: 'RabbitMQ',
+    image: '/img/website/frameworks/rabbitmq.svg',
+  },
+  {
+    title: 'MQTT',
+    image: '/img/website/frameworks/mqtt.png',
+  },
 ];
 
 function Framework({title, image}: FrameworkItem) {
   return (
-    <div className={clsx('col')}>
-      <div className="text--center">
+    <div className={clsx('col', styles.col)}>
+      <div className={styles.featureImgContainer}>
         <img className={styles.featureImg} alt={title} src={image} />
       </div>
     </div>
@@ -46,7 +52,7 @@ function FrameworkDisplay(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
+        <div className={clsx('row', styles.row)}>
           {FrameworkList.map((props, idx) => (
             <Framework key={idx} {...props} />
           ))}
@@ -59,12 +65,11 @@ function FrameworkDisplay(): JSX.Element {
 export default function SupportedFramework(): JSX.Element {
   return (
     <section>
-        <br></br>
-        <section className={styles.homepageHeader}>
-          <h1>Supported Frameworks</h1>
-        </section>
-
-        <FrameworkDisplay />
+      <br />
+      <section className={styles.homepageHeader}>
+        <h1>Supported Frameworks</h1>
+      </section>
+      <FrameworkDisplay />
     </section>
   );
 }
