@@ -56,15 +56,27 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'index',
+            docId: 'main/index',
             position: 'left',
             label: 'Docs',
           },
           {
             type: 'doc',
-            docId: 'references/cli-commands',
+            docId: 'main/references/cli-commands',
             position: 'left',
-            label: 'Commands',
+            label: 'CLI Commands',
+          },
+          {
+            type: 'doc',
+            docId: 'component-library/index',
+            position: 'left',
+            label: 'Component Library',
+          },
+          {
+            type: 'doc',
+            docId: 'project-template/index',
+            position: 'left',
+            label: 'Project Template',
           },
           {to: 'https://www.xpress.ai/blog/', label: 'Blog', position: 'left'},
           {
@@ -82,19 +94,19 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/docs/#first-steps',
+                to: 'docs/main/#first-steps',
               },
               {
                  label: 'Tutorials',
-                 to: '/docs/category/tutorials',
+                 to: 'docs/category/tutorials',
               },
               {
                 label: 'Developer Guide',
-                to: '/docs/category/developer-guide',
+                to: 'docs/category/developer-guide',
              },
               {
                 label: 'Examples',
-                to: '/docs/category/examples',
+                to: 'docs/category/examples',
              },
             ],
           },

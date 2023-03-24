@@ -7,7 +7,7 @@ To ensure a robust codegen compilation, we have set several rules and logics for
 
 ## Node Logic
 
-- A node is a [Xircuits component](../technical-concepts/xircuits-components/getting-started-with-xircuits-components.md).
+- A node is a [Xircuits component](main/technical-concepts/xircuits-components/getting-started-with-xircuits-components.md).
 - Each canvas will have a `Start` and `Finish` node, which cannot be deleted.
 - Nodes can be locked. Nodes that are locked cannot be moved nor deleted.
 - All component library nodes must be linked to compile and execute a workflow. 
@@ -53,7 +53,7 @@ To ensure a robust codegen compilation, we have set several rules and logics for
 
 ## Link Logic
 - A link is created when you select and drag from a port.
-- Linking an `outPort` to an `inPort` will indicate [data passing between components](../developer-guide/passing-data-between-components.md).
+- Linking an `outPort` to an `inPort` will indicate [data passing between components](main/developer-guide/passing-data-between-components.md).
 - If a link is not dropped on a port, it will prompt the component tray interface. Selecting one of the components will automatically link the ▶ ports.
     <details>
     <summary>Video</summary>
