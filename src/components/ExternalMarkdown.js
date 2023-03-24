@@ -24,6 +24,19 @@ const extractSection = (markdown, header) => {
   return sectionLines.join('\n');
 };
 
+const renderLink = (props) => {
+  const href = props.href || '';
+  if (href.endsWith('.mp4')) {
+    return (
+      <video controls style={{ maxWidth: '100%', width: '640px', height: 'auto' }}>
+        <source src={href} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    );
+  }
+  return <a {...props}>{props.children}</a>;
+};
+
 const ExternalMarkdown = ({ url, header, placeholder }) => {
   const [markdownContent, setMarkdownContent] = useState(null);
   const [error, setError] = useState(false);
@@ -62,7 +75,11 @@ const ExternalMarkdown = ({ url, header, placeholder }) => {
   }
 
   return (
-    <ReactMarkdown remarkPlugins={[gfm]} rehypePlugins={[rehypeRaw]}>
+    <ReactMarkdown
+      remarkPlugins={[gfm]}
+      rehypePlugins={[rehypeRaw]}
+      components={{ a: renderLink }}
+    >
       {markdownContent}
     </ReactMarkdown>
   );
