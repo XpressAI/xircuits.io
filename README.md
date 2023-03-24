@@ -1,4 +1,4 @@
-# Website
+# Xircuits.io
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
@@ -31,3 +31,20 @@ $ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+### Fetching and Displaying External Markdowns
+
+You can fetch and display specific sections of external markdown files with customizable error placeholders. This is primarily used for fetching component libraries and project templates readmes. 
+
+Here's a sample of how you can do it. 
+```
+import ExternalMarkdown from '@site/src/components/ExternalMarkdown';
+
+# Example Markdown
+
+<ExternalMarkdown
+  url="https://raw.githubusercontent.com/XpressAI/xircuits/master/xai_components/readme.md"
+  header="Internal Library"
+  placeholder="Content is unavailable or the specified section is not found."
+/>
+```
