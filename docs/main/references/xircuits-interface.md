@@ -30,7 +30,7 @@ From top to bottom:
 1. **Search Bar**: Searches your component.
 2. **Refresh**: Refreshes component list. Use when adding new components and/or modifying existing ones.
 3. **Xircuits Component List**: Components to be dragged into the Xircuits canvas. There are two main types of components.
-    - [General Components](xircuits-components/getting-started-with-xircuits-components#general-components) - General use components that supply *parameters* or *arguments* to library components.
+    - [General Components](../technical-concepts/xircuits-components/getting-started-with-xircuits-components#general-components) - General use components that supply *parameters* or *arguments* to library components.
     - [Library Components](../technical-concepts/xircuits-components/getting-started-with-xircuits-components#xircuits-library-components) - Custom components that are created from various Python frameworks. 
 
     Read the [component documentation](../technical-concepts/xircuits-components/getting-started-with-xircuits-components) for a more in-depth explanation on components.

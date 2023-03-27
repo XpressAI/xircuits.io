@@ -5,11 +5,14 @@ description: "Learn how to make a Xircuits workflow to load prebuilt Keras model
 
 # Keras
 
-Before running this example, ensure that you have already installed the keras related packages. You can do this by:
+Before running this example, ensure that you have already installed the Keras related packages. You can do this by:
 
 ```
-$ pip install xircuits[learning]
+$ pip install xircuits[tensorflow_keras]
 ```
+
+or alternatively use the `requirements.txt` in the `xai_components/xai_tensorflow_keras` directory.
+
 ## Loading a Keras Model and Performing Inference
 
 ![xircuit-runner](/img/docs/xircuits-runner.gif)
