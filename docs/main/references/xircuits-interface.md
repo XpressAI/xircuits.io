@@ -30,10 +30,10 @@ From top to bottom:
 1. **Search Bar**: Searches your component.
 2. **Refresh**: Refreshes component list. Use when adding new components and/or modifying existing ones.
 3. **Xircuits Component List**: Components to be dragged into the Xircuits canvas. There are two main types of components.
-    - [General Components](docs/main/technical-concepts/xircuits-components/getting-started-with-xircuits-components#general-components) - General use components that supply *parameters* or *arguments* to library components.
-    - [Library Components](docs/main/technical-concepts/xircuits-components/getting-started-with-xircuits-components#xircuits-library-components) - Custom components that are created from various Python frameworks. 
+    - [General Components](xircuits-components/getting-started-with-xircuits-components#general-components) - General use components that supply *parameters* or *arguments* to library components.
+    - [Library Components](../technical-concepts/xircuits-components/getting-started-with-xircuits-components#xircuits-library-components) - Custom components that are created from various Python frameworks. 
 
-    Read the [component documentation](docs/main/technical-concepts/xircuits-components/getting-started-with-xircuits-components) for a more in-depth explanation on components.
+    Read the [component documentation](../technical-concepts/xircuits-components/getting-started-with-xircuits-components) for a more in-depth explanation on components.
 
 ## The Workflow Canvas
 
@@ -74,7 +74,7 @@ The Xircuits toolbar is displayed on top of every Xircuits canvas. From left to 
 13. **Xircuits Run Options**
     - **Local Run**: Saves, compiles, and executes Xircuits canvas locally.
     - **Run w/o Compile**: Saves current canvas but does not compile the Python script. Executes Python script with the same filename as the .xircuits file.
-    - **Remote Run**: Saves, compiles, then performs a cmd-based remote run. Used often for Spark Submit. For more information, read [Remote Run](docs/main/references/remote-run).
+    - **Remote Run**: Saves, compiles, then performs a cmd-based remote run. Used often for Spark Submit. For more information, read [Remote Run](remote-run).
 
 ### Component Related Interfaces
 

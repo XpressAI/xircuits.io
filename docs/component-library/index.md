@@ -1,6 +1,10 @@
+---
+sidebar_position: 1
+---
+
 import ExternalMarkdown from '@site/src/components/ExternalMarkdown';
 
-# Component Library
+# Xircuits Component Library
 
 <ExternalMarkdown
   url="https://raw.githubusercontent.com/XpressAI/xircuits/master/xai_components/readme.md"
