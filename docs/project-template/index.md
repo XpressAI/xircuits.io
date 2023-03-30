@@ -1,3 +1,9 @@
+---
+sidebar_position: 1
+tags:
+  - project-template
+---
+
 import ExternalMarkdown from '@site/src/components/ExternalMarkdown';
 
 # Xircuits Project Templates
@@ -11,3 +17,5 @@ Xircuits Project Templates are repositories that uses Xircuits for their specifi
   header="List of Open Source Project Templates"
   placeholder="Content is unavailable or the specified section is not found."
 />
+
+Additionally, we also have more advanced enterprise support project templates at our [XpressAi marketplace](https://www.xpress.ai/shop?search=xircuits).

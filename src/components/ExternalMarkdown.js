@@ -26,6 +26,7 @@ const extractSection = (markdown, header) => {
 
 const renderLink = (props) => {
   const href = props.href || '';
+
   if (href.endsWith('.mp4')) {
     return (
       <video controls style={{ maxWidth: '100%', width: '640px', height: 'auto' }}>
@@ -33,7 +34,16 @@ const renderLink = (props) => {
         Your browser does not support the video tag.
       </video>
     );
+  } else if (href.endsWith('.gif')) {
+    return (
+      <img
+        src={href}
+        alt={props.children}
+        style={{ maxWidth: '100%', width: '640px', height: 'auto' }}
+      />
+    );
   }
+
   return <a {...props}>{props.children}</a>;
 };
 
