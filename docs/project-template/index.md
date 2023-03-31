@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 tags:
   - project-template
 ---
@@ -18,4 +18,4 @@ Xircuits Project Templates are repositories that uses Xircuits for their specifi
   placeholder="Content is unavailable or the specified section is not found."
 />
 
-Additionally, we also have more advanced enterprise support project templates at our [XpressAi marketplace](https://www.xpress.ai/shop?search=xircuits).
+Additionally, we offer advanced project templates with enterprise support, accessible through the [XpressAi marketplace](https://www.xpress.ai/shop?search=xircuits).

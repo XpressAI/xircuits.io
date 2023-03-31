@@ -1,6 +1,6 @@
 import ExternalMarkdown from '@site/src/components/ExternalMarkdown';
 
-# XAI Streamlit
+# Streamlit
 
 <ExternalMarkdown
   url="https://raw.githubusercontent.com/XpressAI/xai-streamlit/main/README.md"

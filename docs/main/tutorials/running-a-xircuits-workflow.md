@@ -94,6 +94,19 @@ To run the workflow, press the `Save & Compile` button. It will prompt you to sa
     
 </details><br></br>
 
+:::info
+
+You can also execute the compiled script directly from the command line. To achieve this, first, add the base directory to the Python path by running the following command:
+```
+export PYTHONPATH="$PWD:$PYTHONPATH"
+```
+Afterward, proceed to run the Python script using the following command:
+```
+python KerasTrainImageClassifier.py
+```
+This ensures that the Python interpreter recognizes the modules in the base directory when executing the script.
+
+:::
 
 Congratulations you have successfully ran your first Xircuits workflow! From here, you should be able to run any Xircuits workflow examples. Jump to the [Examples](docs/category/examples/) section if you want to see the various workflows made by our engineers and open source contributors.
 
