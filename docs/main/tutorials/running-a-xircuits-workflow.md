@@ -19,7 +19,7 @@ New Xircuits users are recommended to start with premade Xircuits workflows crea
 
 ## Viewing and Interpreting the Xircuits Canvas
 
-Once the Xircuits canvas is open, you will see the [Xircuits Interface](../references/xircuits-interface.md). 
+Once the Xircuits canvas is open, you will see the [Xircuits Interface](main/references/xircuits-interface.md). 
 
 A Xircuits workflow starts from the `Start` node to the `Finish` node. The flow sequence is indicated by the flowing blue links connecting the ▶ ports. A component node may also have data ports, which indicates how a component can receive data and parameters to configure their behavior, as well as pass data to the next nodes.
 
@@ -94,8 +94,21 @@ To run the workflow, press the `Save & Compile` button. It will prompt you to sa
     
 </details><br></br>
 
+:::info
 
-Congratulations you have successfully ran your first Xircuits workflow! From here, you should be able to run any Xircuits workflow examples. Jump to the [Examples](../category/examples/) section if you want to see the various workflows made by our engineers and open source contributors.
+You can also execute the compiled script directly from the command line. To achieve this, first, add the base directory to the Python path by running the following command:
+```
+export PYTHONPATH="$PWD:$PYTHONPATH"
+```
+Afterward, proceed to run the Python script using the following command:
+```
+python KerasTrainImageClassifier.py
+```
+This ensures that the Python interpreter recognizes the modules in the base directory when executing the script.
+
+:::
+
+Congratulations you have successfully ran your first Xircuits workflow! From here, you should be able to run any Xircuits workflow examples. Jump to the [Examples](docs/category/examples/) section if you want to see the various workflows made by our engineers and open source contributors.
 
 
 
