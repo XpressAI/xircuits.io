@@ -34,4 +34,4 @@ Consider the following workflow:
     ```
 </details>
 
-For more information on how controlflow works, you may refer to the [controlflow reference](../../technical-concepts/controlflow-components.md) page.
+For more information on how controlflow works, you may refer to the [controlflow reference](../../technical-concepts/branch-and-loop-components) page.

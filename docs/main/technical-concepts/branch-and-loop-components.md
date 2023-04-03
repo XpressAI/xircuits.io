@@ -4,9 +4,9 @@ tags:
   - glossary
 ---
 
-# Controlflow Components
+# Branch and Loop Components
 
-With the 1.7 update, Xircuits allows you to implement conditionals and loops in your workflow by allowing users to specify `BaseComponent` as a class attribute. 
+With the 1.7 update, Xircuits allows you to implement branch conditionals and loops in your workflow by allowing users to specify `BaseComponent` as a class attribute. 
 
 In the frontend canvas, it will be rendered as a flow `▶` port, which users are able to flow link to other library components as opposed to just passing values to a parameter port. In this document, we will refer to these extra flow ports as `controlflow ports`.
 
