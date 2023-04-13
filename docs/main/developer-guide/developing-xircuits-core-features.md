@@ -63,9 +63,9 @@ jupyter lab build
 ### Rebuild (Automatically)
 You can watch the source directory and run Xircuits in watch mode to watch for changes in the extension's source and automatically rebuild the extension and application.
 ```
-# Watch the source directory in another terminal tab
+# Watch the source directory in one terminal tab
 jlpm run watch
-# Run Xircuits in watch mode in one terminal tab
+# Run Xircuits in watch mode in another terminal tab
 jupyter lab --watch
 ```
 
