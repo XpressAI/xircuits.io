@@ -1,6 +1,6 @@
 {
   "label": "Spark",
-  "position": 4,
+  "position": 2,
   "link": {
     "type": "generated-index",
     "description": "Learn how to perform Spark operations on Xircuits."
