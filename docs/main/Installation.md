@@ -17,16 +17,16 @@ We recommend installing in a virtual environment such as Python [venv](https://d
 <TabItem value="win" label="Windows">
 
 ```bash
-$ python -m venv venv
-$ source venv/Scripts/activate
+python -m venv venv
+source venv/Scripts/activate
 ```
 
 </TabItem>
 <TabItem value="MacOS / Linux" label="MacOS / Linux">
 
 ```bash
-$ python -m venv venv
-$ source venv/bin/activate
+python -m venv venv
+source venv/bin/activate
 ```
 
 </TabItem>
@@ -37,7 +37,7 @@ $ source venv/bin/activate
 To install Xircuits run:
 
 ```
-$ pip install xircuits
+pip install xircuits
 ```
 
 ## Canary Installation
@@ -53,7 +53,7 @@ If you'd like the latest goodies (but might be unstable features) of Xircuits, y
 After downloading the artifact, extract the wheel to your working directory then install it using 
 
 ```
-$ pip install xircuits-version-py3.none-any.whl
+pip install xircuits-version-py3.none-any.whl
 ```
 
 
@@ -63,13 +63,13 @@ Before being able to use a component library, you need to install them via `pip 
 
 For example, to be able to use the Pytorch components, run:
 ```
-$ pip install xircuits[pytorch]
+pip install xircuits[pytorch]
 ```
 
 Additionally you can also get all the component library packages via:
 
 ```
-$ pip install xircuits[full]
+pip install xircuits[full]
 ```
 We wouldn't recommended it though as it's very large! For the full list of supported libraries, you can visit the [component libraries page](https://github.com/XpressAI/xircuits/blob/master/xai_components/readme.md).
 
@@ -78,12 +78,12 @@ We wouldn't recommended it though as it's very large! For the full list of suppo
 We have provided some workflows for you to try. To fetch them, run:
 
 ```
-$ xircuits-examples
+xircuits-examples
 ```
 ## Launch
 
 Finally to launch it, run:
 ```
-$ xircuits
+xircuits
 ```
 You will be prompted to load the `xai_components` in the current path. We recommend doing so to be able to edit them.

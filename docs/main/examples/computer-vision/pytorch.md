@@ -8,7 +8,7 @@ description: Learn how to make a Xircuits workflow to train a mnist model in Pyt
 Before running this example, ensure that you have already installed the torch packages. You can do this by:
 
 ```
-$ pip install xircuits[pytorch]
+pip install xircuits[pytorch]
 ```
 ## Training a Torch ML Model
 

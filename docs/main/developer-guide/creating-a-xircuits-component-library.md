@@ -56,8 +56,8 @@ We have provided a Xircuits library template repository [here](https://github.co
   3. A new Xircuits component library should be created for you to clone. To use it, navigate to your Xircuits project directory, then 
 
       ```
-      $ cd xai_components
-      $ git clone https://github.com/your_org/your_new_lib xai_lib_name
+      cd xai_components
+      git clone https://github.com/your_org/your_new_lib xai_lib_name
       ```
     :::info
 

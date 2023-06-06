@@ -29,16 +29,16 @@ If you're using Xircuits component libraries that are also used in your other pr
 
 Once created, you can add it as a submodule by running:
 ```
-$ cd xai_components
-$ git submodule add https://github.com/your_org/your_lib xai_lib_name
+cd xai_components
+git submodule add https://github.com/your_org/your_lib xai_lib_name
 ```
 
 This will create a `.gitmodules` file. Don't forget to commit it.
 
 Finally in your `setup.sh`, you can include these commands which will pull the component library:
 ```
-$ git submodule init
-$ git submodule update
+git submodule init
+git submodule update
 ```
 
 

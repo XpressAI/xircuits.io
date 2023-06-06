@@ -24,12 +24,14 @@ Under the hood, the execute configuration is performed using using the [subproce
 
 The `command` in `CONFIGURATION` will be appended to the compiled Python Xircuits file, such that what will be executed is
 
-$ `command` `CompiledScript.py`
+```
+command CompiledScript.py
+```
 
 For example, if your `command` is `$SPARK_HOME/bin/spark-submit` and you've compiled `SparkLinePlot.xircuits` into `SparkLinePlot.py`, the process that will be executed is:
 
 ```
-$SPARK_HOME/bin/spark-submit SparkLinePlot.py
+SPARK_HOME/bin/spark-submit SparkLinePlot.py
 ```
 
 The output is displayed in the Xircuits Output Terminal.

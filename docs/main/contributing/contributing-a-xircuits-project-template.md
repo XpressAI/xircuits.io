@@ -21,15 +21,15 @@ From the Xircuits repository, select the fork button. This will create a copy of
   Once you have your own fork, clone it to your local by:
 
   ```
-  $ cd your_working_dir
-  $ git clone https://github.com/your_username/xircuits
-  $ cd xircuits
+  cd your_working_dir
+  git clone https://github.com/your_username/xircuits
+  cd xircuits
   ```
 
   Then create a branch for your component library PR.
 
   ```
-  $ git checkout -b your-project-template-name
+  git checkout -b your-project-template-name
   ```
 
 ### 3. Update the Xircuits Project Template List

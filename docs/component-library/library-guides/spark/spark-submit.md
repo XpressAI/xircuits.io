@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Before proceeding, ensure that you have already configured your system to run Spark submit operations. If you can perform
 ```
-$spark-submit example.py
+spark-submit example.py
 ```
 You're ready to proceed with this section.
 

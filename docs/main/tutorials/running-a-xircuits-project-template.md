@@ -15,7 +15,7 @@ For this tutorial, ensure that:
 Starting a Xircuits project template is simple. All you need is to clone an existing project template by:
 
 ```console
-$ git clone project-url
+git clone project-url
 ```
 
 You can view the available project repositories [here](https://github.com/XpressAI/xircuits/tree/master/project-templates#list-of-open-source-project-templates). 

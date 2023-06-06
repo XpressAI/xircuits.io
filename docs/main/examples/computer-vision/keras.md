@@ -8,7 +8,7 @@ description: "Learn how to make a Xircuits workflow to load prebuilt Keras model
 Before running this example, ensure that you have already installed the Keras related packages. You can do this by:
 
 ```
-$ pip install xircuits[tensorflow_keras]
+pip install xircuits[tensorflow_keras]
 ```
 
 or alternatively use the `requirements.txt` in the `xai_components/xai_tensorflow_keras` directory.

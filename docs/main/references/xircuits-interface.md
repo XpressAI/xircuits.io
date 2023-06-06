@@ -17,7 +17,7 @@ The two main parts of Xircuits are:
 First things first - you can launch Xircuits from the command line by running:
 
 ```
-$ xircuits
+xircuits
 ```
 
 ## The Component Library Tray

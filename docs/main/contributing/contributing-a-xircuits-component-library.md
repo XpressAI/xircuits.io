@@ -23,15 +23,15 @@ Before proceeding, ensure that you have already have your component library repo
   Once you have your own fork, clone it to your local by:
 
   ```
-  $ cd your_working_dir
-  $ git clone https://github.com/your_username/xircuits
-  $ cd xircuits
+  cd your_working_dir
+  git clone https://github.com/your_username/xircuits
+  cd xircuits
   ```
 
   Then create a branch for your component library PR.
 
   ```
-  $ git checkout -b your-lib-branch-name
+  git checkout -b your-lib-branch-name
   ```
 
   Verify that you've successfully created your branch.
@@ -62,7 +62,7 @@ Before proceeding, ensure that you have already have your component library repo
   External component libraries are implemented as [submodules](https://github.com/XpressAI/xircuits/blob/master/adr/0003-Refactor%20Component%20Libraries%20as%20Submodules.md) in Xircuits. To add your component library, use the git submodule command.
 
   ```
-  $ git submodule add https://github.com/sample-user/xai-sample-library xai_components/xai_sample
+  git submodule add https://github.com/sample-user/xai-sample-library xai_components/xai_sample
   ```
 
   
