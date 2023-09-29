@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Literal & Argument Components
@@ -12,7 +12,7 @@ You will need to supply an integer to specify how many epochs to run the trainin
 
 ## Literal Component
 
-![LiteralComponent](LiteralComponent.gif)
+![LiteralComponent](/img/docs/xircuits-interface/components/LiteralComponent.gif)
 
 The generated code would look like this:
 
@@ -47,7 +47,7 @@ As you can see, the value is passed in as a `Literal Integer` to the TrainImageC
 
 The following example shows if the argument component is used. Xircuits will prompt you to supply the parameter through our argument window prompt.
 
-![ArgumentComponent](ArgumentComponent.gif)
+![ArgumentComponent](/img/docs/xircuits-interface/components/ArgumentComponent.gif)
 
 And it will be supplied as a argument in the generated code.
 

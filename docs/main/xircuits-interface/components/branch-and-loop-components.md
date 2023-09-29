@@ -1,7 +1,5 @@
 ---
-sidebar_position: 4
-tags:
-  - glossary
+sidebar_position: 3
 ---
 
 # Branch and Loop Components

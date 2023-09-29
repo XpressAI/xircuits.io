@@ -1,11 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
-# Special Components
 
-The following are special components in Xircuits.
-
-## Comment Component
+# Comment Component
 The comment component is a component that displays messages. Unlike normal components, you can add a Comment component via right-click context menu.
 
 <details>

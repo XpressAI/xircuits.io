@@ -104,4 +104,4 @@ Passing data via ports is as simple as declaring the port variable as `InArg` or
 
 Read More:
 - [Xircuits Context](main/technical-concepts/xircuits-context.md)
-- [Literals and Arguments](main/technical-concepts/xircuits-components/literal-and-arguments-components.md)
+- [Literals and Arguments](../xircuits-interface/components/literal-and-arguments-components.md)

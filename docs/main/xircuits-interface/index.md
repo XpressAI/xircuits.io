@@ -31,10 +31,10 @@ From top to bottom:
 1. **Search Bar**: Searches your component.
 2. **Refresh**: Refreshes component list. Use when adding new components and/or modifying existing ones.
 3. **Xircuits Component List**: Components to be dragged into the Xircuits canvas. There are two main types of components.
-    - [General Components](../technical-concepts/xircuits-components/getting-started-with-xircuits-components#general-components) - General use components that supply *parameters* or *arguments* to library components.
-    - [Library Components](../technical-concepts/xircuits-components/getting-started-with-xircuits-components#xircuits-library-components) - Custom components that are created from various Python frameworks. 
+    - [General Components](../xircuits-interface/components/index.md#2-general-components) - General use components that supply *parameters* or *arguments* to library components.
+    - [Library Components](../xircuits-interface/components/index.md#1-library-components) - Custom components that are created from various Python frameworks. 
 
-    Read the [component documentation](../technical-concepts/xircuits-components/getting-started-with-xircuits-components) for a more in-depth explanation on components.
+    Read the [component documentation](../xircuits-interface/components/) for a more in-depth explanation on components.
 
 ## The Workflow Canvas
 
@@ -60,18 +60,19 @@ The Xircuits toolbar is displayed on top of every Xircuits canvas. From left to 
 
 ![xircuits-toolbar](/img/docs/xircuits-interface/xircuits-toolbar.png)
 
-1. **Save**: Save current Xircuits canvas.
-2. **Undo**: Goes back one step.
-3. **Redo**: Goes forward one step.
-4. **Reload from Disk**: Reverts back to last saved point.
-5. **Cut**: Cuts selected component(s) to clipboard.
-6. **Copy**: Copies selected component(s) to clipboard.
-7. **Paste**: Pastes component(s) from clipboard to canvas.
-8. **Lock**: Locks all components in canvas. Locked components cannot be moved, linked-to nor deleted.
-9. **Log**: Open Xircuits log window.
-10. **Test**: A button for Xircuits core feature testing purposes.
-11. **Compile**: Codegens a Python script based on current canvas. 
-12. **Save and Run**: Executes the generated Python script on the Python kernel based on Run Options.
+1. **Undo**: Goes back one step.
+2. **Redo**: Goes forward one step.
+3. **Reload from Disk**: Reverts back to last saved point.
+4. **Cut**: Cuts selected component(s) to clipboard.
+5. **Copy**: Copies selected component(s) to clipboard.
+6. **Paste**: Pastes component(s) from clipboard to canvas.
+7. **Lock**: Locks all components in canvas. Locked components cannot be moved, linked-to nor deleted.
+8. **Log**: Open Xircuits log window.
+9. **Low Power Mode**: Toggle low power mode by disabling link animation.
+10. **Reload All Nodes**: Reloads all nodes in the canvas. 
+11. **Save**: Save current Xircuits canvas.
+12. **Compile**: Codegens a Python script based on current canvas. 
+13. **Save and Run**: Executes the generated Python script on the Python kernel based on Run Options.
 13. **Xircuits Run Options**
     - **Local Run**: Saves, compiles, and executes Xircuits canvas locally.
     - **Run w/o Compile**: Saves current canvas but does not compile the Python script. Executes Python script with the same filename as the .xircuits file.
@@ -112,7 +113,7 @@ You are able to modify `Literal Components` by double clicking them.
 
 There are 2 types of links in Xircuits. 
 
-  1. **Sequence Links:** They indicate the sequence of a Xircuits workflow. Sequence links are blue line flows connecting ▶ ports which will turn solid yellow when highlighted. 
+  1. **Flow Links:** They indicate the sequence of a Xircuits workflow. Flow links are blue line flows connecting ▶ ports which will turn solid yellow when highlighted. 
   <details>
   <summary>Video</summary>
   <p align="center">
@@ -147,4 +148,4 @@ Finally, you can open the context menu by right clicking anywhere on the Xircuit
 7. **Delete**: Deletes component(s).
 8. **Undo**: Goes back one step.
 9. **Redo**: Goes forward one step.
-10. **Add Comment**: Inserts a [`Comment Component`](./special-components#comment-component).
+10. **Add Comment**: Inserts a [`Comment Component`](./components/comment-component.md).

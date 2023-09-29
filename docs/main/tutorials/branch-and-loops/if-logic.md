@@ -34,4 +34,4 @@ Consider the following workflow:
     ```
 </details>
 
-For more information on how controlflow works, you may refer to the [controlflow reference](../../technical-concepts/xircuits-components/branch-and-loop-components) page.
+For more information on how controlflow works, you may refer to the [controlflow reference](../../xircuits-interface/components/branch-and-loop-components.md) page.
