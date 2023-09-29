@@ -19,7 +19,7 @@ New Xircuits users are recommended to start with premade Xircuits workflows crea
 
 ## Viewing and Interpreting the Xircuits Canvas
 
-Once the Xircuits canvas is open, you will see the [Xircuits Interface](main/references/xircuits-interface.md). 
+Once the Xircuits canvas is open, you will see the [Xircuits Interface](../xircuits-interface). 
 
 A Xircuits workflow starts from the `Start` node to the `Finish` node. The flow sequence is indicated by the flowing blue links connecting the ▶ ports. A component node may also have data ports, which indicates how a component can receive data and parameters to configure their behavior, as well as pass data to the next nodes.
 
@@ -34,7 +34,7 @@ As previously mentioned, a Xircuits User will usually work on a premade workflow
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/references/edit-literal.gif"></img></p>
+  <img src="/img/docs/xircuits-interface/edit-literal.gif"></img></p>
 </details>
 
 For more advanced users, you may add more component nodes from the Xircuits component tray, or by dropping a link from a port.

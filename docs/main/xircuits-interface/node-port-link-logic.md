@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 # Node, Port and Link Logic
 
@@ -7,7 +7,7 @@ To ensure a robust codegen compilation, we have set several rules and logics for
 
 ## Node Logic
 
-- A node is a [Xircuits component](main/technical-concepts/xircuits-components/getting-started-with-xircuits-components.md).
+- A node is a [Xircuits component](./components/).
 - Each canvas will have a `Start` and `Finish` node, which cannot be deleted.
 - Nodes can be locked. Nodes that are locked cannot be moved nor deleted.
 - All component library nodes must be linked to compile and execute a workflow. 
@@ -69,7 +69,3 @@ To ensure a robust codegen compilation, we have set several rules and logics for
     <p align="center">
     <img src="/img/docs/interface-smart-link.gif"></img></p>
     </details>
-
-
-### Stacking Links
-- For `string`, `list` and `dict` ports, you are able to stack multiple links. For each additional link, the values will be concatenated (if strings) or added (if list or dict).

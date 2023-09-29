@@ -1,5 +1,6 @@
 ---
-sidebar_position: 0
+title: The Xircuits Interface
+position: 4
 ---
 
 # The Xircuits Interface
@@ -10,7 +11,7 @@ The two main parts of Xircuits are:
 1. [The Component Library Tray](#the-component-library-tray)
 2. [The Workflow Canvas](#the-workflow-canvas)
 
-![xircuits-interface](/img/docs/references/xircuits-interface.png)
+![xircuits-interface](/img/docs/xircuits-interface/xircuits-interface.png)
 
 ## Launching Xircuits
 
@@ -24,16 +25,16 @@ xircuits
 
 You can access the component library tray by selecting the block icon on the left toolbar. 
 
-![xircuits-component-tray](/img/docs/references/xircuits-component-tray.png)
+![xircuits-component-tray](/img/docs/xircuits-interface/xircuits-component-tray.png)
 
 From top to bottom:
 1. **Search Bar**: Searches your component.
 2. **Refresh**: Refreshes component list. Use when adding new components and/or modifying existing ones.
 3. **Xircuits Component List**: Components to be dragged into the Xircuits canvas. There are two main types of components.
-    - [General Components](../technical-concepts/xircuits-components/getting-started-with-xircuits-components#general-components) - General use components that supply *parameters* or *arguments* to library components.
-    - [Library Components](../technical-concepts/xircuits-components/getting-started-with-xircuits-components#xircuits-library-components) - Custom components that are created from various Python frameworks. 
+    - [General Components](../xircuits-interface/components/index.md#2-general-components) - General use components that supply *parameters* or *arguments* to library components.
+    - [Library Components](../xircuits-interface/components/index.md#1-library-components) - Custom components that are created from various Python frameworks. 
 
-    Read the [component documentation](../technical-concepts/xircuits-components/getting-started-with-xircuits-components) for a more in-depth explanation on components.
+    Read the [component documentation](../xircuits-interface/components/) for a more in-depth explanation on components.
 
 ## The Workflow Canvas
 
@@ -57,20 +58,21 @@ The following are the common canvas interfaces that you will use:
 
 The Xircuits toolbar is displayed on top of every Xircuits canvas. From left to right:
 
-![xircuits-toolbar](/img/docs/references/xircuits-toolbar.png)
+![xircuits-toolbar](/img/docs/xircuits-interface/xircuits-toolbar.png)
 
-1. **Save**: Save current Xircuits canvas.
-2. **Undo**: Goes back one step.
-3. **Redo**: Goes forward one step.
-4. **Reload from Disk**: Reverts back to last saved point.
-5. **Cut**: Cuts selected component(s) to clipboard.
-6. **Copy**: Copies selected component(s) to clipboard.
-7. **Paste**: Pastes component(s) from clipboard to canvas.
-8. **Lock**: Locks all components in canvas. Locked components cannot be moved, linked-to nor deleted.
-9. **Log**: Open Xircuits log window.
-10. **Test**: A button for Xircuits core feature testing purposes.
-11. **Compile**: Codegens a Python script based on current canvas. 
-12. **Save and Run**: Executes the generated Python script on the Python kernel based on Run Options.
+1. **Undo**: Goes back one step.
+2. **Redo**: Goes forward one step.
+3. **Reload from Disk**: Reverts back to last saved point.
+4. **Cut**: Cuts selected component(s) to clipboard.
+5. **Copy**: Copies selected component(s) to clipboard.
+6. **Paste**: Pastes component(s) from clipboard to canvas.
+7. **Lock**: Locks all components in canvas. Locked components cannot be moved, linked-to nor deleted.
+8. **Log**: Open Xircuits log window.
+9. **Low Power Mode**: Toggle low power mode by disabling link animation.
+10. **Reload All Nodes**: Reloads all nodes in the canvas. 
+11. **Save**: Save current Xircuits canvas.
+12. **Compile**: Codegens a Python script based on current canvas. 
+13. **Save and Run**: Executes the generated Python script on the Python kernel based on Run Options.
 13. **Xircuits Run Options**
     - **Local Run**: Saves, compiles, and executes Xircuits canvas locally.
     - **Run w/o Compile**: Saves current canvas but does not compile the Python script. Executes Python script with the same filename as the .xircuits file.
@@ -80,7 +82,7 @@ The Xircuits toolbar is displayed on top of every Xircuits canvas. From left to 
 
 Components are the gears of a Xircuits workflow which performs specific actions in sequence. Here's an example:
 
-![xircuits-component-example](/img/docs/references/xircuits-component.png)
+![xircuits-component-example](/img/docs/xircuits-interface/xircuits-component.png)
 
 Each Xircuits components will usually have the following attributes:
   1. **Component Name:** A unique name that identifies the component. 
@@ -89,7 +91,7 @@ Each Xircuits components will usually have the following attributes:
 
 There are a few additional interfaces for library components. They are located at top right corner of components. 
 
-![xircuits-context-menu](/img/docs/references/xircuits-tooltip.png)
+![xircuits-context-menu](/img/docs/xircuits-interface/xircuits-tooltip.png)
 
 1. **Information Tooltip [ `i` ] :** Displays the component information tooltip, if any. In the Python component code, the comment is enclosed in the triple ''' ''' quotation marks. 
 2. **Lock Component [ `🔒` ] :** Locks selected component. Locked components cannot be moved, linked-to nor deleted.
@@ -102,7 +104,7 @@ You are able to modify `Literal Components` by double clicking them.
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/references/edit-literal.gif"></img></p>
+  <img src="/img/docs/xircuits-interface/edit-literal.gif"></img></p>
 </details>
 :::
 
@@ -111,31 +113,31 @@ You are able to modify `Literal Components` by double clicking them.
 
 There are 2 types of links in Xircuits. 
 
-  1. **Sequence Links:** They indicate the sequence of a Xircuits workflow. Sequence links are blue line flows connecting ▶ ports which will turn solid yellow when highlighted. 
+  1. **Flow Links:** They indicate the sequence of a Xircuits workflow. Flow links are blue line flows connecting ▶ ports which will turn solid yellow when highlighted. 
   <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/references/sequence-link.gif"></img></p>
+  <img src="/img/docs/xircuits-interface/sequence-link.gif"></img></p>
   </details>
 
   2. **Parameter Links:** They indicate data flow from parameter component to library component, or from library component to another library component. Parameter links are grey in color and turn into a yellow flow when highlighted. 
   <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/references/parameter-link.gif"></img></p>
+  <img src="/img/docs/xircuits-interface/parameter-link.gif"></img></p>
   </details>
 
 - Selecting and dragging a link will create a point in the line. Use it route links so it's visually intuitive.
 - To delete a link, select it first by shift-clicking, then press delete.
 
 
-For the full list of node - port - link interactions, refer to the Xircuits logic [documentation](/docs/main/references/node-port-link-logic).
+For the full list of node - port - link interactions, refer to the Xircuits logic [documentation](/docs/main/xircuits-interface/node-port-link-logic).
 
 ### Right Click Context Menu
 
 Finally, you can open the context menu by right clicking anywhere on the Xircuits canvas.
 
-![xircuits-context-menu](/img/docs/references/xircuits-context-menu.png)
+![xircuits-context-menu](/img/docs/xircuits-interface/xircuits-context-menu.png)
 
 1. **Cut**: Cuts selected component(s) to clipboard.
 2. **Copy**: Copies selected component(s) to clipboard.
@@ -146,4 +148,4 @@ Finally, you can open the context menu by right clicking anywhere on the Xircuit
 7. **Delete**: Deletes component(s).
 8. **Undo**: Goes back one step.
 9. **Redo**: Goes forward one step.
-10. **Add Comment**: Inserts a [`Comment Component`](docs/main/references/special-components#comment-component).
+10. **Add Comment**: Inserts a [`Comment Component`](./components/comment-component.md).
