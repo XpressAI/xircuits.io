@@ -11,7 +11,7 @@ The comment component is a component that displays messages. Unlike normal compo
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/references/comment-component.gif"></img></p>
+  <img src="/img/docs/xircuits-interface/comment-component.gif"></img></p>
 </details>
 
 Execution-wise, the Comment component has no effect, it's purely a tooltip to help Xircuits users understand the workflow.

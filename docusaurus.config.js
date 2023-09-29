@@ -62,7 +62,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'main/references/cli-commands',
+            docId: 'main/xircuits-interface/cli-commands',
             position: 'left',
             label: 'CLI Commands',
           },

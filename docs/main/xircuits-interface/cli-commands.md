@@ -8,7 +8,7 @@ The following is a list of Xircuits related commands that you can use on the com
 
 ###  `xircuits`
 
-Launches Jupyterlab. Will initialize `.xircuits` config file at current directory as well as offer to ;load the `xai_components` to the current working directory.
+Launches Jupyterlab. Will initialize `.xircuits` config file at current directory as well as offer to load the `xai_components` to the current working directory.
 
 #### Options
 
