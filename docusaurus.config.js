@@ -160,8 +160,8 @@ const config = {
         /** type {import("@xpressai/docusaurus-vecto-search").PluginOptions} */
         ({
           docsRouteBasePath: '/',
-          vecto_public_token: process.env.vecto_public_token,
-          vector_space_id: Number(process.env.vector_space_id),
+          vecto_public_token: process.env.VECTO_PUBLIC_TOKEN,
+          vector_space_id: Number(process.env.VECTOR_SPACE_ID),
           top_k: 20,
           rankBy: "weightedAverage"
         }),
