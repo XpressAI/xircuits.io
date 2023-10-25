@@ -13,9 +13,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/xpress-logo.ico',
-  organizationName: 'XpressAI', // Usually your GitHub org/user name.
-  projectName: 'Xircuits', // Usually your repo name.
-
+  organizationName: 'XpressAI',
+  projectName: 'Xircuits',
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -35,7 +34,9 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      }
+      ),
+
     ],
   ],
 
@@ -150,8 +151,22 @@ const config = {
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true
-      }
+      },
     }),
+
+    themes: [
+      [
+        "@xpressai/docusaurus-vecto-search",
+        /** type {import("@xpressai/docusaurus-vecto-search").PluginOptions} */
+        ({
+          docsRouteBasePath: '/',
+          vecto_public_token: process.env.VECTO_PUBLIC_TOKEN,
+          vector_space_id: Number(process.env.VECTOR_SPACE_ID),
+          top_k: 20,
+          rankBy: "weightedAverage"
+        }),
+      ],
+    ],
 };
 
 module.exports = config;
