@@ -25,3 +25,7 @@ jobs:
 
       - name: Build site
         run: npm run-script build
+        env:
+          VECTO_PUBLIC_TOKEN: ${{ secrets.VECTO_PUBLIC_TOKEN }}
+          VECTO_USER_TOKEN: ${{ secrets.VECTO_USER_TOKEN }}
+          VECTOR_SPACE_ID: ${{ secrets.VECTOR_SPACE_ID }}
