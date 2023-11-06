@@ -4,57 +4,88 @@ sidebar_position: 5
 
 # CLI Commands
 
-The following is a list of Xircuits related commands that you can use on the command line interface (CLI) after you've installed it.
+The following is an updated list of CLI commands for Xircuits that you can use after you've installed it. You also can type `xircuits --help` in your terminal to display a list of all available commands:
 
-###  `xircuits`
+```bash
+$ xircuits --help
 
-Launches Jupyterlab. Will initialize `.xircuits` config file at current directory as well as offer to load the `xai_components` to the current working directory.
+usage: xircuits {start,install,fetch-only,examples,compile,list} ...
 
-#### Options
+Xircuits Command Line Interface
 
-| Name | Default | Description |
-| --- | --- | --- |
-| `--branch [branchName]` | master | Downloads `xai_components` from a specific Xircuits branch. |
+positional arguments:
+  {start,install,fetch-only,examples,compile,list}
+    start               Start Xircuits.
+    install             Fetch and installs a library for Xircuits.
+    fetch-only          Fetch a library for Xircuits. Does not install.
+    examples            Download examples for Xircuits.
+    compile             Compile a Xircuits workflow file.
+    list                List available component libraries for Xircuits.
+```
 
-Additionally, you should also be able to run any [Jupyterlab specific CLI commands](https://nocomplexity.com/documents/jupyterlab/notebooks/jupyterlab-cli.html).
+---
 
-### `xircuits-components`
+### Start Xircuits
+```bash
+xircuits
+```
+or 
+```bash
+xircuits start
+```
+- Starts Xircuits, typically launching JupyterLab and initializing the `.xircuits` config file in the current directory. It also offers to load the `xai_components` into the current working directory.
+- You can append any JupyterLab-specific launch commands, for example:
+    ```bash
+    xircuits start --no-browser
+    ```
 
-Loads the `xai_components` directory to the current working directory.
+---
 
-#### Options
+### Install Xircuits Component Library
+```bash
+xircuits install <component library name>
+```
+- Fetches and uses `pip` to install a component library for Xircuits based on its `requirements.txt`.
+- The component library will be saved at `./xai_components/`.
+- You can provide a component library name from the [component library list](https://github.com/XpressAI/xircuits/tree/master/xai_components) or a GitHub repository URL.
 
-| Name  | Description |
-| --- | --- |
-| `--branch [branchName]` | Downloads the `xai_components` directory from a specified branch. |
-| `--sublib [submodule Name]` | Downloads a Xircuits submodule component library, for example the [Xircuits Pycaret](https://github.com/XpressAI/xai-pycaret) library. For the full list of additional libraries, refer to the [component library list](https://github.com/XpressAI/xircuits/tree/master/xai_components). |
+---
 
-### `xircuits-submodules` [xai_subComponentLibName]
+### Fetch Xircuits Component Library
+```bash
+xircuits fetch-only <component library name>
+```
+- Fetches but does not install a component library for Xircuits.
+- The component library will be saved at `./xai_components/`.
+- You can provide a component library name from the [component library list](https://github.com/XpressAI/xircuits/tree/master/xai_components) or a GitHub repository URL. 
+- If the directory already exists, it will return an error.
 
-Initialize and load a [`xai_components` submodule library](https://github.com/XpressAI/xircuits/tree/master/xai_components#external-library)  to the current working directory and install the required packages.
+---
 
-#### Options
+### Download Xircuits Examples
+```bash
+xircuits examples
+```
+- Downloads the `examples` and `datasets` directories from the main branch of the Xircuits repository to your current directory.
 
-| Name  | Description |
-| --- | --- |
-| `--no-install` | Will only initialize and load the submodule component library without installing it. |
+---
 
-### `xircuits-examples`
+### Compile Xircuits File
+```bash
+xircuits compile <source_file> <out_file> [python_paths_file]
+```
+- Compiles a Xircuits workflow from `source_file.xircuits` into `out_file.py`. This is useful for compiling a workflow without opening JupyterLab.
+- Optionally provide `python_paths_file`, a JSON file with a mapping of component names to required Python paths, e.g., `{'MyComponent': '/some/path'}`.
 
-Downloads the `examples` and `datasets` directories from the main branch.
+---
 
-#### Options
+### List Component Installation 
+```bash
+xircuits list
+```
+- Lists installed, available, and remote component libraries for Xircuits.
 
-| Name | Description |
-| --- | --- |
-| `--branch [branchName]` | Downloads the `examples` and `datasets` directories from a specific Xircuits branch. |
+---
 
-### `xircuits-compile [source_file.xircuits] [out_file.py]`
 
-Compiles a Xircuits workflow `workflow_name.xircuits` into `compiled_name.py`. Useful when you want to compile a workflow without opening Jupyterlab.
-
-#### Options
-
-| Name  | Description |
-| --- | --- |
-| `[python_paths_file]` | JSON file with a mapping of component name to required python path. e.g. {'MyComponent': '/some/path'} |
+Each command also supports the `-h` option for help, which provides additional information and usage examples for the command.
