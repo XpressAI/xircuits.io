@@ -2,8 +2,6 @@
 sidebar_position: 1
 ---
 
-import ExternalMarkdown from '@site/src/components/ExternalMarkdown';
-
 # Xircuits Component Library
 
 Welcome to the Xircuits Component Libraries documentation! With Xircuits serving as the foundation for your projects, Xircuits Component Libraries provides essential tools and features that enable seamless integration with various frameworks. These libraries are like sets of LEGO pieces, ready to be assembled into any structure limited only by your creativity and imagination. With the ability to mix and match different components, you can create customized workflows that result in unique and powerful applications!
