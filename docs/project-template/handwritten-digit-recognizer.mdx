@@ -1,0 +1,53 @@
+---
+sidebar_position: 4
+tags:
+  - project-template
+---
+
+# Handwritten Digit Recognizer
+
+# Xircuits Handwritten Digit Classifier Project Template
+
+This template allows you to train a handwritten digit classifier, using the [Mnist Handwritten Digit Classification Dataset](https://www.tensorflow.org/api_docs/python/tf/keras/datasets/mnist/load_data).
+
+- Dataset preparation: this section handles the dataset used in this template through multiple components.
+
+  - `DownloadDataset` : download mnist dataset.
+  - `VisualizeData` : visualize the training data (optional)
+
+- Model training: build and compile the model for training.
+  - `CreateModel` : building a simple convolutional model.
+  - `TrainModel` : training the model with training dataset.
+  - `PlotTrainingMetrics` : evaluate training performance, by plotting the training loss and accuracy against the number of training epochs.
+  - `EvaluateModel` : determine the model loss and accuracy based on the testing dataset.
+  - `SaveModel` : save model in keras or tensorflow format.
+  - `ConvertTFModelToOnnx` : convert TF model to onnx model to be used in other platforms.
+
+## Prerequisites
+
+You will need Python 3.9+.
+
+## Installation
+
+1. Clone this repository
+2. Create virtual environments and install the required python packages.
+
+```
+pip install -r requirements.txt
+```
+
+3. Run xircuits from the root directory
+
+```
+xircuits
+```
+
+## Workflow in this Template
+
+#### mnist_classifier_template.xircuits
+
+- In this template we used the mnist dataset from Tensorflow and perform a simple classification. You can further fine tune the model by modifying the hyperparameters.
+
+![Template](https://github.com/XpressAI/x-template-handwritten_digit_recognition/raw/main/images/mnist_template.gif)
+
+
