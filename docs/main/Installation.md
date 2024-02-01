@@ -59,31 +59,19 @@ pip install xircuits-version-py3.none-any.whl
 
 ## Installing Xircuits Component Libraries
 
-Before being able to use a component library, you need to install them via `pip install xircuits[packageName]`.
-
-For example, to be able to use the Pytorch components, run:
-```
-pip install xircuits[pytorch]
-```
-
-Additionally you can also get all the component library packages via:
+While Xircuits have preinstalled component libraries, you may want to use one of our many component libraries. Installing them is simple, simply run `xircuits install libraryName`. For example, to be able to use the Pytorch components from the [Pytorch component library](https://github.com/XpressAI/xai-pytorch):
 
 ```
-pip install xircuits[full]
+xircuits install pytorch
 ```
-We wouldn't recommended it though as it's very large! For the full list of supported libraries, you can visit the [component libraries page](https://github.com/XpressAI/xircuits/blob/master/xai_components/readme.md).
 
-## Download Examples
+For the full list of supported libraries, you can visit the [component libraries page](https://github.com/XpressAI/xircuits/blob/master/xai_components/readme.md).
 
-We have provided some workflows for you to try. To fetch them, run:
 
-```
-xircuits-examples
-```
 ## Launch
 
 Finally to launch it, run:
 ```
 xircuits
 ```
-You will be prompted to load the `xai_components` in the current path. We recommend doing so to be able to edit them.
+You will be prompted to load the `xai_components` in the current path. We recommend doing so to be able to edit them. 
