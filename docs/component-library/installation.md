@@ -6,10 +6,10 @@ sidebar_position: 2
 To get started with the Xircuits Component Libraries, you need to complete two main steps: fetching the libraries and installing them. There are two ways to accomplish this, either using the Xircuits CLI command for a quick installation or manually cloning the libraries and installing the requirements. Let's explore both methods in detail.
 
 ## Quick Installation using Xircuits CLI
-The quickest and most convenient way to fetch and install the Xircuits Component Libraries is by using the provided Xircuits CLI command. If a library is included as a submodule in the main Xircuits repository, you can install it by running the following command in your terminal:
+The quickest and most convenient way to fetch and install the Xircuits Component Libraries is by using the provided Xircuits CLI command. If a library is included in the [component library list](https://github.com/XpressAI/xircuits/tree/master/xai_components#external-library), you can install it by running the following command in your terminal:
 
 ```
-xircuits-submodules component-lib-name
+xircuits install component-lib-name
 ```
 
 Replace component-lib-name with the name of the component library you want to install. This command will fetch the library and install it for you, allowing you to start using the components right away. Repeat this process for each library you want to include in your project.

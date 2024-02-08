@@ -5,15 +5,13 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-
-
 # Installation
 You will need Python 3.8+ to install Xircuits. 
 :::tip
 
 We recommend installing in a virtual environment such as Python [venv](https://docs.python.org/3/library/venv.html).
-<Tabs>
 
+<Tabs>
 <TabItem value="win" label="Windows">
 
 ```bash
@@ -34,15 +32,15 @@ source venv/bin/activate
 
 :::
 
-To install Xircuits run:
+To install Xircuits, run:
 
-```
+```bash
 pip install xircuits
 ```
 
 ## Canary Installation
 
-If you'd like the latest goodies (but might be unstable features) of Xircuits, you may grab the wheel from our Github Actions. Select the Python Package Builder run from a master branch, and download the wheel artifact.
+If you're interested in the cutting-edge features of Xircuits (which might include unstable features), you can get the latest version directly from our Github Actions. Look for a Python Package Builder run on the master branch, and download the wheel artifact.
 
 <details>
   <summary>Video</summary>
@@ -50,28 +48,30 @@ If you'd like the latest goodies (but might be unstable features) of Xircuits, y
   <img src="/img/docs/download-wheel.gif"></img></p>
 </details>
 
-After downloading the artifact, extract the wheel to your working directory then install it using 
+After downloading, extract the wheel to your working directory and install it with:
 
-```
+```bash
 pip install xircuits-version-py3.none-any.whl
 ```
 
-
 ## Installing Xircuits Component Libraries
 
-While Xircuits have preinstalled component libraries, you may want to use one of our many component libraries. Installing them is simple, simply run `xircuits install libraryName`. For example, to be able to use the Pytorch components from the [Pytorch component library](https://github.com/XpressAI/xai-pytorch):
+Xircuits is designed to be extensible, featuring a variety of component libraries to enhance its functionality. While it comes with a set of pre-installed components, you might find yourself in need of more specialized functionalities that are offered by external component libraries.
 
-```
+Installing these libraries is straightforward. For example, to use the Pytorch components from our [Pytorch component library](https://github.com/XpressAI/xai-pytorch), simply run:
+
+```bash
 xircuits install pytorch
 ```
 
-For the full list of supported libraries, you can visit the [component libraries page](https://github.com/XpressAI/xircuits/blob/master/xai_components/readme.md).
-
+To explore and install other component libraries, check out the full list on the [component libraries page](https://github.com/XpressAI/xircuits/blob/master/xai_components#external-library).
 
 ## Launch
 
-Finally to launch it, run:
-```
+To start using Xircuits, execute:
+
+```bash
 xircuits
 ```
-You will be prompted to load the `xai_components` in the current path. We recommend doing so to be able to edit them. 
+
+Upon launch, `xai_components` will be loaded in your current working directory.

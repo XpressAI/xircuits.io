@@ -106,8 +106,8 @@ const config = {
                 to: 'docs/category/developer-guide',
              },
               {
-                label: 'Examples',
-                to: 'docs/category/examples',
+                label: 'Use Case Examples',
+                to: 'docs/category/use-case-examples',
              },
             ],
           },

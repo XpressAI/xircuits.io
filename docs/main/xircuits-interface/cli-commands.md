@@ -33,7 +33,7 @@ or
 ```bash
 xircuits start
 ```
-- Starts Xircuits, typically launching JupyterLab and initializing the `.xircuits` config file in the current directory. It also offers to load the `xai_components` into the current working directory.
+- Starts Xircuits, typically launching JupyterLab and initializing the `.xircuits` config file in the current directory. It also loads the `xai_components` into the current working directory.
 - You can append any JupyterLab-specific launch commands, for example:
     ```bash
     xircuits start --no-browser
@@ -47,7 +47,7 @@ xircuits install <component library name>
 ```
 - Fetches and uses `pip` to install a component library for Xircuits based on its `requirements.txt`.
 - The component library will be saved at `./xai_components/`.
-- You can provide a component library name from the [component library list](https://github.com/XpressAI/xircuits/tree/master/xai_components) or a GitHub repository URL.
+- You can provide a component library name from the supported [component library list](https://github.com/XpressAI/xircuits/tree/master/xai_components) or a GitHub repository URL.
 
 ---
 
@@ -57,7 +57,7 @@ xircuits fetch-only <component library name>
 ```
 - Fetches but does not install a component library for Xircuits.
 - The component library will be saved at `./xai_components/`.
-- You can provide a component library name from the [component library list](https://github.com/XpressAI/xircuits/tree/master/xai_components) or a GitHub repository URL. 
+- You can provide a component library name from the supported [component library list](https://github.com/XpressAI/xircuits/tree/master/xai_components) or a GitHub repository URL. 
 - If the directory already exists, it will return an error.
 
 ---
@@ -66,7 +66,7 @@ xircuits fetch-only <component library name>
 ```bash
 xircuits examples
 ```
-- Downloads the `examples` and `datasets` directories from the main branch of the Xircuits repository to your current directory.
+- Loads the `examples` directory from the Xircuits wheel to your current directory.
 
 ---
 
@@ -86,6 +86,5 @@ xircuits list
 - Lists installed, available, and remote component libraries for Xircuits.
 
 ---
-
 
 Each command also supports the `-h` option for help, which provides additional information and usage examples for the command.

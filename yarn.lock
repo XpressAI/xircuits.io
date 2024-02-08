@@ -2580,10 +2580,10 @@
     "@webassemblyjs/ast" "1.11.6"
     "@xtuc/long" "4.2.2"
 
-"@xpressai/docusaurus-vecto-search@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@xpressai/docusaurus-vecto-search/-/docusaurus-vecto-search-0.0.4.tgz#7437117615fd2519f9beacc6c32a0e87651ecb53"
-  integrity sha512-pD8I6gEfscZs/eIYKCZzAmUziZNhHbQo/OeF4mEliLVAhIyKGSJPOED4UY6IndFTXrOQOIezTDVP50AydZWLFA==
+"@xpressai/docusaurus-vecto-search@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@xpressai/docusaurus-vecto-search/-/docusaurus-vecto-search-0.0.5.tgz#b74ac944211ab8b212639c149fdd32f09c5edf1d"
+  integrity sha512-Ghzct4YCiMcZfz87XI/S7ZovX9LsuOfeydIASbiK69rfXQFUqureoL4JEewWenJhXu9wFkkOL6T/R6Yo0CtarQ==
   dependencies:
     "@docusaurus/plugin-content-docs" "^2.0.0-rc.1"
     "@docusaurus/theme-translations" "^2.0.0-rc.1"
