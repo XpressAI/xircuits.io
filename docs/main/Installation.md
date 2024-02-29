@@ -64,7 +64,7 @@ Installing these libraries is straightforward. For example, to use the Pytorch c
 xircuits install pytorch
 ```
 
-To explore and install other component libraries, check out the full list on the [component libraries page](https://github.com/XpressAI/xircuits/blob/master/xai_components#external-library).
+To explore and install other component libraries, check out the full list on the [component libraries page](https://github.com/XpressAI/xircuits/blob/master/xai_components#external-library). The components listed here may also be installed via [component library interface](../component-library/installation.md#installation-using-the-xircuits-library-interface).
 
 ## Launch
 

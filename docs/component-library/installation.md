@@ -22,7 +22,7 @@ Replace `component-lib-name` with the name of the component library you wish to 
 
 ## Installation using the Xircuits Library Interface
 
-Alternatively, you can install libraries using the component library tray interface within Xircuits. Open Xircuits, navigate to the library tray, and look for libraries listed under `Available for Installation`, which are colored in white to indicate they are remote components. Right-click on a library and select the `Install` option. The library repository will be cloned to the xai_components directory, and you will be prompted to choose a kernel. This kernel will execute the pip install command, allowing you to monitor the installation progress. 
+Alternatively, you can install libraries using the component library tray interface within Xircuits. Open Xircuits, navigate to the library tray, and look for libraries listed under `Available for Installation`. Libraries in white are remote and can be installed. Right-click on a library and select the `Install` option. The library repository will be cloned to the xai_components directory, and you will be prompted to choose a kernel. This kernel will execute the pip install command, allowing you to monitor the installation progress. 
 
 ![project-template](/img/docs/component-library/install-from-tray.gif)
 
