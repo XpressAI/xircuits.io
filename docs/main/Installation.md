@@ -56,15 +56,15 @@ pip install xircuits-version-py3.none-any.whl
 
 ## Installing Xircuits Component Libraries
 
-Xircuits is designed to be extensible, featuring a variety of component libraries to enhance its functionality. While it comes with a set of pre-installed components, you might find yourself in need of more specialized functionalities that are offered by external component libraries.
+Xircuits is designed for extensibility, with a range of component libraries available to enhance its functionality. It includes a set of pre-installed components, but you may need specialized functionalities available in external libraries. We provide a collection of dozens of libraries accessible at our [component libraries collection](https://github.com/XpressAI/xircuits/blob/master/xai_components#external-library). 
 
-Installing these libraries is straightforward. For example, to use the Pytorch components from our [Pytorch component library](https://github.com/XpressAI/xai-pytorch), simply run:
+Installing these libraries is straightforward. For instance, to use the Pytorch components from our [Pytorch component library](https://github.com/XpressAI/xai-pytorch), simply run:
 
 ```bash
 xircuits install pytorch
 ```
 
-To explore and install other component libraries, check out the full list on the [component libraries page](https://github.com/XpressAI/xircuits/blob/master/xai_components#external-library). The components listed here may also be installed via [component library interface](../component-library/installation.md#installation-using-the-xircuits-library-interface).
+Components from our collection can also be installed via the [component library interface](../component-library/installation.md#installation-using-the-xircuits-library-interface).
 
 ## Launch
 
