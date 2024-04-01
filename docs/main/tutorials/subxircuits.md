@@ -34,7 +34,6 @@ The `@xai_component` decorator is what distinguishes a regular Python class as a
 
 9. **Run and compile the main workflow.** With your sub-Xircuit integrated, you can proceed to run and compile your main workflow, leveraging the modular, reusable component you've crafted.
 
-
 <p align="center">
   <img width="90%" src="/img/docs/tutorials/subxircuits.gif"></img>
   <figcaption class="image-caption">Sub Xircuits Preview</figcaption>
