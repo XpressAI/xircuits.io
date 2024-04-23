@@ -142,7 +142,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Xpress AI GK. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Xpress AI KK. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
