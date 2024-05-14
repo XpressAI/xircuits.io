@@ -5,44 +5,165 @@ import styles from './SupportedFrameworks.module.css';
 type FrameworkItem = {
   title: string;
   image: string;
+  link: string;
 };
 
-const FrameworkList: FrameworkItem[] = [
+const dataScienceFrameworks: FrameworkItem[] = [
   {
     title: 'Tensorflow',
     image: '/img/website/frameworks/tensorflow.svg',
+    link: 'https://github.com/XpressAI/xai-tensorflow-keras',
   },
   {
     title: 'Pytorch',
     image: '/img/website/frameworks/pytorch.svg',
+    link: 'https://github.com/XpressAI/xai-pytorch',
+  },
+  {
+    title: 'SKLearn',
+    image: '/img/website/frameworks/scikit-learn.svg',
+    link: 'https://github.com/XpressAI/xai-sklearn',
+  },
+  {
+    title: 'XGBoost',
+    image: '/img/website/frameworks/xgboost.png',
+    link: 'https://github.com/XpressAI/xai-xgboost',
   },
   {
     title: 'Spark',
     image: '/img/website/frameworks/spark.svg',
+    link: 'https://github.com/XpressAI/xai-spark',
   },
   {
     title: 'Pycaret',
     image: '/img/website/frameworks/pycaret.png',
+    link: 'https://github.com/XpressAI/xai-pycaret',
   },
   {
     title: 'Streamlit',
     image: '/img/website/frameworks/streamlit.svg',
+    link: 'https://github.com/XpressAI/xai-streamlit',
+  }
+];
+
+const aiAgentsFrameworks: FrameworkItem[] = [
+  {
+    title: 'Vecto',
+    image: '/img/website/frameworks/vecto.svg',
+    link: 'https://github.com/XpressAI/xai-vecto',
   },
+  {
+    title: 'OpenAI',
+    image: '/img/website/frameworks/openai.svg',
+    link: 'https://github.com/XpressAI/xai-openai',
+  },
+  {
+    title: 'Anthropic',
+    image: '/img/website/frameworks/anthropic.svg',
+    link: 'https://github.com/XpressAI/xai-anthropic',
+  },
+  {
+    title: 'HF Agent',
+    image: '/img/website/frameworks/hugging-face.svg',
+    link: 'https://github.com/XpressAI/xai-hfagent',
+  },
+  {
+    title: 'Stability AI',
+    image: '/img/website/frameworks/stability-ai.svg',
+    link: 'https://github.com/XpressAI/xai-stability-ai',
+  },
+  {
+    title: 'Gemini',
+    image: '/img/website/frameworks/gemini.svg',
+    link: 'https://github.com/XpressAI/xai-google-gemini',
+  },
+];
+
+const communicationFrameworks: FrameworkItem[] = [
+  {
+    title: 'Slack',
+    image: '/img/website/frameworks/slack.svg',
+    link: 'https://github.com/XpressAI/xai-slack',
+  },
+  {
+    title: 'Discord',
+    image: '/img/website/frameworks/discord.svg',
+    link: 'https://github.com/XpressAI/xai-discord',
+  },
+];
+
+const messageQueuesFrameworks: FrameworkItem[] = [
   {
     title: 'RabbitMQ',
     image: '/img/website/frameworks/rabbitmq.svg',
+    link: 'https://github.com/XpressAI/xai-rabbitmq',
   },
   {
     title: 'MQTT',
     image: '/img/website/frameworks/mqtt.png',
+    link: 'https://github.com/XpressAI/xai-mqtt',
   },
 ];
 
-function Framework({title, image}: FrameworkItem) {
+const databasesFrameworks: FrameworkItem[] = [
+  {
+    title: 'SQLite',
+    image: '/img/website/frameworks/sqlite.svg',
+    link: 'https://github.com/XpressAI/xai-sqlite',
+  },
+  {
+    title: 'Flask',
+    image: '/img/website/frameworks/flask.svg',
+    link: 'https://github.com/XpressAI/xai-flask',
+  },
+  {
+    title: 'MongoDB',
+    image: '/img/website/frameworks/mongodb.svg',
+    link: 'https://github.com/XpressAI/xai-mongoDB',
+  },
+];
+
+const cloudServicesFrameworks: FrameworkItem[] = [
+  {
+    title: 'GDrive',
+    image: '/img/website/frameworks/gdrive.png',
+    link: 'https://github.com/XpressAI/xai-gdrive',
+  },
+  {
+    title: 'GSpread',
+    image: '/img/website/frameworks/gspreadsheet.png',
+    link: 'https://github.com/XpressAI/xai-gspread',
+  },
+  {
+    title: 'AWS',
+    image: '/img/website/frameworks/aws.svg',
+    link: 'https://github.com/XpressAI/xai-boto3',
+  },
+];
+
+function Framework({ title, image, link }: FrameworkItem) {
   return (
     <div className={clsx('col', styles.col)}>
       <div className={styles.featureImgContainer}>
-        <img className={styles.featureImg} alt={title} src={image} />
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <img className={styles.featureImg} alt={title} src={image} />
+        </a>
+      </div>
+    </div>
+  );
+}
+
+function Section({ title, frameworks }: { title: string, frameworks: FrameworkItem[] }) {
+  return (
+    <div>
+      <div className={styles.sectionTitle}>
+        <h2>{title}</h2>
+        <hr />
+      </div>
+      <div className={clsx('row', styles.row)}>
+        {frameworks.map((props, idx) => (
+          <Framework key={idx} {...props} />
+        ))}
       </div>
     </div>
   );
@@ -52,11 +173,12 @@ function FrameworkDisplay(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className={clsx('row', styles.row)}>
-          {FrameworkList.map((props, idx) => (
-            <Framework key={idx} {...props} />
-          ))}
-        </div>
+        <Section title="Data Science, Machine Learning, and Data Processing" frameworks={dataScienceFrameworks} />
+        <Section title="AI Agents" frameworks={aiAgentsFrameworks} />
+        <Section title="Communication" frameworks={communicationFrameworks} />
+        <Section title="Message Queues" frameworks={messageQueuesFrameworks} />
+        <Section title="Databases & Servers" frameworks={databasesFrameworks} />
+        <Section title="Cloud Services" frameworks={cloudServicesFrameworks} />
       </div>
     </section>
   );
