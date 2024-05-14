@@ -112,14 +112,14 @@ const databasesFrameworks: FrameworkItem[] = [
     link: 'https://github.com/XpressAI/xai-sqlite',
   },
   {
-    title: 'Flask',
-    image: '/img/website/frameworks/flask.svg',
-    link: 'https://github.com/XpressAI/xai-flask',
-  },
-  {
     title: 'MongoDB',
     image: '/img/website/frameworks/mongodb.svg',
     link: 'https://github.com/XpressAI/xai-mongoDB',
+  },
+  {
+    title: 'Flask',
+    image: '/img/website/frameworks/flask.svg',
+    link: 'https://github.com/XpressAI/xai-flask',
   },
 ];
 
