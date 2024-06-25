@@ -9,6 +9,7 @@
   justify-content: center;
   margin-right: -15px;
   margin-left: -15px;
+  margin-bottom: 1rem;
 }
 
 .col {
@@ -18,13 +19,60 @@
   padding-left: 15px;
   display: flex;
   justify-content: center;
+  flex: 0 0 20%;
+  max-width: 20%;
 }
 
 .featureImg {
-  width: 200px;
+  width: auto;
+  height: 150px;
   margin: 0 15px;
+  object-fit: contain;
 }
 
 .homepageHeader {
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .col {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .col {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle h2 {
+  margin-bottom: 0.5rem;
+}
+
+.sectionTitle hr {
+  width: 50%;
+  margin: 0 auto;
 }
