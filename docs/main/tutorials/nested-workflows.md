@@ -92,11 +92,15 @@ Workflow components can accept parameters and return results, similar to functio
 6. **Connect and Run**
    - Connect appropriate inputs to the workflow component and run the workflow to ensure it works as expected.
 
+<div style={{ display: 'flex', justifyContent: 'center' }}>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UZLZ9Z0RdXY?si=wMcd8jLSL06KJX1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Important
+</div>
 
-- Workflow components must be saved and compiled in a valid component library path to be recognized.
+## Reminders
+
+- Workflow components **must** be saved and **compiled** in a valid component library path to be recognized.
 - Ensure correct setup of the directory and naming conventions for successful component creation and usage.
 
 
