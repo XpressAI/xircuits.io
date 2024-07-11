@@ -29,12 +29,6 @@ python -m venv venv
 venv/Scripts/activate
 ```
 
-Download python packages. 
-
-```
-pip install -r requirements.txt
-```
-
 Run the following commands to install the package in local editable mode and install xircuits into the JupyterLab environment.
 
 ```
