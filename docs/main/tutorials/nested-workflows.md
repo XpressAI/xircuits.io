@@ -1,71 +1,96 @@
 # Nested Workflows
 
-Xircuits allows users to create modular, reusable workflows that can be easily integrated into larger workflows by using `workflow components`. Workflow components in Xircuits work like subroutines or functions in traditional programming, encapsulating specific tasks or logic within a reusable piece, which can then be embedded in a larger workflow.
+Xircuits allows users to create modular, reusable workflows that can be integrated into larger workflows using workflow components. Workflow components function like subroutines or functions in traditional programming, encapsulating specific tasks or logic within a reusable piece that can be embedded in a larger workflow.
 
-This tutorial will guide you through the process of embedding or nesting workflows within each other in Xircuits. You will learn how to create an inner workflow, compile it, and then use it within a main workflow. Additionally, you will learn how to pass arguments to and from workflow components.
+## Workflow Components
+
+Workflow components are Xircuits workflows designed to be reusable within other workflows by accepting values and passing the results to an outside workflow. 
+
+<p align="center">
+  <img width="50%" src="/img/docs/tutorials/workflow_component.png"></img>
+  <figcaption class="image-caption">Workflow Components</figcaption>
+</p>
+
+
+:::info
+
+At its core, workflow components are normal Xircuits components. When a workflow is compiled, the `@xai_component(type='xircuits_workflow')` type decorator is added. This type decorator ensures that the compiled workflow is recognized as a workflow component. Here is an example of how it is applied:
+
+<details>
+<summary>Code Snippet</summary>
+
+<p>
+
+```python
+@xai_component(type='xircuits_workflow')
+class Inner(Component):
+
+    def __init__(self):
+        super().__init__()
+        self.__start_nodes__ = []
+        self.c_0 = Print()
+        self.c_0.msg.value = 'Hello workflow component!'
+        self.c_0.next = None
+
+    def execute(self, ctx):
+        for node in self.__start_nodes__:
+            if hasattr(node, 'init'):
+                node.init(ctx)
+        next_component = self.c_0
+        while next_component is not None:
+            next_component = next_component.do(ctx)
+```
+</p>
+</details>
+
+:::
+
+### Requirements
+- The library must be inside the `xai_components` directory.
+- The library directory must have the `xai_` prefix.
+- The library must have a `__init__.py` for Python to recognize it as a package.
 
 ## Creating a Workflow Component
 
-Workflow components are normal Xircuits workflows at their core, that you can run individually if you wish. The only difference is that you can design it to be reusable within other workflows by accepting values and passing the results of the workflow to an outside workflow.
+### Steps
+1. **Create a Workflow**
+   - Create a new workflow in a valid Xircuits component library path.
+   - Design the workflow with necessary components.
 
-For a workflow to be recognized as a workflow component, it must be saved and compiled in a valid component library directory.
+2. **Save and Compile**
+   - Save the workflow.
+   - Compile and run the workflow to verify functionality.
 
-- The library must be inside the `xircuits_components` directory.
-- The library must have the `xai_` prefix.
-- The library must have a `__init__.py` for Python to recognize it as a package.
+3. **Using the Workflow Component**
+   - Compiled workflows appear in the component library tray and can be used in new workflows.
 
-### 1. Create a Workflow
-- Start by creating a new workflow in a valid library path.
-- Design the workflow with the necessary components.
+## Passing Parameters
 
-**For this tutorial, name this workflow something like `inner_workflow.xircuits`. Add the `ConcatString` and `Print` components, adding appropriate literals.**
+Workflow components can accept parameters and return results, similar to function calls in programming.
 
-### 2. Save and Compile
-- Save the workflow. Compile it and run it to verify it works as expected.
+### Steps
+1. **Open a Workflow Component**
+   - If you already have a workflow component in your workflow, you can right-click on it and select `Open Workflow`. 
 
-**Save, compile, and run the workflow to verify it works.**
+2. **Setting Inputs**
+   - Replace Literals in the workflow with components that will become the inPorts for the workflow component.
 
-### 3. Using the Workflow Component
-- Workflows that are compiled in component libraries appear in the component library tray and can be used in new workflows. These workflows are now `workflow components`.
-- You can connect workflow components as you would with any normal component. Simply connect, compile, and run it.
+3. **Setting Outputs**
+   - Connect outputs to the `Finish` component's outPort to pass results from the workflow.
 
-**Create a new workflow named `main_workflow` and use the `inner_workflow` component within it. Compile and run the `main_workflow` to verify it calls and executes the `inner_workflow` correctly.**
+4. **Compile and Verify**
+   - Compile it. You may also run it to verify that the component works on its own.
 
-You have successfully called a workflow from another Xircuits workflow!
+5. **Use the Modified Workflow Component**
+   - In another workflow, add or reload the modified workflow component. The inPorts will correspond to the specified components, and there will be an output port for the workflow results.
 
-## Passing Parameters to and from the Workflow Component
+6. **Connect and Run**
+   - Connect appropriate inputs to the workflow component and run the workflow to ensure it works as expected.
 
-Workflow components can accept parameters and return results, similar to how function calls work in programming.
+## Important
 
-### 1. Opening a Workflow Component
-- Right-click on the workflow component and select `Open Workflow`. You can manually open it or use the function.
+- Workflow components must be saved and compiled in a valid component library path to be recognized.
+- Ensure correct setup of the directory and naming conventions for successful component creation and usage.
 
-**Open the `inner_workflow` component by right-clicking and selecting `Open Workflow`.**
 
-### 2. Setting the inPorts for the Workflow Component
-- Replace the literals in your workflow with `Argument` components. The names of the `Argument` components will be rendered as the names of the inPorts for the workflow component.
 
-**Replace the literals in `inner_workflow` with `Argument` components.**
-
-### 3. Passing Results from the Workflow Component
-- To pass results from this workflow to another workflow using it as a workflow component, connect the necessary outputs to the `Finish` component's `outputs` port.
-
-**Connect the output of `ConcatString` to the `Finish` component's `outputs` port.**
-
-### 4. Compile and Verify
-- Compile the workflow. Run it to verify that the output is the same as the previous output. Ensure the workflow is compiled for it to be updated.
-
-**Compile and run the workflow to verify the output remains the same.**
-
-### 5. Using the Modified Workflow Component
-- In another workflow, drag in the modified workflow component or reload it if it already exists. The inPorts of the workflow component should correspond to the `Argument` components, and it will have an `output` outPort that provides the results of the workflow.
-
-**Drag in or reload the modified `inner_workflow` component in another workflow.**
-
-### 6. Connect and Run
-- Connect literals to the rerendered workflow component.
-- Run the workflow and verify that it works as expected.
-
-**Connect literals to the rerendered workflow component, run it, and verify it works as expected.**
-
-This concludes the tutorial on embedding and nesting workflows in Xircuits. You should now be able to create complex workflows by nesting them and passing arguments efficiently between them.
