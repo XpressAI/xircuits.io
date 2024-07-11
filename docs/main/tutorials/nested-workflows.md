@@ -14,7 +14,7 @@ Workflow components are Xircuits workflows designed to be reusable within other 
 
 :::info
 
-At its core, workflow components are normal Xircuits components. When a workflow is compiled, the `@xai_component(type='xircuits_workflow')` type decorator is added. This type decorator ensures that the compiled workflow is recognized as a workflow component. Here is an example of how it is applied:
+When a workflow is compiled, the `@xai_component(type='xircuits_workflow')` type decorator is added. This type decorator ensures that the compiled workflow is recognized as a workflow component. Here is an example of how it is applied:
 
 <details>
 <summary>Code Snippet</summary>
@@ -64,6 +64,11 @@ class Inner(Component):
 3. **Using the Workflow Component**
    - Compiled workflows appear in the component library tray and can be used in new workflows.
 
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UAgILvaAUGY?si=dUijfS9u4PtPi_eu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" fullscreen></iframe>
+</div>
+
 ## Passing Parameters
 
 Workflow components can accept parameters and return results, similar to function calls in programming.
@@ -86,6 +91,8 @@ Workflow components can accept parameters and return results, similar to functio
 
 6. **Connect and Run**
    - Connect appropriate inputs to the workflow component and run the workflow to ensure it works as expected.
+
+
 
 ## Important
 
