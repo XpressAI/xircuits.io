@@ -1,56 +1,26 @@
-# Nested Workflows
+# Nesting Workflows
 
-Xircuits allows users to create modular, reusable workflows that can be integrated into larger workflows using workflow components. Workflow components function like subroutines or functions in traditional programming, encapsulating specific tasks or logic within a reusable piece that can be embedded in a larger workflow.
-
-## Workflow Components
-
-Workflow components are Xircuits workflows designed to be reusable within other workflows by accepting values and passing the results to an outside workflow. 
+Xircuits allows users to create modular, reusable workflows that can be integrated into larger workflows using `workflow components`. Workflow components function like subroutines or functions in traditional programming, encapsulating specific tasks or logic within a reusable piece that can be embedded in a larger workflow.
 
 <p align="center">
   <img width="50%" src="/img/docs/tutorials/workflow_component.png"></img>
   <figcaption class="image-caption">Workflow Components</figcaption>
 </p>
 
+## Creating a Workflow Component
 
-:::info
+### Prerequisites
 
-When a workflow is compiled, the `@xai_component(type='xircuits_workflow')` type decorator is added. This type decorator ensures that the compiled workflow is recognized as a workflow component. Here is an example of how it is applied:
+Workflow components that are created from workflows must be created in a valid component library path. Therefore you can either use an existing component library or create one from scratch. 
 
-<details>
-<summary>Code Snippet</summary>
+:::tip
 
-<p>
-
-```python
-@xai_component(type='xircuits_workflow')
-class Inner(Component):
-
-    def __init__(self):
-        super().__init__()
-        self.__start_nodes__ = []
-        self.c_0 = Print()
-        self.c_0.msg.value = 'Hello workflow component!'
-        self.c_0.next = None
-
-    def execute(self, ctx):
-        for node in self.__start_nodes__:
-            if hasattr(node, 'init'):
-                node.init(ctx)
-        next_component = self.c_0
-        while next_component is not None:
-            next_component = next_component.do(ctx)
-```
-</p>
-</details>
+If you're creating a component library from scratch, ensure that:
+- The library is located inside the `xai_components` directory.
+- The library directory has the `xai_` prefix.
+- The library includes a `__init__.py` file for Python to recognize it as a package.
 
 :::
-
-### Requirements
-- The library must be inside the `xai_components` directory.
-- The library directory must have the `xai_` prefix.
-- The library must have a `__init__.py` for Python to recognize it as a package.
-
-## Creating a Workflow Component
 
 ### Steps
 1. **Create a Workflow**
@@ -65,8 +35,8 @@ class Inner(Component):
    - Compiled workflows appear in the component library tray and can be used in new workflows.
 
 
-<div style={{ display: 'flex', justifyContent: 'center' }}>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/UAgILvaAUGY?si=dUijfS9u4PtPi_eu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" fullscreen></iframe>
+<div className="iframe-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UAgILvaAUGY?si=dUijfS9u4PtPi_eu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" fullscreen allow="fullscreen;"></iframe>
 </div>
 
 ## Passing Parameters
@@ -92,16 +62,17 @@ Workflow components can accept parameters and return results, similar to functio
 6. **Connect and Run**
    - Connect appropriate inputs to the workflow component and run the workflow to ensure it works as expected.
 
-<div style={{ display: 'flex', justifyContent: 'center' }}>
+<div className="iframe-container">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UZLZ9Z0RdXY?si=wMcd8jLSL06KJX1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UZLZ9Z0RdXY?si=wMcd8jLSL06KJX1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  allow="fullscreen;"></iframe>
 
 </div>
+
+By following these steps, you have successfully created and integrated a reusable workflow component in Xircuits. This allows for greater modularity and reusability in your workflow designs, enhancing efficiency and maintainability.
 
 ## Reminders
 
 - Workflow components **must** be saved and **compiled** in a valid component library path to be recognized.
 - Ensure correct setup of the directory and naming conventions for successful component creation and usage.
 
-
-
+For more additional details on how `workflow component` works, you can refer to the [workflow component](workflow-component) page.

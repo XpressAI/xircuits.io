@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -14,6 +16,16 @@
   --ifm-color-primary-lighter: #5065A8;
   --ifm-color-primary-lightest: #5065A8;
   --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Roboto', sans-serif;
+  --ifm-font-family-monospace: 'Roboto Mono', monospace;
+}
+
+body {
+  font-family: var(--ifm-font-family-base);
+}
+
+code, pre {
+  font-family: var(--ifm-font-family-monospace);
 }
 
 .docusaurus-highlight-code-line {
@@ -36,4 +48,39 @@ table {
 .image-caption {
   color: grey;
   font-size: small;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.875em;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.iframe-container iframe {
+  width: 560px;
+  height: 315px;
 }
