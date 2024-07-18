@@ -1,4 +1,4 @@
-## Workflow Components
+# Workflow Components
 
 Workflow components are Xircuits workflows designed to be reusable within other workflows by accepting values and passing the results to an outside workflow.
 

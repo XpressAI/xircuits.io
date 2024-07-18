@@ -74,7 +74,7 @@ You can define a variable at any point of the workflow using `SetVariableCompone
 ## Recommended Use Cases
 
 You should use Variable Components when:
-- You need a variable that changes. An example of this is controlling loops with Variable Components.
+- You need a variable that changes. An example of this is [controlling loops with Variable Components](branch-and-loops#comparison-and-conditional-logic).
 - You want to save a variable value into the Xircuits context.
 
 
@@ -89,13 +89,13 @@ You *could* (but not really recommended) also do the following with Variable Com
 
 A good Xircuits workflow is one that is understandable at a glance. While you might be tempted to use Variable Components everywhere as with a typical Python script, you might lose visibility compared to using the normal method.
 
-Consider the case where you substitute the Literal Values with Variable Components. Consider the following case:
+Consider the case where you substitute the Literal Values with Variable Components. Consider the following workflow:
 
 <div className="iframe-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/_nKf2QKkdf8?si=EGhMSxAI8Z9G6IhP&amp;start=24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-As you can see, using Literals allows you to keep track of what the Literal is connected to, and with one change, you can easily update the value across nodes. Substituting these with Variable Components means you'll have to ensure that you use the same variable names and might lose track of where the Variable Component is used.
+As shown in the workflow, using Literals allows you to keep track of what the Literal is connected to, and with one change, you can easily update the value across nodes. Substituting these with Variable Components means you'll have to ensure that you use the same variable names and might lose track of where the Variable Component is used.
 
 While ultimately it is up to your Xircuiting style, we recommend using Variable Components sparingly and only when other methods are not feasible.
 
