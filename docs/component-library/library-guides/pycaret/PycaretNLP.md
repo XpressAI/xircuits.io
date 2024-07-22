@@ -15,7 +15,7 @@ python -m textblob.download_corpora
 
 ## Basic Pycaret AutoML NLP
 
-![NLP-basic-example](/img/docs/examples/AutoML/NLP_basic_example.gif)
+![NLP-basic-example](/img/docs/NLP_basic_example.gif)
 
 ##### Example: AutoMLBasicNLP.xircuit
 
@@ -34,13 +34,13 @@ In this example, you will learn how to build a basic NLP Pycaret application tha
 
 ### Plot Graphs
 #### UMAP Dimensionality Plot
-![UMAP_NLP](/img/docs/examples/AutoML/UMAP_NLP.png)
+![UMAP_NLP](/img/docs/UMAP_NLP.png)
 
 #### Bigram Frequency Plot
-![Bigram_NLP](/img/docs/examples/AutoML/Bigram_NLP.png)
+![Bigram_NLP](/img/docs/Bigram_NLP.png)
 
 #### t-SNE (3d) Dimension Plot
-![TSNE_NLP](/img/docs/examples/AutoML/TSNE_NLP.png)
+![TSNE_NLP](/img/docs/TSNE_NLP.png)
 
 
 6. Lastly, `SaveModelNLP`: This component saves the transformation pipeline and trained model object into the current working directory as a pickle file for later use.
@@ -48,7 +48,7 @@ In this example, you will learn how to build a basic NLP Pycaret application tha
 
 ##  Pycaret AutoML Model Tuning
 
-![NLP-tune-example](/img/docs/examples/AutoML/NLP_tune_example.gif)
+![NLP-tune-example](/img/docs/NLP_tune_example.gif)
 
 ##### Example: AutoMLTuningNLP.xircuit
 
@@ -62,7 +62,7 @@ In this example, you will learn how to tune the *num_topics* parameter in NLP mo
 
 ### Plot Graphs
 #### Word Distribution Plot
-![Word_Distribution_NLP](/img/docs/examples/AutoML/Word_Distribution_NLP.png)
+![Word_Distribution_NLP](/img/docs/Word_Distribution_NLP.png)
 
 4. Tuned NLP model using unsupervised Coherence Value, Topic Coherence measures score a single topic by measuring the degree of semantic similarity between high scoring words in the topic. Using the `TuneModelNLP()` component and the *Latent Dirichlet Allocation* model we apply unsupervised model tuning and get the *Coherence Score* and *num_topics*. 
 ```

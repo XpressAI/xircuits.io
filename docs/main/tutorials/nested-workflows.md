@@ -3,7 +3,7 @@
 Xircuits allows users to create modular, reusable workflows that can be integrated into larger workflows using `workflow components`. Workflow components function like subroutines or functions in traditional programming, encapsulating specific tasks or logic within a reusable piece that can be embedded in a larger workflow.
 
 <p align="center">
-  <img width="50%" src="/img/docs/tutorials/workflow_component.png"></img>
+  <img width="50%" src="/img/docs/workflow_component.png"></img>
   <figcaption class="image-caption">Workflow Components</figcaption>
 </p>
 

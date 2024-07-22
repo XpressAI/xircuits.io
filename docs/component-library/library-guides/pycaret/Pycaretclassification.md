@@ -6,7 +6,7 @@ sidebar_position: 3
 
 Before starting any of these examples, please ensure that you installed <code>Pycaret=>2.2</code> in your working environment. You can use <code>pip install pycaret==2.3.8</code> to install it too.    
 ## Basic Pycaret AutoML Binary classification
-![basic_class_example](/img/docs/examples/AutoML/basic_class_example.gif)
+![basic_class_example](/img/docs/basic_class_example.gif)
 ##### Example: AutoMLBasicBinaryClassification.xircuits
 
 In this example, you will learn how to build a basic Pycaret classification application that reads a tabular dataset,setup environment, compare training on multiple ML models, fine-tune models, plot results and save the trained model.
@@ -18,7 +18,7 @@ In this example, you will learn how to build a basic Pycaret classification appl
 3. `CompareModelsClassification`: This component trains and evaluates performance of all estimators available in the model library using cross validation.The output of this component is a score grid with average cross validated scores. Additionally, it output a list of the top performing models, number of top model returned can be controlled by the *num_top* input. 
    
 ### Compare Model Output
-![Binary_compare_models](/img/docs/examples/AutoML/Binary_compare_models.png)
+![Binary_compare_models](/img/docs/Binary_compare_models.png)
 
 4. `CreateModelClassification`: This component trains and evaluates the performance of a **given model** using cross validation.The output of this component is a score grid with CV scores by fold and the created model. 
 
@@ -27,7 +27,7 @@ In this example, you will learn how to build a basic Pycaret classification appl
 6. `PlotModelClassification`: This component analyzes the performance of a trained model on holdout set. the type of the plot wanted could be set in *plot_type*.
 
 ### Plot Feature Graph
-![Binary_feature](/img/docs/examples/AutoML/Binary_feature.png)
+![Binary_feature](/img/docs/Binary_feature.png)
 
 
 7. `PredictModelClassification`: This component predicts Label and Score (probability of predicted class) using a trained model. When the *predict_dataset* input is None, it predicts label and score on the holdout(validation) set.
@@ -39,7 +39,7 @@ In this example, you will learn how to build a basic Pycaret classification appl
 10.  `SaveModelClassification`: This component saves the transformation pipeline and trained model object into the current working directory as a pickle file for later use.
 
 ## Pycaret AutoML Model Operation
-![blend_class_example](/img/docs/examples/AutoML/blend_class_example.gif)
+![blend_class_example](/img/docs/blend_class_example.gif)
 ##### Example: AutoMLClassificationBlendModels.xircuits 
 
 In this example, you will learn how to build to apply transformation on the dataset, **Blend** the top performing model into one model and calibrate the model.
@@ -65,7 +65,7 @@ In this example, you will learn how to build to apply transformation on the data
 
 
 ## Basic Pycaret AutoML Multiclass classification
-![multi_class_example](/img/docs/examples/AutoML/multi_class_example.gif)
+![multi_class_example](/img/docs/multi_class_example.gif)
 ##### AutoMLBasicMulticlassClassification.xircuits
 
 In this example, we have used the same components to build a basic Pycaret Multiclass classification that reads a tabular dataset. We setup the environment, compare training on multiple ML models, fine-tune models, then pick and save the best performance trained model.
@@ -78,12 +78,12 @@ In this example, we have used the same components to build a basic Pycaret Multi
 
 ### Plot Boundary Graph 
 
-![multiclass_boundary](/img/docs/examples/AutoML/multiclass_boundary.png)
+![multiclass_boundary](/img/docs/multiclass_boundary.png)
 
 ### Plot Confusion Matrix Graph
 
-![multiclass_confusion_matrix](/img/docs/examples/AutoML/multiclass_confusion_matrix.png)
+![multiclass_confusion_matrix](/img/docs/multiclass_confusion_matrix.png)
 
 ### Plot Class Report Graph
 
-![multiclass_class_report](/img/docs/examples/AutoML/multiclass_class_report.png)
+![multiclass_class_report](/img/docs/multiclass_class_report.png)

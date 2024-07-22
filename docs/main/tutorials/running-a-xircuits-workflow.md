@@ -53,7 +53,7 @@ Typically, you'll begin with a provided workflow and adjust its parameters. To c
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/xircuits-interface/edit-literal.gif"></img></p>
+  <img src="/img/docs/edit-literal.gif"></img></p>
 </details>
 
 You can also add more components from the component tray or by dragging a link from an existing port.

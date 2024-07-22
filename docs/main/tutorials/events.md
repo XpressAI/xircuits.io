@@ -38,7 +38,7 @@ In this tutorial, you will learn how to integrate event-driven functionality int
 2. Observe how the `OnEvent` component reacts when the `FireEvent` component triggers the specified event.
 
 <p align="center">
-  <img width="90%" src="/img/docs/tutorials/events.gif"></img>
+  <img width="90%" src="/img/docs/events.gif"></img>
   <figcaption class="image-caption">Events Preview</figcaption>
 </p>
 

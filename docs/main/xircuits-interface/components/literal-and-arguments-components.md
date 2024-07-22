@@ -6,13 +6,13 @@ sidebar_position: 2
 
 To supply your Xircuits library components with customizable parameters, we provide `Literal` and `Argument` components as general components. The main difference between them can be observed in the generated code. Consider the training_epoch parameter in the TrainImageClassifier component below. 
 
-![SampleTraining](/img/docs/examples/computer-vision/SampleTraining.png)
+![SampleTraining](/img/docs/SampleTraining.png)
 
 You will need to supply an integer to specify how many epochs to run the training. 
 
 ## Literal Component
 
-![LiteralComponent](/img/docs/xircuits-interface/components/LiteralComponent.gif)
+![LiteralComponent](/img/docs/LiteralComponent.gif)
 
 The generated code would look like this:
 
@@ -47,7 +47,7 @@ As you can see, the value is passed in as a `Literal Integer` to the TrainImageC
 
 The following example shows if the argument component is used. Xircuits will prompt you to supply the parameter through our argument window prompt.
 
-![ArgumentComponent](/img/docs/xircuits-interface/components/ArgumentComponent.gif)
+![ArgumentComponent](/img/docs/ArgumentComponent.gif)
 
 And it will be supplied as a argument in the generated code.
 

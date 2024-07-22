@@ -27,6 +27,6 @@ The Events Component Library is included in the base Xircuits installation and r
 - **Flexibility**: By using events, workflows can be more flexible, allowing for dynamic changes in response to different conditions or inputs.
 
 <p align="center">
-  <img width="90%" src="/img/docs/tutorials/events.gif"></img>
+  <img width="90%" src="/img/docs/events.gif"></img>
   <figcaption class="image-caption">Events Preview</figcaption>
 </p>

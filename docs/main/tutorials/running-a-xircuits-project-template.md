@@ -57,7 +57,7 @@ Once you've setup the project, a Xircuits project template becomes a normal Xirc
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/tutorials/iris_template.gif"></img></p>
+  <img src="/img/docs/iris_template.gif"></img></p>
 </details>
 
 Congratulations you have successfully ran your first Xircuits project template! From here, you should be able to run any project templates. Be sure to checkout the [Xircuits project template section](/docs/project-template/) if you want to see the various project template workflows made by our engineers and open source contributors.

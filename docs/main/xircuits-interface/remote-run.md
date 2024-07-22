@@ -59,7 +59,7 @@ Running Spark Submit using local mode
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/examples/spark/spark-remote-submit.gif"></img></p>
+  <img src="/img/docs/spark-remote-submit.gif"></img></p>
 </details>
 
 ### Note:

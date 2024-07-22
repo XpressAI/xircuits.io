@@ -14,7 +14,7 @@ xircuits install pytorch
 ## Training a Torch ML Model
 
 The following example showcases how to load a Torch dataset, specify a Torch model, train and evaluate, then save the state in Xircuits.
-![torch-train](/img/docs/examples/computer-vision/torch-train.png)
+![torch-train](/img/docs/torch-train.png)
 ##### Example: TorchTrainModel.xircuits
 
 
@@ -142,7 +142,7 @@ The following example showcases how to load a Torch dataset, specify a Torch mod
 
 The following example showcases how to load a Torch model state and perform an inference.
 
-![torch-inference](/img/docs/examples/computer-vision/torch-inference.png)
+![torch-inference](/img/docs/torch-inference.png)
 
 To perform inference, you will need the following components:
 

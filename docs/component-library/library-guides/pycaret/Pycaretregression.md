@@ -7,7 +7,7 @@ sidebar_position: 3
 Before starting any of these examples, please ensure that you installed <code>Pycaret=>2.2</code> in your working environment. You can use <code>pip install pycaret==2.3.8</code> to install it too.    
 ## Basic Pycaret AutoML Regression
 
-![Basic-regression-example](/img/docs/examples/AutoML/basic_regression_example.gif)
+![Basic-regression-example](/img/docs/basic_regression_example.gif)
 
 ##### Example: AutoMLBasicRegression.xircuit
 
@@ -20,7 +20,7 @@ In this example, you will learn how to build a basic Pycaret regression applicat
 3. `CompareModelsRegression`: This component trains and evaluates performance of all estimators available in the model library using cross validation. The output of this component is a score grid with average cross validated scores. Additionally, it outputs a list of the top performing models, number of top model returned can be controlled by the *num_top* input.
 
 ### Compare Model Output
-![Binary_compare_models](/img/docs/examples/AutoML/compare_model_regression.png)
+![Binary_compare_models](/img/docs/compare_model_regression.png)
 
 4. `CreateModelRegression`: This component trains and evaluates the performance of a **given model** using cross validation. The output of this component is a score grid with CV scores by fold and the created model. 
 
@@ -29,7 +29,7 @@ In this example, you will learn how to build a basic Pycaret regression applicat
 6. `PlotModelRegression`: This component analyzes the performance of a trained model on holdout set. The type of the plot desired can be set in *plot_type*.
 
 ### Plot Residuals Graph
-![residuals_plot_regression](/img/docs/examples/AutoML/residuals_plot_regression.png)
+![residuals_plot_regression](/img/docs/residuals_plot_regression.png)
 
 
 7. `PredictModelRegression`: This component predicts Label (Regression value) using a trained model. When the *predict_dataset* input is None, it predicts label and score on the holdout(validation) set.
@@ -43,7 +43,7 @@ In this example, you will learn how to build a basic Pycaret regression applicat
 
 ## Pycaret AutoML Model Operation 
 
-![stacked-regression-example](/img/docs/examples/AutoML/stacked_regression_example.gif)
+![stacked-regression-example](/img/docs/stacked_regression_example.gif)
 
 ##### Example: AutoMLRegressionStackModels.xircuits 
 
@@ -70,4 +70,4 @@ In this example, you will learn how to build to apply transformation on the data
 
 4. `logging`: this component save all the trained models logs to MLflow dashboard can access at localhost:5000, to activate logging you will need to set *log_experiment* in `SetupRegression` component to True.  
 
-![cooks_plot_regression](/img/docs/examples/AutoML/cooks_plot_regression.png)
+![cooks_plot_regression](/img/docs/cooks_plot_regression.png)

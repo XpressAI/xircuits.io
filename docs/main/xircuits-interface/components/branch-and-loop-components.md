@@ -43,7 +43,7 @@ class BranchComponent(Component):
             return self.done, None
 ```
 
-![controlflow-example](/img/docs/tutorials/controlflow-example.gif)
+![controlflow-example](/img/docs/controlflow-example.gif)
 
 The output is show below:
 
