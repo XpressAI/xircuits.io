@@ -25,6 +25,14 @@ Here's high-level overview of how the documentation is organized will help you k
 - [**The Xircuits Interface**](xircuits-interface) contains references for Xircuits’ machinery.
 - [**Contributing**](../category/contributing) guides you on how to make good Xircuits pull requests, whether they are to showcase your component libraries or project templates or other purposes!
 
+## Why Should I Use Xircuits?
+
+Xircuits offers unique benefits tailored to different types of users:
+
+- **For Users:** Run our project templates with minimal or no coding, making it easy to implement AI workflows quickly and efficiently. You don't need a PhD to run AI!
+- **For Developers:** Develop your own workflows visually, allowing for more intuitive and efficient creation and modification of complex processes. Explain your work to bosses easily with powerful visual tools!
+- **For Enterprises:** Use the Xircuits Platform to deploy and integrate AI features swiftly, without the need for extensive development time. Fast and easy integration - you don't need a huge team!
+
 ## Getting Help
 Having trouble? We’d like to help!
 

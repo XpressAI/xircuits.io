@@ -11,7 +11,7 @@ Xircuits allows users to create modular, reusable workflows that can be integrat
 
 ### Prerequisites
 
-Workflow components that are created from workflows must be created in a valid component library path. Therefore you can either use an existing component library or create one from scratch. 
+Workflow components are created from compiled workflows, and therefore must be created in a valid component library path. Thus, you can either use an existing component library or create one from scratch. 
 
 :::tip
 

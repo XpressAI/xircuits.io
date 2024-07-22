@@ -1,22 +1,44 @@
 # Events
 
-The Xircuits Events System introduces a dynamic way to handle event-driven programming within your Xircuits workflows. This system allows components to listen for specific events and react accordingly, enabling a more modular and decoupled design of workflows.
+The Xircuits Events component library introduces a dynamic way to handle event-driven programming within your Xircuits workflows. This system allows components to listen for specific events and react accordingly.
 
-## Overview
+In this tutorial, you will learn how to integrate event-driven functionality into your Xircuits workflows using the `OnEvent` and `FireEvent` components.
 
-The Events Component Library is included in the base Xircuits installation and requires no additional setup. It is ready to use out of the box, allowing for immediate integration of event-driven functionality into your workflows.
+### Prerequisites
 
-Events in Xircuits provide a mechanism for triggering actions in response to specific occurrences within a workflow. This is accomplished through two primary components: `OnEvent` and `FireEvent`.
+- Ensure you have Xircuits installed. The Events component library is included in the base installation, so no additional setup is required.
 
-### `OnEvent` Component
+### Step 1: Setting Up the Workflow
 
-The `OnEvent` component acts as an event listener, waiting for a specified event to occur. When the event is fired, the `OnEvent` component executes its associated actions.
+1. Open your Xircuits workspace.
+2. Create a new workflow or open an existing one where you want to implement the event-driven system.
 
-### `FireEvent` Component
+### Step 2: Adding the `OnEvent` Component
 
-The `FireEvent` component is used to trigger an event. All `OnEvent` components listening for this event will be executed, and any data passed as the payload will be available to them.
+1. From the components library, drag and drop the `OnEvent` component into your workflow.
+2. Configure the `OnEvent` component:
+   - **Event Name**: Specify the name of the event you want this component to listen for.
+   - **Actions**: Define the actions to be executed when the event is fired.
+
+### Step 3: Adding the `FireEvent` Component
+
+1. Drag and drop the `FireEvent` component into your workflow.
+2. Configure the `FireEvent` component:
+   - **Event Name**: Specify the name of the event you want to trigger.
+   - **Payload**: Optionally, add any data you want to pass along with the event.
+
+### Step 4: Connecting Components
+
+1. Connect the `FireEvent` component to the parts of the workflow where you want the event to be triggered.
+2. Ensure the `OnEvent` component is placed appropriately to listen for the triggered event and execute its actions.
+
+### Step 5: Running the Workflow
+
+1. Run your workflow.
+2. Observe how the `OnEvent` component reacts when the `FireEvent` component triggers the specified event.
 
 <p align="center">
   <img width="90%" src="/img/docs/tutorials/events.gif"></img>
   <figcaption class="image-caption">Events Preview</figcaption>
 </p>
+
