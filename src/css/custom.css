@@ -18,13 +18,13 @@
 :root {
   
   
-  --ifm-color-primary: #264f75;
-  --ifm-color-primary-dark: #204465;
-  --ifm-color-primary-darker: #193855;
-  --ifm-color-primary-darkest: #132e46;
-  --ifm-color-primary-light: #3b5f82;
-  --ifm-color-primary-lighter: #4f7090;
-  --ifm-color-primary-lightest: #64819e;
+  --ifm-color-primary: #265ca2;
+  --ifm-color-primary-dark: #27577c;
+  --ifm-color-primary-darker: #1f4969;
+  --ifm-color-primary-darkest: #183c57;
+  --ifm-color-primary-light: #44749a;
+  --ifm-color-primary-lighter: #5883a5;
+  --ifm-color-primary-lightest: ##6c92b1;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 

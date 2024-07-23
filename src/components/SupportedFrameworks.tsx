@@ -38,11 +38,19 @@ const dataScienceFrameworks: FrameworkItem[] = [
     title: 'Pycaret',
     image: '/img/website/frameworks/pycaret.png',
     link: 'https://github.com/XpressAI/xai-pycaret',
-  },
+  }
+];
+
+const frontendFrameworks: FrameworkItem[] = [
   {
     title: 'Streamlit',
     image: '/img/website/frameworks/streamlit.svg',
     link: 'https://github.com/XpressAI/xai-streamlit',
+  },
+  {
+    title: 'Gradio',
+    image: '/img/website/frameworks/gradio.svg',
+    link: 'https://github.com/XpressAI/xai-gradio',
   }
 ];
 
@@ -125,14 +133,14 @@ const databasesFrameworks: FrameworkItem[] = [
 
 const cloudServicesFrameworks: FrameworkItem[] = [
   {
-    title: 'GDrive',
-    image: '/img/website/frameworks/gdrive.png',
-    link: 'https://github.com/XpressAI/xai-gdrive',
+    title: 'Microsoft',
+    image: '/img/website/frameworks/microsoft.svg',
+    link: 'https://github.com/XpressAI/xai-ms-graph',
   },
   {
-    title: 'GSpread',
-    image: '/img/website/frameworks/gspreadsheet.png',
-    link: 'https://github.com/XpressAI/xai-gspread',
+    title: 'Google',
+    image: '/img/website/frameworks/google-cloud.svg',
+    link: 'https://github.com/XpressAI/xircuits',
   },
   {
     title: 'AWS',
@@ -175,9 +183,10 @@ function FrameworkDisplay(): JSX.Element {
       <div className="container">
         <Section title="Data Science, Machine Learning, and Data Processing" frameworks={dataScienceFrameworks} />
         <Section title="AI Agents" frameworks={aiAgentsFrameworks} />
+        <Section title="Frontend Frameworks" frameworks={frontendFrameworks} />
+        <Section title="Backends & Databases" frameworks={databasesFrameworks} />
         <Section title="Communication" frameworks={communicationFrameworks} />
         <Section title="Message Queues" frameworks={messageQueuesFrameworks} />
-        <Section title="Databases & Servers" frameworks={databasesFrameworks} />
         <Section title="Cloud Services" frameworks={cloudServicesFrameworks} />
       </div>
     </section>
