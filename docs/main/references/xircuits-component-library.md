@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 id: xircuits-component-library
-title: Xircuits Component Library
+title: Component Libraries
 tags:
   - glossary
 ---

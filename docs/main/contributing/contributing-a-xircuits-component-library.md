@@ -9,7 +9,7 @@ tags:
 
 # Contributing your Own Xircuits Component Library
 
-This section will focus on how to create a component library pull request so you can showcase your library in our [Xircuits Component Library list](https://github.com/XpressAI/xircuits/tree/master/xai_components#readme)! Users can interact with the component libraries featured in this list using the Xircuits [component library command](main/xircuits-interface/cli-commands.md).
+This section will focus on how to create a component library pull request so you can showcase your library in our [Xircuits Component Library list](https://github.com/XpressAI/xircuits/tree/master/xai_components#readme)! Users can interact with the component libraries featured in this list using the Xircuits [component library command](main/references/cli-commands.md).
 
 Before proceeding, ensure that you have already have your component library repository. We've provided a [guide](main/developer-guide/creating-a-xircuits-component-library.md) for that.
 

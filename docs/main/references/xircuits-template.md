@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
 id: xircuits-project-template
-title: Xircuits Project Template 
+title: Project Templates
 tags:
   - glossary
 ---
