@@ -125,20 +125,15 @@ Generated number: 42
 Finish Executing
 ```
 
-### Using the Command Line
+:::tip
 
-To run the generated script from the command line:
+In the XpressAi platform, you can leverage the chat assistant to generate the component for you.
 
-1. **Set Python Path:**
+<p align="center">
+  <img width="90%" src="/img/docs/xircuits-chat-assistant.gif"></img>
+  <figcaption class="image-caption">Chat Assistant</figcaption>
+</p>
 
-    ```bash
-    export PYTHONPATH="$PWD:$PYTHONPATH"
-    ```
-
-2. **Run Script:**
-
-    ```bash
-    python MyFirstWorkflow.py --input_str "World"
-    ```
+:::
 
 By following these steps, you've learned how to create a custom component library, develop custom components, and define dependencies. This enhances your ability to integrate your own Python code into Xircuits workflows. Keep exploring and expanding your Xircuits skills!

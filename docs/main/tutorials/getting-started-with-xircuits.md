@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Getting Started with Xircuits in JupyterLab
 
-Welcome to Xircuits! This tutorial will walk you through installing Xircuits, starting it, and running a basic "Hello World" example in JupyterLab.
+Welcome to Xircuits! This tutorial will walk you through installing Xircuits, starting it, and running a workflow in JupyterLab.
 
 ## Installation
 
@@ -27,7 +27,7 @@ This command will download and install all the necessary packages for Xircuits.
 
 ## Launching Xircuits
 
-After installing Xircuits, you need to launch it to start building workflows. Follow these steps:
+After installing Xircuits, you need to launch it to start building workflows.
 
 1. **Start Xircuits:** Run the following command in your terminal:
 
@@ -37,44 +37,34 @@ After installing Xircuits, you need to launch it to start building workflows. Fo
 
 This command will launch the Xircuits interface, where you can build and manage your workflows.
 
-## Running a "Hello World" Example
+## Running a Xircuits Workflow
 
 ### Open an Example File
 
 To get started with a simple workflow, let's open a pre-existing example file:
 
-1. **Navigate to Examples:** In the Xircuits interface, navigate to the `xai_components/xai_tensorflow_keras/examples/` directory.
+1. **Navigate to Examples:** In the Xircuits interface, use the file browser to navigate to the `xai_components/xai_controlflow/` directory.
 2. **Select an Example:** Open any `.xircuits` file of your choice. You can also right-click on the library in the component tray within Xircuits and select 'Show Examples' to explore available workflows.
 
 ### View the Xircuits Canvas
 
 Once you open a Xircuits canvas, you will see a visual representation of your workflow. Here’s what you need to know:
 
-1. **Workflow Structure:** The workflow progresses from the `Start` node to the `Finish` node, connected by blue links.
-2. **Nodes and Links:** Nodes represent components, and links represent the flow of data between these components. Each node may have parameter ports for input and output, allowing you to pass data between components.
+1. **Workflow Structure:** The workflow progresses from the `Start` node to the `Finish` node, connected links that represent different aspects of the workflow.
 
-### Modify the Workflow
+2. **Nodes and Links:** Nodes represent components within your workflow and are connected by links. There are two common types of nodes:
+    - **Component Nodes:** These nodes perform actions or tasks within your workflow. They have flow ports at the top to manage the execution flow, with at least one flow inPort and outPort. The flow links connecting these ports are blue and flowing, indicating the execution sequence of the workflow.
+    - **Parameter Nodes:** These nodes supply values to the component nodes, influencing their behavior. They do not have icons and are connected to the component nodes via solid gray links. You can edit the values of parameter nodes by double-clicking on them.
 
-Customizing your workflow is simple:
+### Compile and Run
 
-1. **Edit Parameters:** Double-click on a component to edit its parameters. For example, you can change the `training_epochs` parameter in the `TrainImageClassifier` component to 3.
-2. **Add Components:** Drag components from the component tray into your workflow or create links between nodes to add more functionality.
+After observing the workflow, you need to compile and run it:
 
-### Save and Compile
-
-After making your modifications, you need to save and compile the workflow:
-
-1. **Save Your Changes:** Click 'Save' to save your workflow.
+1. **Save & Compile:** Click 'Save' to save your workflow.
 2. **Compile the Workflow:** Click 'Compile' to generate a Python script with the same name as your `.xircuits` file.
+3. **Run the Workflow:** Select the Python kernel to execute the workflow.
 
-### Run the Workflow
-
-Now, let's execute the workflow:
-
-1. **Save & Compile:** Press the `Save & Compile` button. If there are unsaved changes, you’ll be prompted to save them.
-2. **Choose Python Kernel:** Select the Python kernel to execute the workflow.
-
-You should see output indicating the workflow is running, including training progress and results. For example:
+You should see output indicating the workflow is running, including the execution steps and results. For example, if you opened ControlflowBranch.xircuits, on the output you'll see:
 
 ```plaintext
 ======================================
@@ -85,43 +75,24 @@ __   __  ___                _ _
 /_/  /_/\_\_|_|  \___|\__,_|_|\__|___/
 ======================================
 Xircuits is running...
-Executing: ReadDataSet
-Executing: TrainTestSplit
-Split Parameters:
-Train Split 0.8 
-Shuffle: True 
-Random State: None
-Executing: Create2DInputModel
-x_shape=(28, 28, 1)
-y_shape=10
-Executing: TrainImageClassifier
-Epoch 1/3
-438/438 [==============================] - 17s 14ms/step - loss: 0.4883 - accuracy: 0.8467
-Epoch 2/3
-438/438 [==============================] - 5s 11ms/step - loss: 0.1591 - accuracy: 0.9521
-Epoch 3/3
-438/438 [==============================] - 4s 10ms/step - loss: 0.1144 - accuracy: 0.9651
-Executing: EvaluateAccuracy
-{'loss': '0.07967730611562729', 'accuracy': '0.975803554058075'}
-Finish Executing
+Executing: ControlflowBranch
+Executing: Print
+You can chain multiple branches together!
+Executing: Print
+The 2nd branch is True!
+Executing: Print
+Finally, this will be executed once the final branch flow is complete!
+Finished Executing
 ```
 
-Congratulations on running your first Xircuits workflow! 
 
-### Additional Notes
+## Visual Walkthrough
+For a visual demonstration of the steps mentioned above, you can watch the tutorial video below. 
 
-You can also run the compiled script from the command line:
+<div className="iframe-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Hs_ZX7-VcGM?si=-1L1zz6qWEzwh9Bf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" fullscreen allow="fullscreen;"></iframe>
+</div>
 
-1. **Add to Python Path:** Add your working directory to the Python path:
+Congratulations on running your first Xircuits workflow! You have learned how to install Xircuits, launch it, and run a prebuilt Xircuits workflow.
 
-    ```bash
-    export PYTHONPATH="$PWD:$PYTHONPATH"
-    ```
-
-2. **Execute the Script:** Run the script using Python:
-
-    ```bash
-    python KerasTrainImageClassifier.py
-    ```
-
-Explore other example workflows to practice and familiarize yourself with Xircuits. Happy experimenting!
+You can explore other example workflows to see how things are done in Xircuits. Once you're ready, we'll move on to the next step - creating your own visual workflow from scratch.

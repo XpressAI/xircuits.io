@@ -219,3 +219,26 @@ h6 {
   width: 560px;
   height: 315px;
 }
+
+.navbar__link--platform {
+  background-color: var(--ifm-color-primary);
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.navbar__link--platform:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+[data-theme="dark"] .navbar__link--platform {
+  background-color: var(--ifm-color-primary-light);
+}
+
+[data-theme="dark"] .navbar__link--platform:hover {
+  background-color: var(--ifm-color-primary-darker);
+}
