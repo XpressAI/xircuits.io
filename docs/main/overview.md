@@ -64,21 +64,30 @@ Created a cool component library? All your colleagues need to do is to drop your
 </details>
 
 And many more.
+
 ## How it Works
 1. Create a new Xircuits from the Jupyterlab launcher or open an existing .xircuits file.
 
-![xircuit](/img/docs/open-xircuits.gif)
+<div className="iframe-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ONlBHT5OSbo?si=phd92Yy-B3f6CFyn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" fullscreen allow="fullscreen;"></iframe>
+</div>
 
-2. Drag components from the Xircuits Component Tray to form your training workflow. Share data among your components using the inPorts and outPorts.
+2. Drag components from the Xircuits Component Tray to complete your workflow. Share data among your components using the inPorts and outPorts. Supply or edit Literals which modifies the component behavior!
 
-![xircuit-components](/img/docs/components.gif)
+<div className="iframe-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rPtulYp9rCo?si=ffK3RrUSeL3CScpq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" fullscreen allow="fullscreen;"></iframe>
+</div>
 
-3. Press Compile button! The Xircuits will compile the components into a working Python code.
+3. Press Compile button! The Xircuits will compile the workflow into a Python script. A compiled workflow can also be called in other workflows as a component!
 
-![xircuit-parser](/img/docs/python-parser.gif)
+<div className="iframe-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xoZY4jeGSy4?si=GvSvM5t486b2BV32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" fullscreen allow="fullscreen;"></iframe>
+</div>
 
 4. Run it!
 
-![xircuit-runner](/img/docs/xircuits-runner.gif)
+<div className="iframe-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uxHlnOwKYv0?si=8SpzxK7KrNOlukOZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" fullscreen allow="fullscreen;"></iframe>
+</div>
 
 Xircuits will execute the compiled Python code on the Output Viewer.  

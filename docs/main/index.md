@@ -16,14 +16,16 @@ Are you new to Xircuits? Here's some quick links to start!
 
 ## How the Xircuits Documentation is Organized
 
-Here's high-level overview of how the documentation is organized will help you know where to look for certain things:
+Here's high-level overview of how the documentation is organized to help you know where to look for certain things:
 
-- [**Tutorials**](../category/tutorials) take you by the hand and get you started on your first Xircuits workflows. Start here if you’re new to Xircuits.
-- [**Examples**](../category/use-case-examples) guide you through the steps involved in possible Xircuits use-cases. They are more advanced than tutorials and assume some foundation knowledge of how that particular use-case works and instead focus on how it can be implemented in Xircuits.
-- [**Developer Guide**](../category/developer-guide) are guides so that you can create components and workflows for Xircuits users.
-- [**Technical Concepts**](../category/technical-concepts) discuss key topics and concepts at a fairly high level and provide useful background information and explanation.
-- [**The Xircuits Interface**](xircuits-interface) contains references for Xircuits’ machinery.
-- [**Contributing**](../category/contributing) guides you on how to make good Xircuits pull requests, whether they are to showcase your component libraries or project templates or other purposes!
+- [**Tutorials**](/docs/category/tutorials) take you by the hand and get you started on your first Xircuits workflows. Start here if you’re new to Xircuits.
+- [**Visual Programming in Xircuits**](/docs/category/visual-programming-in-xircuits) teaches you how to perform programming tasks using Xircuits' visual style, including loops, variables, events, etc.
+- [**How-Tos**](/docs/category/how-tos) offer step-by-step instructions for specific tasks and challenges you might encounter.
+- [**Use Case Examples**](/docs/category/use-case-examples) guide you through the steps involved in possible Xircuits use-cases. They are more advanced than tutorials and assume some foundation knowledge of how that particular use-case works and instead focus on how it can be implemented in Xircuits.
+- [**Explanations**](/docs/category/explanations) discuss key topics and concepts at a fairly high level and provide useful background information and explanation.
+- [**Developer Guide**](/docs/category/developer-guide) contains guides so that you can create components and workflows for Xircuits users, including how you can contribute to Xircuits.
+- [**References**](/docs/category/references) contain detailed descriptions of Xircuits’ machinery and commands.
+- [**FAQs**](faq) provide answers to frequently asked questions.
 
 ## Why Should I Use Xircuits?
 
@@ -37,5 +39,5 @@ Xircuits offers unique benefits tailored to different types of users:
 Having trouble? We’d like to help!
 
 - Try the [FAQ](faq) – it’s got answers to many common questions.
-- See if your issue has found and solved before in the [Github Issues](https://github.com/XpressAI/xircuits/issues) page.
+- See if your issue has been found and solved before in the [Github Issues](https://github.com/XpressAI/xircuits/issues) page.
 - Need direct support? You can always visit our [Discord](https://discord.com/invite/vgEg2ZtxCw).
