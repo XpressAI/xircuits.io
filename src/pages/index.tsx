@@ -10,6 +10,7 @@ import HomepageFeatures from '../components/HomepageFeatures';
 import SupportedFrameworks from '../components/SupportedFrameworks';
 import XircuitsforUsers from '../components/XircuitsforUsers';
 import XircuitsforDevelopers from '../components/XircuitsforDevelopers';
+import XircuitsforEnterprise from '../components/XircuitsForEnterprise';
 
 
 
@@ -23,6 +24,7 @@ export default function Home(): JSX.Element {
       <main>
         <XircuitsforUsers /><hr />
         <XircuitsforDevelopers /><hr />
+        <XircuitsforEnterprise /> <hr/>
         <SupportedFrameworks />
       </main>
     </Layout>

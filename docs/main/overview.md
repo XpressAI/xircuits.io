@@ -52,17 +52,6 @@ Didn't find what you're looking for? Creating Xircuits components is very easy! 
 
 </details>
 
-<details>
-<summary><b>Effortless Collaboration</b></summary>
-Created a cool Xircuits workflow? Just pass the .xircuits file to your fellow data scientist, they will be able to load your Xircuits canvas instantly.
-
-![collab](/img/docs/collab.gif)
-
-Created a cool component library? All your colleagues need to do is to drop your component library folder in theirs and they can immediately use your components.
-
-
-</details>
-
 And many more.
 
 ## How it Works
