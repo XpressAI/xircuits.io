@@ -2,86 +2,91 @@
 sidebar_position: 2
 ---
 
-# Creating Your First Visual Workflow
+# Creating Your First Visual Workflow From Scratch
 
-Welcome back to Xircuits! Now that you've learned how to install and run a basic workflow, it's time to create a more complex workflow from scratch. This tutorial will guide you through the process, introducing you to the component library, how to find and install necessary components, and how to use arguments effectively.
+Welcome back to Xircuits! Now that you've learned how to run a basic workflow, it's time to create a more complex one from scratch. This tutorial will guide you through the process, introducing you to the component library, how to find and install necessary components, and how to use arguments effectively.
 
-## Setting Up Your Workflow
+## Creating a New Workflow File
 
-Let's begin by opening Xircuits and creating a new workflow file. If you haven't, start by launching Xircuits and setting up a blank canvas to work on.
+Let's begin by setting up a new workflow in Xircuits:
 
-### Open Xircuits
+1. In the Launcher interface, click on `Others > Xircuits File` to create a new workflow file.
+2. Name your file `MyFirstWorkflow.xircuits`.
+3. You'll see a `Start` and `Finish` node automatically placed on the canvas. These nodes mark the beginning and end of your workflow.
 
-1. **Launch Xircuits:** Open your terminal and start Xircuits with the following command:
+## Navigating the Component Library
 
-    ```bash
-    xircuits
-    ```
+The component library is your toolbox for building workflows. Let's explore how to use it effectively.
 
-This command will open Xircuits, where you can start building your new workflow.
+### Adding Your First Component
 
-### Create a New Workflow
+1. On the left side of the Xircuits interface, click on the cube-like icon to open the component library tray.
+2. Use the search bar at the top to find the `HelloComponent`. Drag it onto the canvas.
+3. Connect the `Start` node to the `HelloComponent` node by dragging from the `Start` arrow outPort to the `HelloComponent` arrow inPort.
+4. Click `Save` and then `Compile` to generate a Python script with the same name as your `.xircuits` file.
+5. Run the workflow by clicking the 'Run' button. You should see an output like "Hello, User!" or a similar greeting.
 
-1. **Create a New File:** In the Launcher interface, click on `Others > Xircuits File` to create a new workflow file. Name your file `MyFirstWorkflow.xircuits`.
+### Expanding Your Component Library
 
-2. **Start Node:** You will see a `Start` and `Finish` node automatically placed on the canvas. This is where your workflow begins.
+Sometimes, you might need a library that isn't installed. Here's how to add it:
 
-## Exploring the Component Library
+1. In the component library tray, look for libraries listed under `Available for Installation`.
+2. To install a library, click on the `...` next to it and select `Install`. The library will be cloned to the `xai_components` directory.
+3. You'll be prompted to choose a kernel, which will execute the `pip install` command to install the library.
 
-Now, let's explore the component library, which contains various pre-built components for your workflows. You'll learn how to search for components and install new ones if needed.
+For this tutorial, let's install the `xai_tensorflow` library:
 
-### Adding Components
+1. Click on the `...` next to `xai_tensorflow` and select `Install`.
+2. Follow the prompts to complete the installation.
 
-1. **Open Component Library:** On the left side of the Xircuits interface, click on the cube-like icon, it's the component library tray. This tray contains various pre-built components that you can use in your workflow.
+Once installed, the new components will be available in your library.
 
-2. **Search for Components:** Use the search bar at the top of the component library to find specific components. For example, search for `HelloComponent` and drag it onto the canvas.
+## Constructing a More Complex Workflow
 
-3. **Connecting Components:** Connect the `Start` node to the `HelloComponent` node by dragging from the `Start` arrow outPort to the `HelloComponent` arrow inPort.
+Now, let's create a machine learning workflow by adding and connecting multiple components. You can reuse the previous canvas or create a new one.
 
-4. **Compile and Save:** Click `Save` and then `Compile` to generate a Python script with the same name as your `.xircuits` file.
+### Assembling the Core Components
 
-### Using External Libraries
+1. Search for and drag these components onto the canvas, connecting them in this order:
+   - `ReadKerasDataSet` (connect to `Start` node)
+   - `TrainTestSplit` (connect to `ReadKerasDataSet`)
+   - `KerasCreate2DInputModel` (connect to `TrainTestSplit`)
+   - `KerasTrainImageClassifier` (connect to `KerasCreate2DInputModel`)
+   - `KerasEvaluateAccuracy` (connect to `KerasTrainImageClassifier`)
+   - Connect `KerasEvaluateAccuracy` to the `Finish` node to complete the workflow.
 
-Sometimes, you might need a library that is not installed. Here's how to add it:
+Notice how Xircuits automatically connects some ports for you. For example, when you connect `ReadKerasDataSet` to `TrainTestSplit`, the `dataset` outPort of `ReadKerasDataSet` is automatically connected to the `dataset` inPort of `TrainTestSplit`. This smart linking feature helps connect ports with similar names and compatible types.
 
-1. **Install New Libraries:** In the component library tray, look for libraries listed under `Available for Installation`.
-   
-2. **Install Example:** Click on the `...` on a library you need (e.g., `xai_tensorflow_keras`) and select `Install`. The library will be cloned to the `xai_components` directory. You will be prompted to choose a kernel, which will execute the `pip install` command to install the library.
+### Completing Compulsory Connections
 
-For this example, let's install the `xai_tensorflow` library:
+Try running the workflow now. You'll likely encounter an error message: "Please connect all [★]COMPULSORY InPorts." In Xircuits, ports marked with a ★ are compulsory and must be connected.
 
-1. **Install xai_tensorflow:** Click on the `...` next to `xai_tensorflow` and select `Install`. Follow the prompts to complete the installation.
+Take a moment to observe which compulsory inPorts aren't connected yet. Can you make educated guesses on how to connect them?
 
-After the installation is complete, the component library will be ready for use.
+Here's what you need to do:
+1. Connect `TrainTestSplit`'s `train` outPort to both `KerasCreate2DModel`'s and `KerasTrainImageClassifier`'s `training_data` inPort.
+2. Connect `TrainTestSplit`'s `test` outPort to `KerasEvaluateAccuracy`'s `eval_dataset` inPort.
 
-## Building the Workflow
+### Modifying Workflow Behavior with Parameter Components
 
-Let's add and connect more components to build a complete workflow.
+Parameter components allow you to set fixed values that can be used by other components in the workflow. Let's add some parameters:
 
-### Adding More Components
+1. Drag a `Literal Integer` component onto the canvas and set its value to `5`.
+2. Connect the `Literal Integer` component to the `training_epochs` input port of the `KerasTrainImageClassifier` component.
 
-1. **Add and Connect Components:** Search for and drag the following components onto the canvas, connecting them in this order:
-   - `ReadDataSet` (connect to `Start` node)
-   - `TrainTestSplit` (connect to `ReadDataSet`)
-   - `Create2DInputModel` (connect to `TrainTestSplit`)
-   - `TrainImageClassifier` (connect to `Create2DInputModel`)
-   - `EvaluateAccuracy` (connect to `TrainImageClassifier`)
-   - Connect `EvaluateAccuracy` to the `Finish` node to complete the workflow.
+3. Drag a `Literal String` component onto the canvas and set its value to "mnist".
+4. Connect this `Literal String` component to the `dataset_name` input port of the `ReadKerasDataSet` component.
 
-### Using Parameter Components
+Using parameter components like these helps in making workflows flexible and easily configurable.
 
-Parameter components allow you to set fixed values that can be used by other components in the workflow. Here’s how to use them:
+## Launching Your Workflow
 
-1. **Literal Component:** The Literal component is used to pass fixed values to other components. For example, to set the number of training epochs:
-   - Drag a `Literal` component onto the canvas.
-   - Double-click the `Literal` component and set its value to `5`.
-   - Connect the `Literal` component to the `training_epochs` input port of the `TrainImageClassifier` component.
+Now it's time to see your creation in action:
 
-Using parameter components like `Literal` helps in making workflows flexible and easily configurable.
+1. Press the `Save & Compile` button.
+2. Select the Python kernel to execute the workflow.
 
-## Execute the Workflow
-
-1. **Run the Workflow:** Press the `Save & Compile` button. Select the Python kernel to execute the workflow. You should see the output indicating the workflow is running.
+You should see output similar to this:
 
 ```plaintext
 ======================================
@@ -92,16 +97,17 @@ __   __  ___                _ _
 /_/  /_/\_\_|_|  \___|\__,_|_|\__|___/
 ======================================
 Xircuits is running...
-Executing: ReadDataSet
+Executing: ReadKerasDataSet
 Executing: TrainTestSplit
-Executing: Create2DInputModel
-Executing: TrainImageClassifier
+Executing: KerasCreate2DInputModel
+Executing: KerasTrainImageClassifier
 Epoch 1/5
 ...
-Executing: EvaluateAccuracy
+Executing: KerasEvaluateAccuracy
 {'loss': '0.07967730611562729', 'accuracy': '0.975803554058075'}
 Finish Executing
 
 ```
 
-By following these steps, you’ve created a more complex workflow from scratch, installed necessary libraries, and learned how to use literal components to customize your workflow parameters. Explore more components and workflows to further enhance your Xircuits skills. Happy experimenting!
+Congratulations! You've just created a complex workflow from scratch, installed necessary libraries, and learned how to use literal components to customize your workflow parameters.
+As you become more comfortable with Xircuits, try exploring more components and creating more intricate workflows.
