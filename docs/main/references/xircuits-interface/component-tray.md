@@ -80,3 +80,25 @@ Remote libraries are listed under the **AVAILABLE FOR INSTALLATION** header. The
 2. **Open Repository**: Opens the library's repository in a new tab (if available).
 
 These features combine to make the Component Library Tray a powerful tool for managing and utilizing components in your Xircuits projects.
+
+## Troubleshooting
+
+1. If you find that the Component Library Tray is empty, please check whether the `.xircuits` file exists in the base working directory. This file is crucial for the proper functioning of the Component Library Tray.
+
+2. If you've made a new local component library and it does not appear in the tray, ensure that you've properly followed the steps of creating a new library.
+
+## Technical Details
+
+For those interested in the technical aspects of how the Component Library Tray works:
+
+:::note[How it Works]
+
+The Component Library Tray's contents are parsed from the `component_library_config.json` file, which is located in the `.xircuits` directory. This configuration file is generated from two sources:
+
+1. The `.gitmodules` file in the `.xircuits` directory
+2. Parsing through the `xai_components/` directory, searching for `pyproject.toml` files
+
+The `component_library_config.json` is updated in two scenarios:
+- When a component change is saved
+- When the "Refresh Component Library" option is selected from the context menu
+:::
