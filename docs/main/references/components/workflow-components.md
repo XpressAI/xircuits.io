@@ -47,6 +47,8 @@ class Inner(Component):
 - Library must be inside the `xai_components` directory.
 - Library directory must have the `xai_` prefix.
 - Library must have a `__init__.py` for Python to recognize it as a package.
+- The `.xircuits` workflow file must be compiled into a python file first.
+- The compiled workflow **must** be in the library directory, eg xai_components/xai_yourlib/compiled_workflow.py. If it is in another child directory, the tray will not pick it up as a valid component.
 
 ## Passing Parameters
 

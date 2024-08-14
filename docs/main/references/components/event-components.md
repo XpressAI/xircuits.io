@@ -1,6 +1,6 @@
-# Events
+# Event Components
 
-The Xircuits Events System introduces a dynamic way to handle event-driven programming within your Xircuits workflows. This system allows components to listen for specific events and react accordingly, enabling a more modular and decoupled design of workflows.
+Xircuits has a dynamic way to handle event-driven programming within your Xircuits workflows. This system allows components to listen for specific events and react accordingly, enabling a more modular and decoupled design of workflows.
 
 ## Overview
 
