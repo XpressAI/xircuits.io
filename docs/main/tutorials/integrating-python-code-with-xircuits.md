@@ -75,6 +75,22 @@ Now, let's walk through the process of creating a custom component. For this exa
             self.days_difference.value = difference
     ```
 
+
+:::tip
+
+You can also use the Xircuits `Create New Component` interface to create components.
+
+<details>
+<summary>Preview</summary>
+
+<div className="iframe-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-u352lIbbnA?si=OvWYpAQ0qtf21B3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" fullscreen allow="fullscreen;"></iframe>
+</div>
+
+</details>
+
+:::
+
 ### Understanding the Component Structure
 
 Let's break down the key elements of our custom component:

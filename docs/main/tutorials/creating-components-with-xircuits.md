@@ -10,42 +10,52 @@ Welcome to this step-by-step tutorial on creating and using reusable workflow co
 
 Workflow components in Xircuits are like functions in traditional programming. They allow you to encapsulate specific tasks or logic into reusable pieces that can be embedded in larger workflows.
 
-<p align="center">
-  <img width="50%" src="/img/docs/workflow_component.png"></img>
-  <figcaption class="image-caption">Workflow Components</figcaption>
-</p>
-
-## Setting Up Your Initial Workflow
+## Setting Up and Creating Your First Workflow Component
 
 To begin, you have two options:
 
 1. Use the `HelloTutorial.xircuits` from the first tutorial.
 2. Create a new workflow from scratch.
 
-If you're creating a new workflow, make sure to add the following components to your canvas:
-- Start
-- ConcatString
-- Print
-- Finish
+If you're creating a new workflow:
 
-Also, add two Literal components and connect them to the ConcatString component. Set one Literal to "Hello " and the other to "Xircuits!".
+1. Add the `ConcatString` and `Print` components to your canvas.
+2. Add two Literal components and connect them to the ConcatString component.
+3. Set one Literal to "Hello " and the other to "Xircuits!".
+4. Connect the output of `ConcatString` to the input of `Print`.
 
-## Creating Your First Workflow Component
+Your workflow should look like this:
 
-1. Save your workflow and compile it to generate a Python script.
-2. Run the workflow to see the output. You should see "Hello Xircuits!" printed.
+<p align="center">
+  <img width="75%" src="/img/docs/tutorial-workflow-component-01.png"></img>
+  <figcaption class="image-caption">HelloTutorial.xircuits</figcaption>
+</p>
+
+To create your first workflow component:
+
+1. Save your workflow with a descriptive name (e.g., "HelloXircuits.xircuits").
+2. Compile the workflow to generate a Python script. This step is crucial for Xircuits to recognize your workflow as a component.
+
+Optionally, you can run the workflow to verify its output. You should see "Hello Xircuits!" printed if you do.
+
+Now that we've set up our initial workflow and compiled it, it's ready to be used as a component. In the next section, we'll learn how to incorporate this newly created component into a larger workflow.
 
 ## Using Your Workflow Component
 
 Now, let's use this component in a new workflow:
 
 1. Start a new workflow in Xircuits.
-2. Look for your compiled workflow in the component library tray.
+2. Look for your workflow component in the component library tray. It will have the same name as its filename. 
 3. Drag and drop your workflow component into the new workflow.
 4. Connect the Start node to your component, and your component to the Finish node.
 5. Compile and run this new workflow.
 
-You should see the same output as before: "Hello Xircuits!". However, you're now using your custom component in a larger workflow. Congratulations! You've just created and used your first workflow component.
+<p align="center">
+  <img width="75%" src="/img/docs/tutorial-workflow-component-02.png"></img>
+  <figcaption class="image-caption">Using the Workflow Component</figcaption>
+</p>
+
+You should see the same output as before: "Hello Xircuits!". However, you're now effectively executing a workflow in another workflow. Congratulations! You've just created and used your first workflow component.
 
 ## Enhancing Workflow Flexibility with Arguments
 
@@ -57,17 +67,62 @@ While your component works, it's not very flexible. Let's modify it to accept cu
    - For the name (e.g., "Xircuits!"), replace it with an Argument String named "name".
 3. Connect these new Argument components to the appropriate inputs of the `ConcatString` component.
 4. Connect the output of the `ConcatString` component to the `Finish` component's `outputs` port.
+1. Save your changes and compile the workflow.
+
+<p align="center">
+  <img width="75%" src="/img/docs/tutorial-workflow-component-03.png"></img>
+  <figcaption class="image-caption">Using the Arguments in Workflow Components</figcaption>
+</p>
 
 ## Using Your Enhanced Workflow Component
 
 Now that you've modified your workflow:
 
-1. Save your changes and compile the workflow.
+1. Double check that you've saved your changes and compiled the workflow. If you haven't - it won't be updated!
 2. Go back to your second workflow (or create a new one).
 3. Replace the previous version of your component with this new, argument-enabled version.
 4. You'll notice that your component now has input ports for "greeter" and "name".
 5. Add two Literal components to provide values for these inputs.
 6. Connect everything and run the workflow.
+
+<p align="center">
+  <img width="75%" src="/img/docs/tutorial-workflow-component-04.png"></img>
+  <figcaption class="image-caption">Using the Updated Workflow Component</figcaption>
+</p>
+
+<details>
+<summary>Expected Output</summary>
+<code>
+
+    ======================================
+    __   __  ___                _ _
+    \ \  \ \/ (_)_ __ ___ _   _(_) |_ ___
+    \ \  \  /| | '__/ __| | | | | __/ __|
+    / /  /  \| | | | (__| |_| | | |_\__ \
+    /_/  /_/\_\_|_|  \___|\__,_|_|\__|___/
+
+    ======================================
+
+
+Xircuits is running...
+
+
+Executing: NewWorkflow
+
+Executing: HelloTutorial
+
+Executing: ConcatString
+
+Executing: Print
+Greetings User!
+
+Executing: PrettyPrint
+'Greetings User!'
+
+Finished Executing
+</code>
+</details>
+
 
 ## Benefits of Argument-Based Components
 
