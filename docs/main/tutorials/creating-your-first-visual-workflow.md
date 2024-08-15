@@ -41,6 +41,10 @@ For this tutorial, let's install the `xai_tensorflow` library:
 
 Once installed, the new components will be available in your library.
 
+<div className="iframe-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AtE6nus0kts?si=P1hoJ6ojKRC8wtzF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" fullscreen allow="fullscreen;"></iframe>
+</div>
+
 ## Constructing a More Complex Workflow
 
 Now, let's create a machine learning workflow by adding and connecting multiple components. You can reuse the previous canvas or create a new one.
@@ -55,7 +59,12 @@ Now, let's create a machine learning workflow by adding and connecting multiple 
    - `KerasEvaluateAccuracy` (connect to `KerasTrainImageClassifier`)
    - Connect `KerasEvaluateAccuracy` to the `Finish` node to complete the workflow.
 
-Notice how Xircuits automatically connects some ports for you. For example, when you connect `ReadKerasDataSet` to `TrainTestSplit`, the `dataset` outPort of `ReadKerasDataSet` is automatically connected to the `dataset` inPort of `TrainTestSplit`. This smart linking feature helps connect ports with similar names and compatible types.
+   <p align="center">
+   <img width="100%" src="/img/docs/tutorial-workflow-from-scratch-01.png"></img>
+   <figcaption class="image-caption">Connecting the Components</figcaption>
+   </p>
+
+   Notice how Xircuits automatically connects some ports for you. For example, when you connect `ReadKerasDataSet` to `TrainTestSplit`, the `dataset` outPort of `ReadKerasDataSet` is automatically connected to the `dataset` inPort of `TrainTestSplit`. This smart linking feature helps connect ports with similar names and compatible types.
 
 ### Completing Compulsory Connections
 
@@ -64,20 +73,50 @@ Try running the workflow now. You'll likely encounter an error message: "Please 
 Take a moment to observe which compulsory inPorts aren't connected yet. Can you make educated guesses on how to connect them?
 
 Here's what you need to do:
-1. Connect `TrainTestSplit`'s `train` outPort to both `KerasCreate2DModel`'s and `KerasTrainImageClassifier`'s `training_data` inPort.
+1. Connect `TrainTestSplit`'s `train` outPort to **both** `KerasCreate2DModel`'s and `KerasTrainImageClassifier`'s `training_data` inPort.
 2. Connect `TrainTestSplit`'s `test` outPort to `KerasEvaluateAccuracy`'s `eval_dataset` inPort.
+
+   <p align="center">
+   <img width="100%" src="/img/docs/tutorial-workflow-from-scratch-02.png"></img>
+   <figcaption class="image-caption">Providing Data between Components</figcaption>
+   </p>
+
+   Hovering over a link or port will highlight the connections.
+
+:::tip
+
+If you find it difficult to see or manage connections between components, you can create custom routes for better clarity. Simply hold the `Ctrl` key and click on a link to create waypoints along the connection line, allowing you to route it around other components or organize your workflow visually.
+
+:::
 
 ### Modifying Workflow Behavior with Parameter Components
 
-Parameter components allow you to set fixed values that can be used by other components in the workflow. Let's add some parameters:
+Parameter components allow you to set fixed values that can be used by other components in the workflow. Let's add some parameters using two different methods:
 
-1. Drag a `Literal Integer` component onto the canvas and set its value to `5`.
-2. Connect the `Literal Integer` component to the `training_epochs` input port of the `KerasTrainImageClassifier` component.
+#### Method 1: Dragging Components from the Tray
 
-3. Drag a `Literal String` component onto the canvas and set its value to "mnist".
-4. Connect this `Literal String` component to the `dataset_name` input port of the `ReadKerasDataSet` component.
+1. Drag a `Literal String` component onto the canvas from the component tray.
+2. Set its value to "mnist".
+3. Connect this `Literal String` component to the `dataset_name` input port of the `ReadKerasDataSet` component.
 
-Using parameter components like these helps in making workflows flexible and easily configurable.
+#### Method 2: Pulling Out a Link from the Port
+
+1. Click on the `training_epochs` input port of the `KerasTrainImageClassifier` component.
+2. Drag outwards to create a link. This will automatically spawn the appropriate input dialogue.
+3. In the dialogue that appears, enter the integer value 5.
+4. Press Enter to confirm the value.
+
+<p align="center">
+<img width="100%" src="/img/docs/tutorial-workflow-from-scratch-03.png"></img>
+<figcaption class="image-caption">Supplying Parameter Components</figcaption>
+</p>
+
+
+Both methods achieve the same result, creating parameter components that feed values into your workflow. The second method can be quicker as it automatically creates the correct type of literal component based on the port you're connecting to.
+
+Using parameter components like these helps in making workflows flexible and easily configurable. You can easily change these values to adjust your workflow's behavior without modifying the core components.
+
+Try both methods and see which one you prefer. As you become more comfortable with Xircuits, you'll likely find yourself using a combination of both techniques depending on the situation.
 
 ## Launching Your Workflow
 

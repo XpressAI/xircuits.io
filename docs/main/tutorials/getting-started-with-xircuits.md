@@ -46,7 +46,7 @@ In Xircuits, you'll be working with pipelines that we call `workflows`. They are
 To get started with a simple workflow, let's open a pre-existing example file:
 
 1. **Navigate to Examples:** In the Xircuits interface, use the file browser to navigate to the `xai_components/xai_template/` directory.
-2. **Select an Example:** Open the `HelloTutorial.xircuits` file. This simple workflow demonstrates how to concatenate strings and print the result. You can also right-click on the library in the component tray within Xircuits and select 'Show Examples' to explore other available workflows.
+2. **Select an Example:** Open the `HelloTutorial.xircuits` file. This simple workflow demonstrates how to concatenate strings and print the result. You can also right-click on the library in the component tray within Xircuits and select `Show Example` to explore other available workflows.
 
 ### Understand the Workflow Logic
 
@@ -65,6 +65,11 @@ Once you open a .xircuits file, you will see a visual representation of your wor
    - Finish: Marks the end of the workflow
 
    There are also two Literal components connected to ConcatString, providing the strings "Hello " and "Xircuits!" to be concatenated.
+
+<p align="center">
+<img width="75%" src="/img/docs/hello-tutorial.png"></img>
+<figcaption class="image-caption">HelloTutorial.xircuits</figcaption>
+</p>
 
 ### Modifying the Workflow
 
