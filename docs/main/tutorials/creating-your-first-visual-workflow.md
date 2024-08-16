@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Creating Your First Visual Workflow From Scratch
 
-Welcome back to Xircuits! Now that you've learned how to run a basic workflow, it's time to create a more complex one from scratch. This tutorial will guide you through the process, introducing you to the component library, how to find and install necessary components, and how to use arguments effectively.
+In the previous tutorial, you learned how to run and modify prebuilt Xircuits workflows by adjusting parameter components. While this is a great starting point, Xircuits offers much more flexibility. You can create your own custom workflows from scratch, combining components from various libraries we support. This tutorial will guide you through the process of building a more complex workflow, introducing you to the component library, how to install remote libraries, and showing you how to add and mix different components to create a powerful, customized solution.
 
 ## Creating a New Workflow File
 
@@ -34,9 +34,9 @@ Sometimes, you might need a library that isn't installed. Here's how to add it:
 2. To install a library, click on the `...` next to it and select `Install`. The library will be cloned to the `xai_components` directory.
 3. You'll be prompted to choose a kernel, which will execute the `pip install` command to install the library.
 
-For this tutorial, let's install the `xai_tensorflow` library:
+For this tutorial, let's install the Tensorflow Keras library:
 
-1. Click on the `...` next to `xai_tensorflow` and select `Install`.
+1. Click on the `...` next to `TENSORFLOW_KERAS` and select `Install`.
 2. Follow the prompts to complete the installation.
 
 Once installed, the new components will be available in your library.
@@ -64,7 +64,7 @@ Now, let's create a machine learning workflow by adding and connecting multiple 
    <figcaption class="image-caption">Connecting the Components</figcaption>
    </p>
 
-   Notice how Xircuits automatically connects some ports for you. For example, when you connect `ReadKerasDataSet` to `TrainTestSplit`, the `dataset` outPort of `ReadKerasDataSet` is automatically connected to the `dataset` inPort of `TrainTestSplit`. This smart linking feature helps connect ports with similar names and compatible types.
+   Notice how Xircuits automatically connects some ports for you. For example, when you connect `ReadKerasDataSet` to `TrainTestSplit`, the `dataset` outPort of `ReadKerasDataSet` is automatically connected to the `dataset` inPort of `TrainTestSplit`. A smart linking feature helps connect ports with similar names and compatible types.
 
 ### Completing Compulsory Connections
 

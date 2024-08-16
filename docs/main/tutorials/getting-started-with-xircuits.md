@@ -46,7 +46,13 @@ In Xircuits, you'll be working with pipelines that we call `workflows`. They are
 To get started with a simple workflow, let's open a pre-existing example file:
 
 1. **Navigate to Examples:** In the Xircuits interface, use the file browser to navigate to the `xai_components/xai_template/` directory.
-2. **Select an Example:** Open the `HelloTutorial.xircuits` file. This simple workflow demonstrates how to concatenate strings and print the result. You can also right-click on the library in the component tray within Xircuits and select `Show Example` to explore other available workflows.
+2. **Select an Example:** Open the `HelloTutorial.xircuits` file. This simple workflow demonstrates how to concatenate strings and print the result. 
+
+:::tip
+
+Some component libraries have default examples for you to start with. You can open them using the `...` context menu when you expand a library, then selecting `Show Example`.
+
+:::
 
 ### Understand the Workflow Logic
 
@@ -56,13 +62,30 @@ Once you open a .xircuits file, you will see a visual representation of your wor
 
 2. **Nodes and Links:** Nodes represent components within your workflow and are connected by links. There are two common types of nodes:
     - **Component Nodes:** These nodes perform actions or tasks within your workflow. They have flow ports at the top to manage the execution flow, with at least one flow inPort and outPort. The flow links connecting these ports are blue and flowing, indicating the execution sequence of the workflow.
+
+        <details>
+        <summary><b>Preview</b></summary>
+        <p align="center">
+        <img width="75%" src="/img/docs/component-nodes.gif"></img>
+        <figcaption class="image-caption">Component Nodes</figcaption>
+        </p>
+        </details>
+
     - **Parameter Nodes:** These nodes supply values to the component nodes, influencing their behavior. They do not have icons and are connected to the component nodes via solid gray links. You can edit the values of parameter nodes by double-clicking on them.
 
+        <details>
+        <summary><b>Preview</b></summary>
+        <p align="center">
+        <img width="75%" src="/img/docs/interface-custom-ports.gif"></img>
+        <figcaption class="image-caption">Parameter Nodes</figcaption>
+        </p>
+        </details>
+
 3. **HelloTutorial Workflow:** In this example, you'll see four main components:
-   - Start: The beginning of the workflow
-   - ConcatString: Combines two strings
-   - Print: Outputs the result
-   - Finish: Marks the end of the workflow
+   - `Start`: The beginning of the workflow
+   - `ConcatString`: Combines two strings
+   - `Print`: Outputs the result
+   - `Finish`: Marks the end of the workflow
 
    There are also two Literal components connected to ConcatString, providing the strings "Hello " and "Xircuits!" to be concatenated.
 

@@ -42,7 +42,6 @@ Now, let's walk through the process of creating a custom component. For this exa
 
     ```python
     from xai_components.base import InArg, InCompArg, OutArg, Component, xai_component
-    from datetime import datetime
     ```
 
 3. **Define the Component Class:**
@@ -53,21 +52,32 @@ Now, let's walk through the process of creating a custom component. For this exa
         """Calculates the number of days between two dates.
         
         ##### inPorts:
-        - date1 (str): The first date in 'YYYY-MM-DD' format. Compulsory.
-        - date2 (str): The second date in 'YYYY-MM-DD' format. If not provided, current date is used.
+        - year1 (str): The year of the first date. Compulsory.
+        - month1 (str): The month of the first date. Compulsory.
+        - day1 (str): The day of the first date. Compulsory.
+        - year2 (str): The year of the second date. If not provided, current year is used.
+        - month2 (str): The month of the second date. If not provided, current month is used.
+        - day2 (str): The day of the second date. If not provided, current day is used.
         
         ##### outPorts:
         - days_difference (int): The number of days between the two dates.
         """
-        date1: InCompArg[str]
-        date2: InArg[str]
+        year1: InCompArg[str]
+        month1: InCompArg[str]
+        day1: InCompArg[str]
+        year2: InArg[str]
+        month2: InArg[str]
+        day2: InArg[str]
         days_difference: OutArg[int]
         
         def execute(self, ctx) -> None:
-            date1 = datetime.strptime(self.date1.value, '%Y-%m-%d')
+        
+            from datetime import datetime
+
+            date1 = datetime(int(self.year1.value), int(self.month1.value), int(self.day1.value))
             
-            if self.date2.value:
-                date2 = datetime.strptime(self.date2.value, '%Y-%m-%d')
+            if self.year2.value and self.month2.value and self.day2.value:
+                date2 = datetime(int(self.year2.value), int(self.month2.value), int(self.day2.value))
             else:
                 date2 = datetime.now()
             
@@ -75,6 +85,7 @@ Now, let's walk through the process of creating a custom component. For this exa
             self.days_difference.value = difference
     ```
 
+4. **Don't forget to save it.**
 
 :::tip
 
@@ -109,22 +120,27 @@ Once you've created your new component, it's time to use it in Xircuits:
 
 ### Example Workflow
 
-Let's create a workflow that calculates the number of days between a fixed date and either a provided date or the current date:
+Let's create a workflow that calculates the number of days between the current date and a fixed date:
 
 1. **Add Components:**
-    - `Start` -> `GetCurrentDate` -> `FormatString` -> `DateDifference` -> `Print` -> `Finish`
-    - Add a `Literal` component for the second date
+    - `Start` -> `GetCurrentDate` -> `DateDifference` -> `Print` -> `Finish`
+    - Add three `Literal` components for the year, month, and day of the fixed date
 
 2. **Configure and Run:**
     - Use `GetCurrentDate` to get the current date.
-    - Use `FormatString` to combine the year, month, and day into a date string.
-    - Use a `Literal` component to provide a second date (e.g., "2023-01-01").
-    - Connect both dates to your new `DateDifference` component.
+    - Connect the `year`, `month`, and `day` outputs from `GetCurrentDate` to the `year2`, `month2`, and `day2` inputs of `DateDifference` respectively.
+    - Use `Literal` components to provide a fixed date (e.g., "2023", "1", "1" for January 1, 2023).
+    - Connect these `Literal` components to the `year1`, `month1`, and `day1` inputs of `DateDifference`.
     - Link the `days_difference` output to the `Print` component.
+
+<p align="center">
+<img width="90%" src="/img/docs/tutorial-custom-python-component-01.png"></img>
+<figcaption class="image-caption">Using the DateDifference Component</figcaption>
+</p>
 
 3. **Expected Output:**
     ```
-    The difference between the current date and 2023-01-01 is X days.
+    The difference between 2023-01-01 and the current date is X days.
     ```
 
 ## Best Practices for Creating Custom Components
