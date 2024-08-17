@@ -9,19 +9,11 @@ tags:
 
 # Creating a Xircuits Component
 
-Xircuits allows users to create their own components with ease. This guide will walk you through the process of developing Xircuits components, providing a comprehensive overview and a component syntax cheatsheet to serve as a quick reference.
-
-## Introduction to Developing Xircuits Components
+This guide provides a quick reference for creating Xircuits components, covering component declaration, ports, argument types, and data passing between components.
 
 Xircuits components are modular units of code that can be linked together to form workflows. These components can take inputs, perform operations, and produce outputs, facilitating complex data processing and automation tasks. 
 
 ## Component Syntax Cheatsheet
-
-This cheatsheet provides a quick reference for creating Xircuits components, covering component declaration, ports, and argument types.
-
-### Component Initialization and Definitions
-
-#### Component Declaration
 
 ```python
 from xai_components.base import InArg, OutArg, InCompArg, Component, xai_component
@@ -42,7 +34,7 @@ class ComponentName(Component):
 
     def execute(self, ctx) -> None:
         # Access values from input ports
-        input_str = self.input_str.value if self.input_str.value else "Default Value"
+        input_str = self.input_str.value
         input_int = self.input_int.value if self.input_int.value else 0
 
         # Example operation
@@ -55,118 +47,72 @@ class ComponentName(Component):
 
 ### Types of Ports
 
-- **InArg:** Input argument that allows data to be passed into the component.
-- **OutArg:** Output argument that allows data to be passed out of the component.
-- **InCompArg:** Input component argument for linking components dynamically.
+- **InArg:** Input argument
+- **OutArg:** Output argument
+- **InCompArg:** Compulsory input component argument
 
-### Dynamic Ports
+### Argument Types
 
-Ports can be dynamically defined and used for various data types to allow flexible component definitions.
+- String: `InArg[str]`
+- Integer: `InArg[int]`
+- Boolean: `InArg[bool]`
+- Float: `InArg[float]`
+- Any: `InArg[Any]` (bypasses type checking)
 
-### Types of Args
+## Creating Your First Component
 
-- **String:** `InArg[str]`
-- **Integer:** `InArg[int]`
-- **Boolean:** `InArg[bool]`
-- **Float:** `InArg[float]`
-- **Any:** `InArg[Any]` (bypasses type checking)
+1. Create a new Python file (e.g., `MyComponent.py`) in your `xai_components` directory.
+2. Copy the cheatsheet code and modify it for your component.
+3. Implement your component logic in the `execute` method.
 
-## Creating a Xircuits Component
+## Setting Default Values
 
-1. **Create `SampleComponent.py` inside a `xai_components` directory (e.g., `xai_components/xai_template`).**
+You can set default values for input ports in two ways:
 
-2. **Add Essential Imports:**
-   ```python
-   from xai_components.base import InArg, OutArg, Component, xai_component
-   ```
-
-3. **Create Your Component Class:**
-   ```python
-   @xai_component(color="blue")
-   class ComponentName(Component):
-       ...
-   ```
-
-4. **Decorator:**
-   Use the `@xai_component` decorator to indicate that your Python class is a Xircuits component.
-
-5. **Ports Declaration:**
-   ```python
-   input_str: InArg[str]
-   input_int: InArg[int]
-   output_int: OutArg[int]
-   ```
-
-6. **Execute Method:**
-   The `execute` method must pass `self` and context `ctx`.
-   ```python
-   def execute(self, ctx) -> None:
-       ...
-   ```
-
-7. **Initialize Default Values:**
+1. In the `__init__` method:
    ```python
    def __init__(self):
        super().__init__()
        self.input_str.value = "Default Value!"
    ```
 
-8. **Accessing Values from Ports:**
-   ```python
-   input_str = self.input_str.value if self.input_str.value else "Default Value"
-   input_int = self.input_int.value if self.input_int.value else 0
-   ```
-
-## Example Component Workflow
-
-Below is an example of a Xircuits component that takes in a string and outputs a random integer. This example serves as a cheatsheet, illustrating key concepts discussed in this guide.
-
-```python
-# SampleComponent.py
-
-from xai_components.base import InArg, OutArg, Component, xai_component
-
-@xai_component(color="blue")
-class HelloNewLibrary(Component):
-
-    # Define ports as class properties
-    input_str: InArg[str]
-    output_int: OutArg[int]
-
-    def __init__(self):
-        super().__init__()
-        # Initialize default values
-        self.input_str.value = "Default Value!"
-
-    def execute(self, ctx) -> None:
-        # Access value from input port
-        input_str = self.input_str.value if self.input_str.value else "Default Value"
-        print("Hello " + input_str)
-
-        # Generate and set a random integer to the output port
-        import random
-        x = random.randint(0, 100)
-        self.output_int.value = x
-```
-
-## Initializing Values
-
-There are two methods for setting default values for `InArg` if the user does not supply the parameter in the canvas.
-
-1. **Set Default Value in `__init__`:**
-   ```python
-   def __init__(self):
-       super().__init__()
-       self.input_str.value = "Default Value!"
-   ```
-
-2. **Set Default Value in `execute`:**
+2. In the `execute` method:
    ```python
    def execute(self, ctx) -> None:
        input_str = self.input_str.value if self.input_str.value else "Default Value"
-       input_int = self.input_int.value if self.input_int.value else 0
    ```
 
-## Conclusion
+## Passing Data between Components
 
-By following this guide, you can create custom Xircuits components that are versatile and easy to integrate into your workflows. Use the provided examples and cheatsheet as a quick reference to streamline the development process. Happy coding!
+There are two ways to pass data between components: through ports and by utilizing the Xircuits context (ctx). Here's how to use ports for data passing:
+
+### Passing Data via Ports
+
+1. **Output Component:**
+   ```python
+   @xai_component(color="red")
+   class HelloOutComponent(Component):
+       outport_example: OutArg[str]
+
+       def execute(self, ctx) -> None:
+           username = "Xircuits"
+           print(f"Hello {username} from HelloOutComponent!")
+           self.outport_example.value = username
+   ```
+
+2. **Input Component:**
+   ```python
+   @xai_component(color="red")
+   class HelloInComponent(Component):
+       inport_example: InArg[str]
+
+       def execute(self, ctx) -> None:
+           username = self.inport_example.value
+           print(f"Hello {username} from HelloInComponent!")
+   ```
+
+### Notes on Data Passing:
+- An inPort can also be linked to a `Literal` or an `Argument` component given the correct data type.
+- Declaring the port type as `any` will bypass the port type check.
+
+By following this guide and using the cheatsheet, you can quickly create custom Xircuits components and pass data between them in your workflows.
