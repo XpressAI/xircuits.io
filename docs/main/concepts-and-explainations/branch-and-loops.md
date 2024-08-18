@@ -215,4 +215,4 @@ In this workflow, we first define a boolean variable called `is_running` using `
 
 </details>
 
-These are just some of the controlflow components that are available, if you are a developer, you can even create your own branch component. For more technical details on how these components work, you can refer to the [branch components reference documentation](../../main/xircuits-interface/components/branch-and-loop-components.md).
+These are just some of the controlflow components that are available, if you are a developer, you can even create your own branch component. For more technical details on how these components work, you can refer to the [branch components reference documentation](/main/references/components/branch-and-loop-components.md).
