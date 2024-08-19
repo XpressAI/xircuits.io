@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Nesting Workflows
 
 Xircuits allows users to create modular, reusable workflows that can be integrated into larger workflows using `workflow components`. Workflow components function like subroutines or functions in traditional programming, encapsulating specific tasks or logic within a reusable piece that can be embedded in a larger workflow.

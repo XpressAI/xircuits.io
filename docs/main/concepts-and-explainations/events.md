@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Events
 
 The Xircuits Events component library introduces a dynamic way to handle event-driven programming within your Xircuits workflows. This system allows components to listen for specific events and react accordingly.
