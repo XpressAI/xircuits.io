@@ -111,11 +111,7 @@ const config = {
               {
                 label: 'Developer Guide',
                 to: 'docs/category/developer-guide',
-             },
-              {
-                label: 'Use Case Examples',
-                to: 'docs/category/use-case-examples',
-             },
+             }
             ],
           },
           {
