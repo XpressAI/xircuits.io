@@ -79,4 +79,4 @@ By following these steps, you have successfully created and integrated a reusabl
 - Workflow components **must** be saved and **compiled** in a valid component library path to be recognized.
 - Ensure correct setup of the directory and naming conventions for successful component creation and usage.
 
-For more additional details on how `workflow component` works, you can refer to the [workflow component](workflow-component) page.
+For more additional details on how `workflow component` works, you can refer to the [workflow component](/docs/main/references/components/workflow-components) page.

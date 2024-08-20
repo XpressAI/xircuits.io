@@ -150,13 +150,6 @@ Hello Xircuits!
 Finished Executing
 ```
 
-## Visual Walkthrough
-For a visual demonstration of the steps mentioned above, you can watch the tutorial video below. 
-
-<div className="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Hs_ZX7-VcGM?si=-1L1zz6qWEzwh9Bf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" fullscreen allow="fullscreen;"></iframe>
-</div>
-
 Congratulations on running your first Xircuits workflow! You have learned how to install Xircuits, launch it, open a prebuilt Xircuits workflow, modify and execute it.
 
 You can explore other example workflows to see how things are done in Xircuits. Once you're ready, we'll move on to the next step - creating your own visual workflow from scratch.
