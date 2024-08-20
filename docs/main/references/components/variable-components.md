@@ -65,7 +65,7 @@ The Xircuits Context is implemented as a dictionary that can be accessed and mod
 
 When a variable is set using `SetVariableComponent` or `DefineVariableComponent`, it is stored in this context. The `GetVariableComponent` then retrieves values from this context when needed.
 
-For more detailed information on the Xircuits Context and its broader applications, refer to the [Xircuits Context documentation](link-to-xircuits-context-docs).
+For more detailed information on the Xircuits Context and its broader applications, refer to the [Xircuits Context documentation](/docs/main/references/xircuits-context).
 
 ## Best Practices
 
@@ -83,4 +83,4 @@ While Variable Components offer flexibility, it's recommended to use them judici
 - Overuse of Variable Components can make workflows harder to understand and maintain.
 - While the Xircuits Context provides flexibility, excessive use can lead to less explicit data flow in the workflow.
 
-For more detailed information on how to use Variable Components in practice, refer to the tutorial documentation on [Using Variables](docs/main/concepts-and-explainations/using-variables.md).
+For more detailed information on how to use Variable Components in practice, refer to the tutorial documentation on [Using Variables](/docs/main/how-tos/using-variables).

@@ -101,4 +101,4 @@ While ultimately it is up to your Xircuiting style, we recommend using Variable 
 
 :::
 
-For more details on how Variable Components work under the hood, refer to the [Variable Components](docs/main/references/components/variable-components.md) documentation.
+For more details on how Variable Components work under the hood, refer to the [Variable Components](/docs/main/references/components/variable-components.md) documentation.

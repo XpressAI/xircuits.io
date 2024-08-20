@@ -95,8 +95,6 @@ There are 2 types of links in Xircuits.
 
 - Shift selecting will create a point in the link. Use it to route links so it's visually intuitive.
 
-For the full list of node - port - link interactions, refer to the Xircuits logic [documentation](/docs/main/xircuits-interface/node-port-link-logic).
-
 ### Right Click Context Menu
 
 The Xircuits context menu offers various options based on the selected entities on the canvas. You can open the context menu by right-clicking anywhere on the Xircuits canvas.
@@ -120,6 +118,6 @@ The Xircuits context menu offers various options based on the selected entities 
 | **Delete**         | Deletes the selected component(s) or links.                                                          | When nodes or links are selected.                                          |
 | **Undo**           | Reverts the last action.                                                                             | When no nodes are selected.                                                |
 | **Redo**           | Reapplies the last undone action.                                                                    | When no nodes are selected.                                                |
-| **Add Comment**    | Inserts a [`Comment Component`](./components/comment-component.md) at the specified node position.   | When no nodes are selected.                                                |
+| **Add Comment**    | Inserts a [`Comment Component`](/docs/main/references/components/comment-component.md) at the specified node position.   | When no nodes are selected.                                                |
 
-For the full list of node-port-link interactions, refer to the Xircuits logic [documentation](/docs/main/xircuits-interface/node-port-link-logic).
+For the full list of node-port-link interactions, refer to the Xircuits logic [documentation](/docs/main/references/xircuits-interface/node-port-link-logic).

@@ -64,7 +64,7 @@ Installing these libraries is straightforward. For instance, to use the Pytorch 
 xircuits install pytorch
 ```
 
-Components from our collection can also be installed via the [component library interface](../component-library/installation.md#installation-using-the-xircuits-library-interface).
+Components from our collection can also be installed via the [component library interface](/docs/component-library/installation#installation-using-the-xircuits-library-interface).
 
 ## Launch
 

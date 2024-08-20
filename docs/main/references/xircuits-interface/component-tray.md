@@ -46,7 +46,7 @@ Users can drag and drop these components into their workflow to build their Xirc
 
 For local libraries, you can click on the library name to reveal the components within that library. Hovering over a component will display its docstring, providing quick information about its functionality.
 
-For more detailed information on components and their usage, please refer to the [Components documentation](./components/index.md).
+For more detailed information on components and their usage, please refer to the [Components documentation](/docs/main/references/components/).
 
 ## 3. Library Context Menus
 

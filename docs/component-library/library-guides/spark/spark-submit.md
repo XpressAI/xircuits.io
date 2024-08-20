@@ -12,7 +12,7 @@ You're ready to proceed with this section.
 
 ### Xircuits Spark Submit
 
-Xircuits provides an user interface to submit Spark applications via [custom remote run](main/xircuits-interface/remote-run.md). Running it is simple:
+Xircuits provides an user interface to submit Spark applications via [custom remote run](/docs/main/references/xircuits-interface/remote-run). Running it is simple:
 
 1. Create your spark application in the Xircuits canvas.
 2. Compile! Verify that the script has been generated.

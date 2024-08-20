@@ -7,7 +7,7 @@ To ensure robust codegen compilation, we have established several rules and logi
 
 ## Node Logic
 
-- A node is a [Xircuits component](./components/).
+- A node is a [Xircuits component](/docs/main/references/components/).
 - Each canvas has a `Start` and `Finish` node, which cannot be deleted.
 - Nodes can be locked, preventing movement or deletion.
 - All component library nodes must be linked to compile and execute a workflow.
@@ -76,7 +76,7 @@ To ensure robust codegen compilation, we have established several rules and logi
 ## Link Logic
 
 - Links are created by selecting and dragging from a port.
-- Linking an `outPort` to an `inPort` indicates [data passing between components](main/developer-guide/passing-data-between-components.md).
+- Linking an `outPort` to an `inPort` indicates data passing between components.
 - If a link is not dropped on a port, it prompts the component tray interface.
 
     <details>

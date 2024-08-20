@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Remote Run
 
-The remote run is a special Xircuits feature which allows user to execute tasks remotely. While the main usage is for [Spark Submit](../../component-library/library-guides/spark/spark-submit), it can also be used for submitting jobs to servers.
+The remote run is a special Xircuits feature which allows user to execute tasks remotely. While the main usage is for [Spark Submit](/docs/component-library/library-guides/spark/spark-submit), it can also be used for submitting jobs to servers.
 
 ### Configuring the Remote Run
 

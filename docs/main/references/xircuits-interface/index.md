@@ -17,7 +17,7 @@ The two main parts of Xircuits are:
 
 The Component Library Tray contains all available components for building your workflows. It includes:
 
-- [Component Tray Overview](/docs/main/references/xircuits-interface/component-tray.md)
+- [Component Tray Overview](/docs/main/references/xircuits-interface/component-tray)
 - Search functionality
 - Refresh option
 - List of available components
@@ -26,16 +26,15 @@ The Component Library Tray contains all available components for building your w
 
 The Workflow Canvas is where you build and edit your Xircuits workflows. Key features include:
 
-- [Workflow Interface Overview](/docs/main/references/xircuits-interface/workflow-canvas.md)
-- [Node, Port and Link Logic](/docs/main/references/xircuits-interface/node-port-link-logic.md)
-- [Components](/docs/main/references/components/index.md)
-  - [Literal & Argument Components](/docs/main/references/components/literal-and-arguments-components.md)
-  - [Branch and Loop Components](/docs/main/references/components/branch-and-loop-components.md)
-  - [Variable Components](/docs/main/references/components/variable-components.md)
-  - [Comment Component](/docs/main/references/components/comment-component.md)
-  - [Events](/docs/main/references/components/event-components.md)
-  - [Workflow Components](/docs/main/references/components/workflow-components.md)
-- [Dynamic Ports](/docs/main/references/xircuits-interface/dynamic-ports.md)
-- [Remote Run](/docs/main/references/xircuits-interface/remote-run.md)
+- [Workflow Interface Overview](/docs/main/references/xircuits-interface/workflow-canvas)
+- [Node, Port and Link Logic](/docs/main/references/xircuits-interface/node-port-link-logic)
+- [Components](/docs/main/references/components/index)
+  - [Literal & Argument Components](/docs/main/references/components/literal-and-arguments-components)
+  - [Branch and Loop Components](/docs/main/references/components/branch-and-loop-components)
+  - [Variable Components](/docs/main/references/components/variable-components)
+  - [Comment Component](/docs/main/references/components/comment-component)
+  - [Events](/docs/main/references/components/event-components)
+  - [Workflow Components](/docs/main/references/components/workflow-components)
+- [Remote Run](/docs/main/references/xircuits-interface/remote-run)
 
 For a comprehensive guide on using Xircuits, please refer to the linked documentation pages.
