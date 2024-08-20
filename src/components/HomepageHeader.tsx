@@ -10,6 +10,9 @@ function HomepageHeader() {
       <header className={(styles.heroBanner)}>
         <div className="container">
           <img src="/img/xircuits-logo.png"></img>
+          <br/>
+          <br/>
+
           <img src="/img/docs/xircuits-frontpage.gif"></img>
 
           <p className="hero__subtitle">A simple visual programming environment for Jupyterlab.</p>

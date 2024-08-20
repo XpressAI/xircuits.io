@@ -1,0 +1,30 @@
+.justify-paragraph {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentPad{
+  padding: 2rem
+}
+
+.gifPad{
+  padding: 1rem;
+}
+
+.homepageHeader {
+  /* Center horizontally*/
+  text-align: center;
+}

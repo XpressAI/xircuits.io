@@ -6,7 +6,7 @@ title: Creating a Xircuits Project Template
 
 # How to Create a Xircuits Project Template
 
-In the [tutorial](main/tutorials/running-a-xircuits-project-template.md), you've learnt on how to run a Xircuits project template. This guide will help you how to create your own. The recommended way is to use the repository project template.
+In the [tutorial](/docs/project-template/running-a-xircuits-project-template), you've learnt on how to run a Xircuits project template. This guide will help you how to create your own. The recommended way is to use the repository project template.
 
 ## Starting a New Xircuits Project from the Project Template
 

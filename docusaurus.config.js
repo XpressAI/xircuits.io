@@ -63,7 +63,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'main/xircuits-interface/cli-commands',
+            docId: 'main/references/cli-commands',
             position: 'left',
             label: 'CLI Commands',
           },
@@ -82,8 +82,15 @@ const config = {
           {to: 'https://www.xpress.ai/blog/', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/XpressAI/xircuits',
-            label: 'GitHub',
             position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
+          },
+          {
+            href: 'https://xpress.ai/',
+            label: 'Platform',
+            position: 'right',
+            className: 'navbar__link--platform',
           },
         ],
       },
@@ -104,11 +111,7 @@ const config = {
               {
                 label: 'Developer Guide',
                 to: 'docs/category/developer-guide',
-             },
-              {
-                label: 'Use Case Examples',
-                to: 'docs/category/use-case-examples',
-             },
+             }
             ],
           },
           {
