@@ -33,7 +33,7 @@ If you have done it correctly, you should end up with a directory tree similar t
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/developer-guide/create-new-component-library.gif"></img></p>
+  <img src="/img/docs/create-new-component-library.gif"></img></p>
 </details><br></br>
 
 You can now check whether Xircuits have registered your component library. In the Component Tray, click the refresh icon. `newLibrary` should appear, and inside it your component ready to use.

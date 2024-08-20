@@ -12,7 +12,7 @@ function XircuitsforDevelopers() {
         <div className={clsx('col col--5 col--offset-1')}>
           <div className={styles.center}>
             <div className={styles.gifPad}>
-              <img src="/img/website/preview-anomaly-detection.gif"></img>
+              <video src="/img/website/xircuits-for-developers-small.webm" autoPlay loop></video>
             </div>
           </div>
         </div>

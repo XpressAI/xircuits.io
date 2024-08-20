@@ -11,7 +11,7 @@ In Xircuits, we have provided the `controlflow` component library which implemen
 The `BranchComponent` allows you to create branches in your workflow based on a condition, similar to an if-else statement in traditional programming. 
 
 <p align="center">
-  <img width="50%" src="/img/docs/branchComponent.png"></img>
+  <img width="50%" src="/img/docs/BranchComponent.png"></img>
   <figcaption class="image-caption">BranchComponent</figcaption>
 </p>
 
@@ -62,7 +62,7 @@ If you would like more examples of `BranchComponent`, `ControlflowBranch.xircuit
 The `LoopComponent` enables repetitive execution of a workflow segment based on a condition, similar to a while loop.
 
 <p align="center">
-  <img width="50%" src="/img/docs/loopComponent.png"></img>
+  <img width="50%" src="/img/docs/LoopComponent.png"></img>
   <figcaption class="image-caption">LoopComponent</figcaption>
 </p>
 
@@ -188,11 +188,12 @@ In this workflow, we first define a boolean variable called `is_running` using `
 <details>
   <summary>Expected Output</summary>
 
+  ```
   ======================================
   __   __  ___                _ _
   \ \  \ \/ (_)_ __ ___ _   _(_) |_ ___
-  \ \  \  /| | '__/ __| | | | | __/ __|
-  / /  /  \| | | | (__| |_| | | |_\__ \
+   \ \  \  /| | '__/ __| | | | | __/ __|
+   / /  /  \| | | | (__| |_| | | |_\__ \
   /_/  /_/\_\_|_|  \___|\__,_|_|\__|___/
 
   ======================================
@@ -212,6 +213,8 @@ In this workflow, we first define a boolean variable called `is_running` using `
   Finally, this will be executed once the final branch flow is complete!
 
   Finished Executing
+
+  ```
 
 </details>
 

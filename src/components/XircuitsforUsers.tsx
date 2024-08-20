@@ -37,7 +37,7 @@ function XircuitsforUsers() {
         <div className={clsx('col col--5 col--offset-1 flex')}>
           <div className={styles.center}>
             <div className={styles.gifPad}>
-              <img src="/img/website/preview-xircuits-user.gif"></img>
+              <video src="/img/website/xircuits-for-users-small.webm" autoPlay loop></video>
             </div>
           </div>
         </div>
