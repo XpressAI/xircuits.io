@@ -47,57 +47,53 @@ To ensure robust codegen compilation, we have established several rules and logi
     | `dict`    | `{ }`   |
     | `any`     | `[_]`   |
 
-    
-<details>
-<summary>Custom Ports</summary>
-<p align="center">
-<img src="/img/docs/interface-custom-ports.gif"></img></p>
-</details>
+### Dynamic Ports
+
+- Dynamic Ports expand dynamically when linked, while being treated as a singular variable in the compiled code.
+- Types: DynaList, DynaTuple
+- Linking to an empty dynaport spawns a new identical dynaport below it, with an updated [x] label.
+
+    <details>
+    <summary>Preview</summary>
+    <div className="iframe-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CMLT5V6uhuk?si=WfY50Aw1niPUTA4N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    </details>
+
+- All Literals can link to DynaLists and DynaTuples.
+- Removing a link updates subsequent dynaports automatically.
+- Creating a link to an already linked dynaport shifts existing links and following dynaports.
+
+    <details>
+    <summary>Preview</summary>
+    <div className="iframe-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/f_aZuBFlokQ?si=V2tkY-ghmjxuFGzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    </details>
+
+- Dynaports inherit other default port behaviors, such as reloading.
 
 ## Link Logic
 
 - Links are created by selecting and dragging from a port.
 - Linking an `outPort` to an `inPort` indicates [data passing between components](main/developer-guide/passing-data-between-components.md).
 - If a link is not dropped on a port, it prompts the component tray interface.
-<details>
-<summary>Component Chaining Interface</summary>
-<p align="center">
-<img src="/img/docs/interface-chain.gif"></img></p>
-</details>
+
+    <details>
+    <summary>Component Chaining Interface</summary>
+    <p align="center">
+    <img src="/img/docs/interface-chain.gif"></img></p>
+    </details>
+
+- If a link is not dropped on a port, it prompts the component tray interface.
+- You can create a point in a link by `ctrl` + clicking on a link. This will allow you to route links around components.
 
 ### Smart Link
 
 - When linking ▶ ports, Xircuits checks for parameter port label intersections and attempts to link them automatically.
 
-<details>
-<summary>Video: Interface Smart Link</summary>
-<p align="center">
-<img src="/img/docs/interface-smart-link.gif"></img></p>
-</details>
-
-## Dynamic Ports
-
-Dynamic Ports are specialized ports that expand dynamically when linked, while being treated as a singular variable in the compiled code.
-
-### Behavior of Dynamic Ports
-
-- DynaList, DynaTuple, and DynaDict are processed as normal lists, tuples, and dicts in the compiled code, preserving the order of the dynaport sequence.
-- Linking to an empty dynaport spawns a new identical dynaport below it, with a [x] label updated for each subsequent link.
-- All types of Literals can link to DynaLists and DynaTuples, but only Literal Dicts can link to DynaDicts.
-- Removing a link to a dynaport automatically updates the following dynaports.
-- Creating a link to an already linked dynaport shifts the existing link and following dynaports.
-- Dynaports inherit other default port behaviors, such as reloading.
-
-
-
-<div className="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/tdbJLUIUZPk?si=AnERo_c2IgnA9isl" title="Dynamic Ports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-
-<div className="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/CMLT5V6uhuk?si=WfY50Aw1niPUTA4N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-
-<div className="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/f_aZuBFlokQ?si=V2tkY-ghmjxuFGzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+    <details>
+    <summary>Video: Interface Smart Link</summary>
+    <p align="center">
+    <img src="/img/docs/interface-smart-link.gif"></img></p>
+    </details>
