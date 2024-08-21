@@ -43,7 +43,7 @@ Navigate to your Xircuits repository and create the pull request! To ensure that
   <details>
   <summary><b>VS Code Example</b></summary>
     <p align="center">
-    <img src="/img/docs/contributing/submit-component-lib-pr.png"></img></p>
+    <img src="/img/docs/submit-component-lib-pr.png"></img></p>
   </details><br/>
 
 

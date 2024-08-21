@@ -89,7 +89,7 @@ Don't forget that you should prepend `xai_` to the directory name in order for y
   <details>
   <summary><b>VS Code Example</b></summary>
     <p align="center">
-    <img src="/img/docs/contributing/vscode-submodule.png"></img></p>
+    <img src="/img/docs/vscode-submodule.png"></img></p>
   </details>
 
 ### 4. Create the PR! 
@@ -99,7 +99,7 @@ Navigate to your Xircuits repository and create the pull request! To ensure that
   <details>
   <summary><b>VS Code Example</b></summary>
     <p align="center">
-    <img src="/img/docs/contributing/submit-component-lib-pr.png"></img></p>
+    <img src="/img/docs/submit-component-lib-pr.png"></img></p>
   </details><br/>
 
 And you're done! We'll give a look at your PR as soon as possible, so keep track the review tab now and then. You can also join our Discord if you would like to discuss anything. 
