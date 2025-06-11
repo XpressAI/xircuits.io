@@ -103,3 +103,8 @@ This setup allows each iteration of the `ForEach` loop to start a new thread, ex
 ## Conclusion
 
 By integrating multithreading into your Xircuits workflows, you can significantly improve efficiency for time-consuming operations. Use the `RunParallelThread` and `AwaitFutures` components in conjunction with branch components to leverage concurrent execution in your projects. Remember to keep `RunParallelThread` in the branch's body flow and `AwaitFutures` in the main flow for proper parallel execution.
+
+
+## Additional Notes
+
+Due to Xircuits' architecture where all components are instantiated at startup, creating custom parallel versions of branch components (like a modified ForEach) can lead to memory overwrites and unpredictable behavior. Components share the same memory space across threads, causing race conditions when setting output values. For complex parallel operations, consider creating self-contained components that handle all logic internally rather than attempting to parallelize existing branch structures. This is planned to be improved in a major patch.
