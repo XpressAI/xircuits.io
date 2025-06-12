@@ -134,7 +134,9 @@ Let's create a workflow that calculates the number of days between the current d
     - Link the `days_difference` output to the `Print` component.
 
 <p align="center">
-<img width="90%" src="/img/docs/tutorial-custom-python-component-01.png"></img>
+
+![](/img/docs/tutorial-custom-python-component-01.png)
+
 <figcaption class="image-caption">Using the DateDifference Component</figcaption>
 </p>
 
@@ -158,8 +160,10 @@ When creating your own components, keep these best practices in mind:
 In the XpressAI platform, you can leverage the chat assistant to generate components for you. This powerful feature can significantly speed up your component creation process and help you get started quickly with custom functionality.
 
 <p align="center">
-  <img width="90%" src="/img/docs/xircuits-chat-assistant.gif"></img>
-  <figcaption class="image-caption">Chat Assistant</figcaption>
+
+![](/img/docs/xircuits-chat-assistant.gif)
+
+<figcaption class="image-caption">Chat Assistant</figcaption>
 </p>
 
 :::

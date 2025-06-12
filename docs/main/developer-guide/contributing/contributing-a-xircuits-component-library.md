@@ -86,20 +86,30 @@ Don't forget that you should prepend `xai_` to the directory name in order for y
   </details>
   
   If successful, you should be able to see them staged in git. Commit both the .gitmodules and your component library and push them.  
-  <details>
+<details>
   <summary><b>VS Code Example</b></summary>
-    <p align="center">
-    <img src="/img/docs/vscode-submodule.png"></img></p>
-  </details>
+
+  <p align="center">
+
+  ![VS Code submodule](/img/docs/vscode-submodule.png)
+
+  </p>
+
+</details>
 
 ### 4. Create the PR! 
 
 Navigate to your Xircuits repository and create the pull request! To ensure that we can help you merge it, [please allow us to be able to push commits to your fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/allowing-changes-to-a-pull-request-branch-created-from-a-fork#enabling-repository-maintainer-permissions-on-existing-pull-requests). 
 
-  <details>
+<details>
   <summary><b>VS Code Example</b></summary>
-    <p align="center">
-    <img src="/img/docs/submit-component-lib-pr.png"></img></p>
-  </details><br/>
+
+  <p align="center">
+
+  ![Submit component library PR](/img/docs/submit-component-lib-pr.png)
+
+  </p>
+
+</details><br/>
 
 And you're done! We'll give a look at your PR as soon as possible, so keep track the review tab now and then. You can also join our Discord if you would like to discuss anything. 

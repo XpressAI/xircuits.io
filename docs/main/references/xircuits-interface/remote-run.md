@@ -59,7 +59,10 @@ Running Spark Submit using local mode
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/spark-remote-submit.gif"></img></p>
+
+  ![](/img/docs/spark-remote-submit.gif)
+
+  </p>
 </details>
 
 ### Note:

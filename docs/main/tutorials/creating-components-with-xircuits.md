@@ -29,8 +29,10 @@ If you're creating a new workflow:
 Your workflow should look like this:
 
 <p align="center">
-  <img width="75%" src="/img/docs/tutorial-workflow-component-01.png"></img>
-  <figcaption class="image-caption">HelloTutorial.xircuits</figcaption>
+
+![](/img/docs/tutorial-workflow-component-01.png)
+
+<figcaption class="image-caption">HelloTutorial.xircuits</figcaption>
 </p>
 
 To create your first workflow component:
@@ -53,8 +55,10 @@ Now, let's use this component in a new workflow:
 5. Compile and run this new workflow.
 
 <p align="center">
-  <img width="75%" src="/img/docs/tutorial-workflow-component-02.png"></img>
-  <figcaption class="image-caption">Using the Workflow Component</figcaption>
+
+![](/img/docs/tutorial-workflow-component-02.png)
+
+<figcaption class="image-caption">Using the Workflow Component</figcaption>
 </p>
 
 You should see the same output as before: "Hello Xircuits!". However, you're now effectively executing a workflow in another workflow. Congratulations! You've just created and used your first workflow component.
@@ -72,8 +76,10 @@ While your component works, it's not very flexible. Let's modify it to accept cu
 1. Save your changes and compile the workflow.
 
 <p align="center">
-  <img width="75%" src="/img/docs/tutorial-workflow-component-03.png"></img>
-  <figcaption class="image-caption">Using the Arguments in Workflow Components</figcaption>
+
+![](/img/docs/tutorial-workflow-component-03.png)
+
+<figcaption class="image-caption">Using the Arguments in Workflow Components</figcaption>
 </p>
 
 ## Using Your Enhanced Workflow Component
@@ -88,8 +94,10 @@ Now that you've modified your workflow:
 6. Connect everything and run the workflow.
 
 <p align="center">
-  <img width="75%" src="/img/docs/tutorial-workflow-component-04.png"></img>
-  <figcaption class="image-caption">Using the Updated Workflow Component</figcaption>
+
+![](/img/docs/tutorial-workflow-component-04.png)
+
+<figcaption class="image-caption">Using the Updated Workflow Component</figcaption>
 </p>
 
 <details>

@@ -11,15 +11,19 @@ In Xircuits, we have provided the `controlflow` component library which implemen
 The `BranchComponent` allows you to create branches in your workflow based on a condition, similar to an if-else statement in traditional programming. 
 
 <p align="center">
-  <img width="50%" src="/img/docs/BranchComponent.png"></img>
-  <figcaption class="image-caption">BranchComponent</figcaption>
+
+![](/img/docs/BranchComponent.png)
+
+<figcaption class="image-caption">BranchComponent</figcaption>
 </p>
 
 Consider the following workflow:
 
 <p align="center">
-  <img width="90%" src="/img/docs/BranchComponentExample.png"></img>
-  <figcaption class="image-caption">BranchComponent Example</figcaption>
+
+![](/img/docs/BranchComponentExample.png)
+
+<figcaption class="image-caption">BranchComponent Example</figcaption>
 </p>
 
 The `BranchComponent` will alter its behavior depending on the `condition` inPort. In this case, as a `Literal True` is connected to the `BranchComponent`, it will execute the `Print` component which is connected to the "This will be printed if the condition is true!" Literal String. Finally, as with all branch components, it will go to the default flow port after completing the branch execution flow and execute one additional `Print` component.
@@ -62,15 +66,19 @@ If you would like more examples of `BranchComponent`, `ControlflowBranch.xircuit
 The `LoopComponent` enables repetitive execution of a workflow segment based on a condition, similar to a while loop.
 
 <p align="center">
-  <img width="50%" src="/img/docs/LoopComponent.png"></img>
-  <figcaption class="image-caption">LoopComponent</figcaption>
+
+![](/img/docs/LoopComponent.png)
+
+<figcaption class="image-caption">LoopComponent</figcaption>
 </p>
 
 Consider the example `ControlflowLoop.xircuits`:
 
 <p align="center">
-  <img width="90%" src="/img/docs/ControlflowLoop.xircuits.png"></img>
-  <figcaption class="image-caption">LoopComponent Example</figcaption>
+
+![](/img/docs/ControlflowLoop.xircuits.png)
+
+<figcaption class="image-caption">LoopComponent Example</figcaption>
 </p>
 
 `LoopComponent` will keep looping as long as the condition is set to be `True`.
@@ -120,8 +128,10 @@ As shown from the output, this workflow will continue indefinitely as the condit
 The `ForEach` component iterates over a list of items, executing a workflow segment for each item, similar to a for loop. Consider the following workflow:
 
 <p align="center">
-  <img width="90%" src="/img/docs/ForEachComponentExample.png"></img>
-  <figcaption class="image-caption">ForEachComponent Example</figcaption>
+
+![](/img/docs/ForEachComponentExample.png)
+
+<figcaption class="image-caption">ForEachComponent Example</figcaption>
 </p>
 
 In this workflow, the `ForEach` component will iterate through each item in the list. The item and the index are printed one after the other.
@@ -179,8 +189,10 @@ In this workflow, the `ForEach` component will iterate through each item in the 
 The `ComparisonComponent` performs comparisons between two values and returns a boolean result, useful for creating conditions in branches and loops. Consider the following advanced example:
 
 <p align="center">
-  <img width="90%" src="/img/docs/ControlflowCounterLoop.xircuits.png"></img>
-  <figcaption class="image-caption">Comparison Components to Control Loops Example</figcaption>
+
+![](/img/docs/ControlflowCounterLoop.xircuits.png)
+
+<figcaption class="image-caption">Comparison Components to Control Loops Example</figcaption>
 </p>
 
 In this workflow, we first define a boolean variable called `is_running` using `DefineVariableComponent`. This boolean is the condition of looping for the `LoopComponent`. The workflow then defines a counter that decreases each step. Then finally using the `ComparisonComponent`, we define only when the counter is less than 1, `is_running` will be `False`.

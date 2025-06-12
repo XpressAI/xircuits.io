@@ -82,7 +82,10 @@ To ensure robust codegen compilation, we have established several rules and logi
     <details>
     <summary>Component Chaining Interface</summary>
     <p align="center">
-    <img src="/img/docs/interface-chain.gif"></img></p>
+
+    ![](/img/docs/interface-chain.gif)
+
+    </p>
     </details>
 
 - If a link is not dropped on a port, it prompts the component tray interface.
@@ -95,5 +98,8 @@ To ensure robust codegen compilation, we have established several rules and logi
     <details>
     <summary>Video: Interface Smart Link</summary>
     <p align="center">
-    <img src="/img/docs/interface-smart-link.gif"></img></p>
+
+    ![](/img/docs/interface-smart-link.gif)
+
+    </p>
     </details>

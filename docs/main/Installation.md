@@ -45,7 +45,10 @@ If you're interested in the cutting-edge features of Xircuits (which might inclu
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/download-wheel.gif"></img></p>
+
+  ![](/img/docs/download-wheel.gif)
+
+  </p>
 </details>
 
 After downloading, extract the wheel to your working directory and install it with:

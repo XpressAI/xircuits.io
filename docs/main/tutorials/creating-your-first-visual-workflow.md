@@ -60,7 +60,9 @@ Now, let's create a machine learning workflow by adding and connecting multiple 
    - Connect `KerasEvaluateAccuracy` to the `Finish` node to complete the workflow.
 
    <p align="center">
-   <img width="100%" src="/img/docs/tutorial-workflow-from-scratch-01.png"></img>
+
+   ![](/img/docs/tutorial-workflow-from-scratch-01.png)
+
    <figcaption class="image-caption">Connecting the Components</figcaption>
    </p>
 
@@ -77,7 +79,9 @@ Here's what you need to do:
 2. Connect `TrainTestSplit`'s `test` outPort to `KerasEvaluateAccuracy`'s `eval_dataset` inPort.
 
    <p align="center">
-   <img width="100%" src="/img/docs/tutorial-workflow-from-scratch-02.png"></img>
+
+   ![](/img/docs/tutorial-workflow-from-scratch-02.png)
+
    <figcaption class="image-caption">Providing Data between Components</figcaption>
    </p>
 
@@ -107,7 +111,9 @@ Parameter components allow you to set fixed values that can be used by other com
 4. Press Enter to confirm the value.
 
 <p align="center">
-<img width="100%" src="/img/docs/tutorial-workflow-from-scratch-03.png"></img>
+
+![](/img/docs/tutorial-workflow-from-scratch-03.png)
+
 <figcaption class="image-caption">Supplying Parameter Components</figcaption>
 </p>
 

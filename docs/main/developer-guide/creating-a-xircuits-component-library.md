@@ -33,7 +33,10 @@ If you have done it correctly, you should end up with a directory tree similar t
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/create-new-component-library.gif"></img></p>
+
+  ![Create new component library](/img/docs/create-new-component-library.gif)
+
+  </p>
 </details><br></br>
 
 You can now check whether Xircuits have registered your component library. In the Component Tray, click the refresh icon. `newLibrary` should appear, and inside it your component ready to use.
@@ -44,7 +47,10 @@ Xircuits component libraries, as with Xircuits files are very sharable. All you 
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/collab.gif"></img></p>
+
+  ![Collaboration](/img/docs/collab.gif)
+
+  </p>
 </details><br></br>
 
 ## Creating a Component Library from the Template

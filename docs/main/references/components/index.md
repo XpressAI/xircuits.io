@@ -18,7 +18,9 @@ Component library nodes are the workhorses of your workflow. They perform action
 <details>
 <summary><b>Preview</b></summary>
 <p align="center">
-<img width="75%" src="/img/docs/component-nodes.gif"></img>
+
+![](/img/docs/component-nodes.gif)
+
 <figcaption class="image-caption">Component Nodes</figcaption>
 </p>
 </details>
@@ -56,7 +58,9 @@ Parameter nodes, found in the GENERAL tab, supply values to other components, in
 <details>
 <summary><b>Preview</b></summary>
 <p align="center">
-<img width="75%" src="/img/docs/interface-custom-ports.gif"></img>
+
+![](/img/docs/interface-custom-ports.gif)
+
 <figcaption class="image-caption">Parameter Nodes</figcaption>
 </p>
 </details>
