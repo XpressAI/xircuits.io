@@ -66,7 +66,9 @@ Once you open a .xircuits file, you will see a visual representation of your wor
         <details>
         <summary><b>Preview</b></summary>
         <p align="center">
-        <img width="75%" src="/img/docs/component-nodes.gif"></img>
+
+        ![](/img/docs/component-nodes.gif)
+
         <figcaption class="image-caption">Component Nodes</figcaption>
         </p>
         </details>
@@ -76,7 +78,9 @@ Once you open a .xircuits file, you will see a visual representation of your wor
         <details>
         <summary><b>Preview</b></summary>
         <p align="center">
-        <img width="75%" src="/img/docs/interface-custom-ports.gif"></img>
+
+        ![](/img/docs/interface-custom-ports.gif)
+
         <figcaption class="image-caption">Parameter Nodes</figcaption>
         </p>
         </details>
@@ -90,7 +94,9 @@ Once you open a .xircuits file, you will see a visual representation of your wor
    There are also two Literal components connected to ConcatString, providing the strings "Hello " and "Xircuits!" to be concatenated.
 
 <p align="center">
-<img width="75%" src="/img/docs/hello-tutorial.png"></img>
+
+![](/img/docs/hello-tutorial.png)
+
 <figcaption class="image-caption">HelloTutorial.xircuits</figcaption>
 </p>
 

@@ -11,8 +11,10 @@ Variable components are components that act like variables in workflows. We have
 - `GetVariableComponent`
 
 <p align="center">
-  <img width="50%" src="/img/docs/VariableComponents.png"></img>
-  <figcaption class="image-caption">Variable Components</figcaption>
+
+![](/img/docs/VariableComponents.png)
+
+<figcaption class="image-caption">Variable Components</figcaption>
 </p>
 
 ## DefineVariableComponent

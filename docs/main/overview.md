@@ -17,16 +17,28 @@ It is created by data scientists for data scientists.
   <summary><b>Rich Xircuits Canvas Interface</b></summary>
   <br></br>
   <p align="center">Unreal Engine-like Chain Component Interface<br></br>
-  <img src="/img/docs/interface-chain.gif" width="600"></img></p>
+
+  ![](/img/docs/interface-chain.gif)
+
+  </p>
 
   <p align="center">Custom Nodes and Ports<br></br>
-  <img src="/img/docs/interface-custom-ports.gif" width="600"></img></p>
+
+  ![](/img/docs/interface-custom-ports.gif)
+
+  </p>
   
   <p align="center">Smart Link and Type Check Logic<br></br>
-  <img src="/img/docs/interface-smart-link.gif" width="600"></img></p>
+
+  ![](/img/docs/interface-smart-link.gif)
+
+  </p>
   
   <p align="center">Component Tooltips<br></br>
-  <img src="/img/docs/interface-tooltips.gif" width="600"></img></p>
+
+  ![](/img/docs/interface-tooltips.gif)
+
+  </p>
 </details>
 
 <details>

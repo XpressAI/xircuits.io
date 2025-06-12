@@ -3,8 +3,10 @@
 Workflow components are Xircuits workflows designed to be reusable within other workflows by accepting values and passing the results to an outside workflow.
 
 <p align="center">
-  <img width="50%" src="/img/docs/workflow_component.png"></img>
-  <figcaption class="image-caption">Workflow Components</figcaption>
+
+![](/img/docs/workflow_component.png)
+
+<figcaption class="image-caption">Workflow Components</figcaption>
 </p>
 
 :::info

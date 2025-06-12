@@ -21,7 +21,10 @@ Xircuits provides an user interface to submit Spark applications via [custom rem
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/spark-remote-submit.gif"></img></p>
+
+  ![Spark remote submit](/img/docs/spark-remote-submit.gif)
+
+  </p>
 </details>
 
 If you have chosen cluster mode, your application should run in the Spark dashboard at `localhost:8080`.
@@ -29,7 +32,10 @@ If you have chosen cluster mode, your application should run in the Spark dashbo
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/spark-submit-cluster.gif"></img></p>
+
+  ![Spark submit cluster](/img/docs/spark-submit-cluster.gif)
+
+  </p>
 </details>
 
 

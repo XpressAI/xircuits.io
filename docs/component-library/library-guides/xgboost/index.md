@@ -67,7 +67,9 @@ Now that you've successfully trained an XGBoost model and performed a prediction
 Replace `SKLearnLoadDataset` with `CSVToSKLearnDataset` and update the inPorts. For this example, we can use the [pinguin dataset](https://www.kaggle.com/code/parulpandey/penguin-dataset-the-new-iris). If it does not exist in your working directory, you can fetch it using the `xircuits-examples` command. Update its inPorts so that it looks like this.
 
 <p align="center">
-  <img width="80%"src="https://github.com/XpressAI/xircuits.io/assets/68586800/f9d355d6-6e8a-42e6-9d27-a67cdd946c7c"></img>
+
+![XGBoost workflow example](https://github.com/XpressAI/xircuits.io/assets/68586800/f9d355d6-6e8a-42e6-9d27-a67cdd946c7c)
+
 </p>
 
 As with the previous example, simply press run. You should see 

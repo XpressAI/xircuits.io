@@ -11,8 +11,10 @@ If you would like to manage variables within your workflows, variable components
 - `DefineVariableComponent`
 
 <p align="center">
-  <img width="50%" src="/img/docs/VariableComponents.png"></img>
-  <figcaption class="image-caption">Variable Components</figcaption>
+
+![](/img/docs/VariableComponents.png)
+
+<figcaption class="image-caption">Variable Components</figcaption>
 </p>
 
 ## Steps to Use Variable Components
@@ -25,8 +27,10 @@ Using `Variable Components` is simple:
 Consider the following workflow. 
 
 <p align="center">
-  <img width="90%" src="/img/docs/VariableComponentsExample.png"></img>
-  <figcaption class="image-caption">Variable Component Example</figcaption>
+
+![](/img/docs/VariableComponentsExample.png)
+
+<figcaption class="image-caption">Variable Component Example</figcaption>
 </p>
 
 You can define a variable at any point of the workflow using `SetVariableComponent`, and then retrieve the value at the end using `GetVariableComponent`.

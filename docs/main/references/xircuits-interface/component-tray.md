@@ -7,8 +7,10 @@ sidebar_position: 1
 The Component Library Tray is an essential part of the Xircuits interface, providing access to all available components for building your workflows. It consists of three main parts: the search bar, library context menus, and the components themselves.
 
 <p align="center">
-  <img width="50%" src="/img/docs/xircuits-component-tray.png"></img>
-  <figcaption class="image-caption">Xircuits Component Tray</figcaption>
+
+![](/img/docs/xircuits-component-tray.png)
+
+<figcaption class="image-caption">Xircuits Component Tray</figcaption>
 </p>
 
 
@@ -23,8 +25,10 @@ At the top of the Component Library Tray, you'll find a search bar that allows y
 ### Search Bar Context Menu
 
 <p align="center">
-  <img width="50%" src="/img/docs/tray-context-main.png"></img>
-  <figcaption class="image-caption">Main Context Menu</figcaption>
+
+![](/img/docs/tray-context-main.png)
+
+<figcaption class="image-caption">Main Context Menu</figcaption>
 </p>
 
 Next to the search bar, there's a context menu (accessible via the `...` icon) with the following options:
@@ -55,8 +59,10 @@ Both local and remote libraries have their own context menus, accessible by clic
 ### For Local Libraries:
 
 <p align="center">
-  <img width="50%" src="/img/docs/tray-context-local-component-library.png"></img>
-  <figcaption class="image-caption">Local Library Context Menu</figcaption>
+
+![](/img/docs/tray-context-local-component-library.png)
+
+<figcaption class="image-caption">Local Library Context Menu</figcaption>
 </p>
 
 
@@ -70,8 +76,10 @@ Note: The availability of these options depends on the library's configuration i
 ### For Remote Libraries:
 
 <p align="center">
-  <img width="50%" src="/img/docs/tray-context-remote-component-library.png"></img>
-  <figcaption class="image-caption">Remote Library Context Menu</figcaption>
+
+![](/img/docs/tray-context-remote-component-library.png)
+
+<figcaption class="image-caption">Remote Library Context Menu</figcaption>
 </p>
 
 Remote libraries are listed under the **AVAILABLE FOR INSTALLATION** header. Their context menu includes:

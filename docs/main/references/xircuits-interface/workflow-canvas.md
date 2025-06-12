@@ -11,7 +11,10 @@ You can start the Xircuits workflow canvas in two ways:
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/open-xircuits.gif"></img></p>
+
+  ![](/img/docs/open-xircuits.gif)
+
+  </p>
 </details>
 
 The following are the common canvas interfaces that you will use:
@@ -70,7 +73,10 @@ You are able to modify `Parameter Components` (Literal nodes and Argument nodes)
 <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/edit-literal.gif"></img></p>
+
+  ![](/img/docs/edit-literal.gif)
+
+  </p>
 </details>
 :::
 
@@ -83,14 +89,20 @@ There are 2 types of links in Xircuits.
   <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/sequence-link.gif"></img></p>
+
+  ![](/img/docs/sequence-link.gif)
+
+  </p>
   </details>
 
   2. **Parameter Links:** They indicate data flow from parameter component to library component, or from library component to another library component. Parameter links are grey in color and turn into a yellow flow when highlighted. 
   <details>
   <summary>Video</summary>
   <p align="center">
-  <img src="/img/docs/parameter-link.gif"></img></p>
+
+  ![](/img/docs/parameter-link.gif)
+
+  </p>
   </details>
 
 - Shift selecting will create a point in the link. Use it to route links so it's visually intuitive.

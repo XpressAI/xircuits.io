@@ -30,8 +30,10 @@ Create a new workflow or open an existing one where you want to use multithreadi
 5. Connect the `futures` outPort of `RunParallelThread` to the `futures` inPort of `AwaitFutures`.
 
 <p align="center">
-  <img width="50%" src="/img/docs/ParallelExecutionComponents.png"></img>
-  <figcaption class="image-caption">Parallel Execution Components</figcaption>
+
+![](/img/docs/ParallelExecutionComponents.png)
+
+<figcaption class="image-caption">Parallel Execution Components</figcaption>
 </p>
 
 ### Step 3: Use Branch Components
@@ -47,8 +49,10 @@ Common branch components include:
 Let's look at the `RunParallelExample.xircuits` workflow:
 
 <p align="center">
-  <img width="90%" src="/img/docs/RunParallelExample.png"></img>
-  <figcaption class="image-caption">RunParallelThread Example</figcaption>
+
+![](/img/docs/RunParallelExample.png)
+
+<figcaption class="image-caption">RunParallelThread Example</figcaption>
 </p>
 
 In this example:

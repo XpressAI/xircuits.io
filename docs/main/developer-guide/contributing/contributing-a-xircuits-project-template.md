@@ -40,11 +40,12 @@ Navigate to `project-templates/readme.md` and add your project to the list.
 
 Navigate to your Xircuits repository and create the pull request! To ensure that we can help you merge it, [please allow us to be able to push commits to your fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/allowing-changes-to-a-pull-request-branch-created-from-a-fork#enabling-repository-maintainer-permissions-on-existing-pull-requests). 
 
-  <details>
+<details>
   <summary><b>VS Code Example</b></summary>
-    <p align="center">
-    <img src="/img/docs/submit-component-lib-pr.png"></img></p>
-  </details><br/>
+
+  ![Submit component library PR](/img/docs/submit-component-lib-pr.png)
+
+</details><br/>
 
 
 And that's it! Sharing your project template is a good way of getting more contributors to help your repository. We're always looking out for more interesting use cases that you can build with Xircuits!

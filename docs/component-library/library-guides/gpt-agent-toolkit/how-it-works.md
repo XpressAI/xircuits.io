@@ -12,7 +12,9 @@ The GPT Agent Toolkit is adopted from [BabyAGI](https://github.com/yoheinakajima
 
 <div align="center">
   <a href="https://github.com/yoheinakajima/babyagi">
-  <img src="https://user-images.githubusercontent.com/21254008/235015461-543a897f-70cc-4b63-941a-2ae3c9172b11.png" />
+
+  ![BabyAGI workflow diagram](https://user-images.githubusercontent.com/21254008/235015461-543a897f-70cc-4b63-941a-2ae3c9172b11.png)
+
   <p style={{color: 'gray', fontSize: '12px'}}>Read more here.</p>
   </a>
 </div>
