@@ -51,8 +51,9 @@ echo '{"path": "xai_components/xai-yourlib", "url": "https://github.com/your_use
 
 :::info
 
-Ensure you use the folder name format `xai_<library>`, for example `xai_yourlib`, so Xircuits can locate it.
+Don't forget that you should prepend `xai_` to the directory name in order for your component library to be parsed by the Xircuits component tray. So if your repository name is `xai-sample-library`, please convert the hyphen ( - ) to underscore ( _ ).
 
+:::
 
 Once added, commit your change:
 
