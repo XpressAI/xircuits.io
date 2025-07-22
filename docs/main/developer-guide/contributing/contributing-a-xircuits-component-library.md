@@ -14,102 +14,73 @@ This section will focus on how to create a component library pull request so you
 Before proceeding, ensure that you have already have your component library repository. We've provided a [guide](/docs/main/developer-guide/creating-a-xircuits-component-library.md) for that.
 
 
-### 1. Fork the Xircuits Repository
+### 1. Fork the xai-components-manifest Repository
 
-  Navigate to the [Xircuits repository](https://github.com/XpressAI/xircuits) and create a [fork](https://github.com/XpressAI/xircuits/fork) to your account. This is your own copy of Xircuits to freely experiment with changes without affecting the original one.
+Navigate to the [xai-components-manifest repository](https://github.com/XpressAI/xai-components-manifest) and fork it to your account. This gives you a personal copy to work on.
 
-### 2. Clone and Create a Branch
+### 2. Clone Your Fork and Create a Branch
 
-  Once you have your own fork, clone it to your local by:
+Clone your fork locally and create a feature branch:
 
-  ```
-  cd your_working_dir
-  git clone https://github.com/your_username/xircuits
-  cd xircuits
-  ```
+```bash
+git clone https://github.com/your_username/xai-components-manifest.git
+cd xai-components-manifest
+git checkout -b add-your-lib
+```
 
-  Then create a branch for your component library PR.
+```bash
+sample-user@machine ~/xai-components-manifest
+$ git clone https://github.com/sample-user/xai-components-manifest.git
+Cloning into 'xai-components-manifest'...
+...
+$ cd xai-components-manifest
+$ git checkout -b sample-user/add-xai-sample-library
+Switched to branch 'sample-user/add-xai-sample-library'
+```
 
-  ```
-  git checkout -b your-lib-branch-name
-  ```
+### 3. Update the Manifest File
 
-  Verify that you've successfully created your branch.
+Add your component library details to `xai_components_manifest.jsonl`. You can do this via the command line or a text editor.
 
-  <details>
-    <summary><b>Sample Log</b></summary>
+#### Command Line Example
 
-    sample-user@LAPTOP MINGW64 ~/Documents/Github/xircuits-sample-user-fork
-    $ git clone https://github.com/sample-user/xircuits
-    Cloning into 'xircuits'...
-    remote: Enumerating objects: 5820, done.
-    remote: Counting objects: 100% (5820/5820), done.
-    remote: Compressing objects: 100% (1687/1687), done.
-    remote: Total 5820 (delta 4064), reused 5750 (delta 4039), pack-reused 0
-    Receiving objects: 100% (5820/5820), 8.52 MiB | 7.69 MiB/s, done.
-    Resolving deltas: 100% (4064/4064), done.
+```bash
+echo '{"path": "xai_components/xai-yourlib", "url": "https://github.com/your_username/xai-yourlib", "library_id": "YOURLIB", "git_ref": "main"}' \
+  >> xai_components_manifest.jsonl
+```
 
-    sample-user@LAPTOP MINGW64 ~/Documents/Github/xircuits-sample-user-fork
-    $ cd xircuits/
-
-    sample-user@LAPTOP MINGW64 ~/Documents/Github/xircuits-sample-user-fork/xircuits (master)
-    $ git checkout -b sample-user/new-component-lib
-    Switched to a new branch 'sample-user/new-component-lib'
-  </details>
-
-### 3. Add Component Library as Submodule
-
-  External component libraries are implemented as [submodules](https://github.com/XpressAI/xircuits/blob/master/adr/0003-Refactor%20Component%20Libraries%20as%20Submodules.md) in Xircuits. To add your component library, use the git submodule command.
-
-  ```
-  git submodule add https://github.com/sample-user/xai-sample-library xai_components/xai_sample
-  ```
-
-  
 :::info
 
 Don't forget that you should prepend `xai_` to the directory name in order for your component library to be parsed by the Xircuits component tray. So if your repository name is `xai-sample-library`, please convert the hyphen ( - ) to underscore ( _ ).
 
 :::
-  <details>
-    <summary><b>Sample Log</b></summary>
 
-    sample-user@LAPTOP-GO9QVI9H MINGW64 ~/Documents/Github/xircuits-sample-user-fork/xircuits (master)
-    $ git submodule add https://github.com/sample-user/xai-sample-library xai_components/xai_sample
-    Cloning into 'C:/Users/sample-user/Documents/Github/xircuits-sample-user-fork/xircuits/xai_components/xai_sample'...
-    remote: Enumerating objects: 7, done.
-    remote: Counting objects: 100% (7/7), done.
-    remote: Compressing objects: 100% (6/6), done.
-    remote: Total 7 (delta 0), reused 6 (delta 0), pack-reused 0
-    Receiving objects: 100% (7/7), 6.06 KiB | 6.06 MiB/s, done.
-    warning: in the working copy of '.gitmodules', LF will be replaced by CRLF the next time Git touches it
-  </details>
-  
-  If successful, you should be able to see them staged in git. Commit both the .gitmodules and your component library and push them.  
-<details>
-  <summary><b>VS Code Example</b></summary>
+Once added, commit your change:
 
-  <p align="center">
+```bash
+git add xai_components_manifest.jsonl
+git commit -m "Add xai-yourlib to components manifest"
+```
 
-  ![VS Code submodule](/img/docs/vscode-submodule.png)
+### 4. (Optional) Regenerate Metadata Locally
 
-  </p>
+To preview the metadata output, run:
 
-</details>
+```bash
+python create_metadata.py
+```
 
-### 4. Create the PR! 
+This will generate:
 
-Navigate to your Xircuits repository and create the pull request! To ensure that we can help you merge it, [please allow us to be able to push commits to your fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/allowing-changes-to-a-pull-request-branch-created-from-a-fork#enabling-repository-maintainer-permissions-on-existing-pull-requests). 
+- `index.json`
+- `metadata/<library_id>.json`
 
-<details>
-  <summary><b>VS Code Example</b></summary>
+### 5. Create a Pull Request
 
-  <p align="center">
+Push your branch to your fork and open a pull request against `XpressAI/xai-components-manifest`. Include a description of your component library and link to its repository.
 
-  ![Submit component library PR](/img/docs/submit-component-lib-pr.png)
+Once merged, your library will be available to all Xircuits users via the `xircuits component library` CLI command.
 
-  </p>
-
-</details><br/>
+---
 
 And you're done! We'll give a look at your PR as soon as possible, so keep track the review tab now and then. You can also join our Discord if you would like to discuss anything. 
