@@ -39,11 +39,12 @@ The Xircuits toolbar is displayed on top of every Xircuits canvas. From left to 
 7. **Lock**: Locks all components in canvas. Locked components cannot be moved, linked-to nor deleted.
 8. **Log**: Open Xircuits log window.
 9. **Low Power Mode**: Toggle low power mode by disabling link animation.
-10. **Reload All Nodes**: Reloads all nodes in the canvas. 
-11. **Save**: Save current Xircuits canvas.
-12. **Compile**: Codegens a Python script based on current canvas. 
-13. **Save and Run**: Executes the generated Python script on the Python kernel based on Run Options.
-13. **Xircuits Run Options**
+10. **Toggle Light/Dark Mode**: Switches between light and dark themes.
+11. **Reload All Nodes**: Reloads all nodes in the canvas. 
+12. **Save**: Save current Xircuits canvas.
+13. **Compile**: Codegens a Python script based on current canvas. 
+14. **Save and Run**: Executes the generated Python script on the Python kernel based on Run Options.
+15. **Xircuits Run Options**
     - **Local Run**: Saves, compiles, and executes Xircuits canvas locally.
     - **Run w/o Compile**: Saves current canvas but does not compile the Python script. Executes Python script with the same filename as the .xircuits file.
     - **Remote Run**: Saves, compiles, then performs a cmd-based remote run. Used often for Spark Submit. For more information, read [Remote Run](remote-run).
@@ -85,7 +86,7 @@ You are able to modify `Parameter Components` (Literal nodes and Argument nodes)
 
 There are 2 types of links in Xircuits. 
 
-  1. **Flow Links:** They indicate the sequence of a Xircuits workflow. Flow links are blue line flows connecting ▶ ports which will turn solid yellow when highlighted. 
+  1. **Flow Links:** They indicate the sequence of a Xircuits workflow. Flow links are blue line flows connecting ▶ ports which will turn solid yellow when highlighted. You can drop a flow link anywhere on a target node to auto-connect to its main flow port.
   <details>
   <summary>Video</summary>
   <p align="center">

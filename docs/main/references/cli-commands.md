@@ -18,6 +18,7 @@ positional arguments:
     start               Start Xircuits.
     install             Fetch and installs a library for Xircuits.
     fetch-only          Fetch a library for Xircuits. Does not install.
+    uninstall           Uninstall a component library for Xircuits.
     examples            Download examples for Xircuits.
     compile             Compile a Xircuits workflow file.
     list                List available component libraries for Xircuits.
@@ -59,6 +60,19 @@ xircuits fetch-only <component library name>
 - The component library will be saved at `./xai_components/`.
 - You can provide a component library name from the supported [component library list](https://github.com/XpressAI/xircuits/tree/master/xai_components) or a GitHub repository URL. 
 - If the directory already exists, it will return an error.
+
+---
+
+### Uninstall Xircuits Component Library
+
+```bash
+xircuits uninstall <component library name>
+```
+
+* Uninstalls a previously installed component library from the `./xai_components/` directory.
+* Shows a success message when the library is removed.
+* If the library does not exist, a warning will be shown.
+* Core libraries such as `xai_utils` and `xai_events` are protected and cannot be uninstalled.
 
 ---
 

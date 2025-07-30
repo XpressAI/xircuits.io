@@ -70,6 +70,7 @@ Both local and remote libraries have their own context menus, accessible by clic
 2. **See Readme**: Opens the library's README file in a markdown viewer.
 3. **Show Example**: Opens an example file for the library.
 4. **Open Repository**: Opens the library's repository in a new tab.
+5. **Uninstall AGENT**: Removes the library from Xircuits after confirmation.
 
 Note: The availability of these options depends on the library's configuration in its `pyproject.toml` file.
 
