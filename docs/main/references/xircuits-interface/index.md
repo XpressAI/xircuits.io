@@ -28,7 +28,7 @@ The Workflow Canvas is where you build and edit your Xircuits workflows. Key fea
 
 - [Workflow Interface Overview](/docs/main/references/xircuits-interface/workflow-canvas)
 - [Node, Port and Link Logic](/docs/main/references/xircuits-interface/node-port-link-logic)
-- [Components](/docs/main/references/components/index)
+- [Components](/docs/main/references/components)
   - [Literal & Argument Components](/docs/main/references/components/literal-and-arguments-components)
   - [Branch and Loop Components](/docs/main/references/components/branch-and-loop-components)
   - [Variable Components](/docs/main/references/components/variable-components)

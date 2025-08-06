@@ -1,8 +1,10 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const { themes } = require('prism-react-renderer');
+
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -13,8 +15,10 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/xpress-logo.ico',
+
   organizationName: 'XpressAI',
   projectName: 'Xircuits',
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -22,32 +26,37 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl: 'https://github.com/XpressAI/xircuits.io/edit/main/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/XpressAI/xircuits.io/edit/main/blog/',
+          editUrl: 'https://github.com/XpressAI/xircuits.io/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }
-      ),
-
+      }),
     ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Disable MDX v1 compat once all MDX content is migrated
+      markdown: {
+        mdx1Compat: {
+          comments: false,
+          admonitions: false,
+          headingIds: false,
+        },
+      },
+
       docs: {
         sidebar: {
           hideable: true,
-        }
+        },
       },
+
       navbar: {
         title: '',
         logo: {
@@ -55,11 +64,10 @@ const config = {
           src: 'img/xircuits-logo.png',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'main/index',
-            position: 'left',
-            label: 'Docs',
+          { type: 'doc', 
+            docId: 'main/index', 
+            position: 'left', 
+            label: 'Docs' 
           },
           {
             type: 'doc',
@@ -79,7 +87,7 @@ const config = {
             position: 'left',
             label: 'Project Template',
           },
-          {to: 'https://www.xpress.ai/blog/', label: 'Blog', position: 'left'},
+          { to: 'https://www.xpress.ai/blog/', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/XpressAI/xircuits',
             position: 'right',
@@ -94,24 +102,16 @@ const config = {
           },
         ],
       },
+
       footer: {
         style: 'dark',
         links: [
           {
             title: 'Docs',
             items: [
-              {
-                label: 'Getting Started',
-                to: 'docs/main/#first-steps',
-              },
-              {
-                 label: 'Tutorials',
-                 to: 'docs/category/tutorials',
-              },
-              {
-                label: 'Developer Guide',
-                to: 'docs/category/developer-guide',
-             }
+              { label: 'Getting Started', to: 'docs/main/#first-steps' },
+              { label: 'Tutorials', to: 'docs/category/tutorials' },
+              { label: 'Developer Guide', to: 'docs/category/developer-guide' },
             ],
           },
           {
@@ -121,42 +121,32 @@ const config = {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/xircuits',
               },
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/C4DaD3MrAH',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/XpressAI',
-              },
+              { label: 'Discord', href: 'https://discord.gg/C4DaD3MrAH' },
+              { label: 'Twitter', href: 'https://twitter.com/XpressAI' },
             ],
           },
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                href: 'https://www.xpress.ai/blog/',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/XpressAI/xircuits',
-              },
+              { label: 'Blog', href: 'https://www.xpress.ai/blog/' },
+              { label: 'GitHub', href: 'https://github.com/XpressAI/xircuits' },
             ],
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Xpress AI KK. Built with Docusaurus.`,
       },
+
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['bash', 'json'],
       },
+
       colorMode: {
         defaultMode: 'light',
-        disableSwitch: true
+        disableSwitch: true,
       },
     }),
-
     themes: [
       [
         "@xpressai/docusaurus-vecto-search",

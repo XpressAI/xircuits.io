@@ -66,4 +66,4 @@ Workflow components can accept parameters and return results.
 - Ensure correct setup of the directory and naming conventions for successful component creation and usage.
 
 
-For a tutorial on how to use `workflow components`, you can refer to the [workflow component](docs/main/references/components/workflow-components) tutorial.
+For a tutorial on how to use `workflow components`, you can refer to the [workflow component](/docs/main/references/components/workflow-components) tutorial.

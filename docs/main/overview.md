@@ -15,30 +15,31 @@ It is created by data scientists for data scientists.
 
 <details>
   <summary><b>Rich Xircuits Canvas Interface</b></summary>
-  <br></br>
-  <p align="center">Unreal Engine-like Chain Component Interface<br></br>
-
-  ![](/img/docs/interface-chain.gif)
-
-  </p>
-
-  <p align="center">Custom Nodes and Ports<br></br>
-
-  ![](/img/docs/interface-custom-ports.gif)
-
-  </p>
+  <br />
   
-  <p align="center">Smart Link and Type Check Logic<br></br>
+  <div align="center">
+    <p>Unreal Engine-like Chain Component Interface</p>
+    
+    ![](/img/docs/interface-chain.gif)
+  </div>
 
-  ![](/img/docs/interface-smart-link.gif)
-
-  </p>
+  <div align="center">
+    <p>Custom Nodes and Ports</p>
+    
+    ![](/img/docs/interface-custom-ports.gif)
+  </div>
   
-  <p align="center">Component Tooltips<br></br>
-
-  ![](/img/docs/interface-tooltips.gif)
-
-  </p>
+  <div align="center">
+    <p>Smart Link and Type Check Logic</p>
+    
+    ![](/img/docs/interface-smart-link.gif)
+  </div>
+  
+  <div align="center">
+    <p>Component Tooltips</p>
+    
+    ![](/img/docs/interface-tooltips.gif)
+  </div>
 </details>
 
 <details>
@@ -70,25 +71,25 @@ And many more.
 1. Create a new Xircuits from the Jupyterlab launcher or open an existing .xircuits file.
 
 <div className="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ONlBHT5OSbo?si=phd92Yy-B3f6CFyn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" fullscreen allow="fullscreen;"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ONlBHT5OSbo?si=phd92Yy-B3f6CFyn" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 </div>
 
 2. Drag components from the Xircuits Component Tray to complete your workflow. Share data among your components using the inPorts and outPorts. Supply or edit Literals which modifies the component behavior!
 
 <div className="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/rPtulYp9rCo?si=ffK3RrUSeL3CScpq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" fullscreen allow="fullscreen;"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rPtulYp9rCo?si=ffK3RrUSeL3CScpq" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 </div>
 
 3. Press Compile button! The Xircuits will compile the workflow into a Python script. A compiled workflow can also be called in other workflows as a component!
 
 <div className="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/xoZY4jeGSy4?si=GvSvM5t486b2BV32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" fullscreen allow="fullscreen;"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xoZY4jeGSy4?si=GvSvM5t486b2BV32" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 </div>
 
 4. Run it!
 
 <div className="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/uxHlnOwKYv0?si=8SpzxK7KrNOlukOZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" fullscreen allow="fullscreen;"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uxHlnOwKYv0?si=8SpzxK7KrNOlukOZ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 </div>
 
-Xircuits will execute the compiled Python code on the Output Viewer.  
+Xircuits will execute the compiled Python code on the Output Viewer.
