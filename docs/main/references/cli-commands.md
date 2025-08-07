@@ -72,7 +72,7 @@ xircuits uninstall <component library name>
 * Uninstalls a previously installed component library from the `./xai_components/` directory.
 * Shows a success message when the library is removed.
 * If the library does not exist, a warning will be shown.
-* Core libraries such as `xai_utils` and `xai_events` are protected and cannot be uninstalled.
+* Core libraries such as `xai_utils` and `xai_events` are protected and cannot be uninstalled by default.
 
 ---
 
