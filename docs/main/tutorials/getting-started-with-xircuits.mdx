@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import { XircuitsGraph } from '@xpressai/xircuits-viewer-react';
+
 # Getting Started with Xircuits
 
 Welcome to Xircuits! This tutorial will walk you through installing Xircuits, starting it, opening and modifying a workflow, and finally running it in JupyterLab.
@@ -93,12 +95,12 @@ Once you open a .xircuits file, you will see a visual representation of your wor
 
    There are also two Literal components connected to ConcatString, providing the strings "Hello " and "Xircuits!" to be concatenated.
 
-<p align="center">
-
-![](/img/docs/hello-tutorial.png)
-
-<figcaption class="image-caption">HelloTutorial.xircuits</figcaption>
-</p>
+<XircuitsGraph
+  src="/workflows/HelloXircuits.xircuits"
+  height={400}
+  theme="dark"
+  style={{ borderRadius: '8px' }}
+/>
 
 ### Modifying the Workflow
 

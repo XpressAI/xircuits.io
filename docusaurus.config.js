@@ -1,8 +1,5 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const {themes: prismThemes} = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -11,10 +8,16 @@ const config = {
   url: 'http://xircuits.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/xpress-logo.ico',
   organizationName: 'XpressAI',
   projectName: 'Xircuits',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'throw',
+    },
+  },
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -22,23 +25,20 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl: 'https://github.com/XpressAI/xircuits.io/edit/main/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/XpressAI/xircuits.io/edit/main/blog/',
+          editUrl: 'https://github.com/XpressAI/xircuits.io/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }
-      ),
-
+      }),
     ],
   ],
+
+  themes: ['@xpressai/docusaurus-vecto-search'],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -46,7 +46,7 @@ const config = {
       docs: {
         sidebar: {
           hideable: true,
-        }
+        },
       },
       navbar: {
         title: '',
@@ -100,76 +100,49 @@ const config = {
           {
             title: 'Docs',
             items: [
-              {
-                label: 'Getting Started',
-                to: 'docs/main/#first-steps',
-              },
-              {
-                 label: 'Tutorials',
-                 to: 'docs/category/tutorials',
-              },
-              {
-                label: 'Developer Guide',
-                to: 'docs/category/developer-guide',
-             }
+              {label: 'Getting Started', to: 'docs/main/#first-steps'},
+              {label: 'Tutorials', to: 'docs/category/tutorials'},
+              {label: 'Developer Guide', to: 'docs/category/developer-guide'},
             ],
           },
           {
             title: 'Community',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/xircuits',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/C4DaD3MrAH',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/XpressAI',
-              },
+              {label: 'Stack Overflow', href: 'https://stackoverflow.com/questions/tagged/xircuits'},
+              {label: 'Discord', href: 'https://discord.gg/C4DaD3MrAH'},
+              {label: 'Twitter', href: 'https://twitter.com/XpressAI'},
             ],
           },
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                href: 'https://www.xpress.ai/blog/',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/XpressAI/xircuits',
-              },
+              {label: 'Blog', href: 'https://www.xpress.ai/blog/'},
+              {label: 'GitHub', href: 'https://github.com/XpressAI/xircuits'},
             ],
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Xpress AI KK. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
       colorMode: {
         defaultMode: 'light',
-        disableSwitch: true
+        disableSwitch: true,
+      },
+      vectorSearch: {
+        mode: 'hybrid',
+        vecto: {
+          publicToken: process.env.VECTO_PUBLIC_TOKEN ?? '',
+          vectorSpaceId: Number(process.env.VECTO_SPACE_ID ?? '0'),
+          batchSize: 5,
+        },
+        content: {
+          splitOnHeadings: [2, 3],
+        },
       },
     }),
-
-    themes: [
-      [
-        "@xpressai/docusaurus-vecto-search",
-        /** type {import("@xpressai/docusaurus-vecto-search").PluginOptions} */
-        ({
-          docsRouteBasePath: '/',
-          vecto_public_token: process.env.VECTO_PUBLIC_TOKEN,
-          vector_space_id: Number(process.env.VECTOR_SPACE_ID),
-          top_k: 20,
-          rankBy: "weightedAverage"
-        }),
-      ],
-    ],
 };
 
 module.exports = config;
