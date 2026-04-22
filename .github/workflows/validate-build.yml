@@ -10,22 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
 
-      - name: Setup Build Env
-        run: |
-          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-          . ~/.nvm/nvm.sh
-          nvm install 18.14.2
-          nvm use 18.14.2
-
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: 'yarn'
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install --frozen-lockfile
 
       - name: Build site
-        run: npm run-script build
+        run: yarn build
         env:
           VECTO_PUBLIC_TOKEN: ${{ secrets.VECTO_PUBLIC_TOKEN }}
           VECTO_USER_TOKEN: ${{ secrets.VECTO_USER_TOKEN }}
-          VECTOR_SPACE_ID: ${{ secrets.VECTOR_SPACE_ID }}
+          VECTO_SPACE_ID: ${{ secrets.VECTO_SPACE_ID }}
