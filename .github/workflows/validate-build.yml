@@ -24,6 +24,7 @@ jobs:
       - name: Build site
         run: yarn build
         env:
-          VECTO_PUBLIC_TOKEN: ${{ secrets.VECTO_PUBLIC_TOKEN }}
-          VECTO_USER_TOKEN: ${{ secrets.VECTO_USER_TOKEN }}
-          VECTO_SPACE_ID: ${{ secrets.VECTO_SPACE_ID }}
+          # Use CI-scoped Vecto space so PR builds don't touch prod search index.
+          VECTO_PUBLIC_TOKEN: ${{ secrets.VECTO_CI_PUBLIC_TOKEN }}
+          VECTO_USER_TOKEN: ${{ secrets.VECTO_CI_USER_TOKEN }}
+          VECTO_SPACE_ID: ${{ secrets.VECTO_CI_SPACE_ID }}
