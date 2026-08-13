@@ -5,7 +5,7 @@ const {themes: prismThemes} = require('prism-react-renderer');
 const config = {
   title: 'Xircuits',
   tagline: 'Xpress your Workflows',
-  url: 'http://xircuits.io',
+  url: 'https://xircuits.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/xpress-logo.ico',
